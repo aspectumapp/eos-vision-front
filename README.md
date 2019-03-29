@@ -1,2 +1,2 @@
 # eos-vision-front
-components for SinglePageApplication from EOS Vision
+Components for SinglePageApplication from EOS Vision

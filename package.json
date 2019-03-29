@@ -1,7 +1,7 @@
 {
-  "name": "eos-vision",
+  "name": "eos-vision-front",
   "version": "0.0.1",
-  "description": "EOS-Vision components",
+  "description": "Components for SinglePageApplication from EOS Vision",
   "main": "./dist",
   "scripts": {
     "prebuild": "rm -fr ./dist/",
