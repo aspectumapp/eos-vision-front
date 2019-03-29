@@ -1,0 +1,45 @@
+{
+  "name": "eos-vision",
+  "version": "0.0.1",
+  "description": "EOS-Vision components",
+  "main": "./dist",
+  "scripts": {
+    "prebuild": "rm -fr ./dist/",
+    "build": "npm run ts2js && npm run copy-src-to-dist",
+    "ts2js": "tsc",
+    "copy-src-to-dist": "cp -fr ./src/* ./dist",
+    "docz:dev": "docz dev",
+    "docz:build": "docz build",
+    "lint": "tslint -c tslint.json --project ."
+  },
+  "author": "odevyatkov <odevyatkov@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:eos-vision/eos-vision-front.git"
+  },
+  "keywords": [
+    "EOS",
+    "react",
+    "components"
+  ],
+  "homepage": "https://github.com/eos-vision/eos-vision-front",
+  "devDependencies": {
+    "pre-commit": "1.2.2",
+    "tslint": "5.14.0",
+    "tslint-config-standard": "8.0.1",
+    "tslint-react": "3.6.0",
+    "tslint-react-recommended": "1.0.15",
+    "typescript": "3.3.4000"
+  },
+  "dependencies": {
+    "@types/react": "^16.8.8",
+    "classnames": "^2.2.6",
+    "lodash-es": "^4.17.11",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.4"
+  },
+  "pre-commit": [
+    "lint"
+  ]
+}
