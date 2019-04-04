@@ -5,12 +5,12 @@
   "main": "./dist",
   "scripts": {
     "prebuild": "rm -fr ./dist/",
-    "build": "npm run ts2js && npm run copy-src-to-dist",
-    "ts2js": "tsc",
+    "build": "npm run tsc && npm run copy-src-to-dist",
+    "tsc": "tsc",
     "copy-src-to-dist": "cp -fr ./src/* ./dist",
-    "docz:dev": "docz dev",
-    "docz:build": "docz build",
-    "lint": "tslint -c tslint.json --project ."
+    "lint": "tslint -c tslint.json --project .",
+    "storybook": "start-storybook",
+    "storybook:build": "build-storybook -c .storybook -o docsite"
   },
   "author": "odevyatkov <odevyatkov@gmail.com>",
   "license": "MIT",
@@ -25,7 +25,12 @@
   ],
   "homepage": "https://github.com/eos-vision/eos-vision-front",
   "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@storybook/addon-info": "^5.0.6",
+    "@storybook/react": "^5.0.6",
+    "babel-loader": "^8.0.5",
     "pre-commit": "1.2.2",
+    "react-docgen-typescript-loader": "^3.1.0",
     "tslint": "5.14.0",
     "tslint-config-standard": "8.0.1",
     "tslint-react": "3.6.0",
@@ -37,7 +42,8 @@
     "classnames": "^2.2.6",
     "lodash-es": "^4.17.11",
     "prop-types": "^15.7.2",
-    "react": "^16.8.4"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "pre-commit": [
     "lint"
