@@ -10,7 +10,7 @@
     "copy-src-to-dist": "cp -fr ./src/* ./dist",
     "lint": "tslint -c tslint.json --project .",
     "storybook": "start-storybook",
-    "storybook:build": "build-storybook -c .storybook -o docsite"
+    "storybook:build": "build-storybook -c .storybook -o docs"
   },
   "author": "odevyatkov <odevyatkov@gmail.com>",
   "license": "MIT",
