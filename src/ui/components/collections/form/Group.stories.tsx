@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
-import Group from '../src/ui/components/collections/form/Group';
+import Group from './Group';
 
 const stories = storiesOf('Group', module);
 

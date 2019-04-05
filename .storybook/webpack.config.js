@@ -7,15 +7,19 @@ module.exports = ({ config }) => {
       {
         loader: require.resolve('babel-loader'),
         options: {
-          presets: [
-            ['react-app', { flow: false, typescript: true }]
-          ],
+          presets: [['react-app', { flow: false, typescript: false }]],
         },
       },
       {
-        loader: require.resolve("react-docgen-typescript-loader"),
-      }
-    ]
+        loader: require.resolve('ts-loader'),
+      },
+      {
+        loader: require.resolve('react-docgen-typescript-loader'),
+        options: {
+          tsconfigPath: './tsconfig.json'
+        },
+      },
+    ],
   });
 
   return config;

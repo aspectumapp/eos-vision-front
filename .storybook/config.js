@@ -4,7 +4,7 @@ import { withInfo } from '@storybook/addon-info';
 
 addDecorator(withInfo);
 
-const req = require.context('../stories', true, /\.stories\.tsx$/);
+const req = require.context('../src/ui', true, /\.stories\.tsx$/);
 
 function loadStories() {
   req.keys().forEach(req);
