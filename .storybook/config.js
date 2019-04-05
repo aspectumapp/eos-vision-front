@@ -1,6 +1,17 @@
-import { configure } from '@storybook/react';
-import { addDecorator } from '@storybook/react';
+import {
+  configure,
+  addParameters,
+  addDecorator,
+} from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
+
+addParameters({
+  options: {
+    name: 'EOS Vision Front',
+    goFullScreen: false,
+    showAddonPanel: false,
+  }
+});
 
 addDecorator(withInfo);
 
