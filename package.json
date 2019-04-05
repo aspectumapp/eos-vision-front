@@ -5,7 +5,7 @@
   "main": "./dist",
   "scripts": {
     "prebuild": "rm -fr ./dist/",
-    "build": "npm run tsc && npm run copy-src-to-dist",
+    "build": "npm run tsc && npm run copy-src-to-dist && npm run storybook:build",
     "tsc": "tsc",
     "copy-src-to-dist": "cp -fr ./src/* ./dist",
     "lint": "tslint -c tslint.json --project .",
