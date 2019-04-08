@@ -1,11 +1,25 @@
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
+
 import Group from './Group';
 
-const stories = storiesOf('Group', module);
+const story = storiesOf('Components | Collections / Form / Group', module);
 
-stories.add(
-  'Group',
-  () => <Group label='hello'>{'hello'}</Group>,
-  { info: { inline: true } }
-);
+story
+  .add('Basic usage', () => {
+    return (
+      <Group
+        label='Group label'
+      >
+        <label>{'Username'}</label>
+        <input
+          type='text'
+        />
+      </Group>
+    );
+  }, {
+    info: {
+      inline: true,
+    },
+  })
+;

@@ -2,29 +2,71 @@ import * as React from 'react';
 import classnames from 'classnames';
 
 export interface DataOnChange {
+  /**
+   * Indicates if checkbox is checked
+   */
   checked?: boolean;
+
+  /**
+   * Input tag name attribute value
+   */
   name?: string;
+
+  /**
+   * Input tag value attribute value
+   */
   value?: string;
+
+  /**
+   * Label for checkbox. Can be React component
+   */
   label?: string | React.ReactNode;
 }
 
-export interface Props {
-  tabIndex?: number;
-  inputType?: 'radio'|'checkbox';
-  checked?: boolean;
-  name?: string;
-  value?: string;
-  label?: string | React.ReactNode;
-  toggle?: boolean;
+export interface Props extends DataOnChange {
+  /**
+   * css classes
+   */
   className?: string;
-  onChange: (data: DataOnChange, event: React.SyntheticEvent) => void;
+
+  /**
+   * Tab index attribute value
+   */
+  tabIndex?: number;
+
+  /**
+   * Input type
+   */
+  inputType?: 'radio'|'checkbox';
+
+  /**
+   * Indicates if checkbox is toggle
+   */
+  toggle?: boolean;
+
+  /**
+   * Indicates if checkbox is disabled
+   */
   disabled?: boolean;
+
+  /**
+   * Change handler
+   */
+  onChange: (data: DataOnChange, event: React.SyntheticEvent) => void;
 }
 
 export default class Base extends React.PureComponent<Props> {
   static defaultProps: Partial<Props> = {
     className: '',
     tabIndex: 0,
+    disabled: false,
+    onChange: undefined,
+    toggle: false,
+    inputType: 'checkbox',
+    checked: false,
+    name: '',
+    value: '',
+    label: '',
   };
 
   handleChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
@@ -95,7 +137,6 @@ export default class Base extends React.PureComponent<Props> {
     return (
       <div
         className={className}
-        onClick={this.handleClick}
       >
         <input
           type={this.props.inputType}

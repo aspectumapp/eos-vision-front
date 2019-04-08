@@ -4,19 +4,83 @@ import { action } from '@storybook/addon-actions';
 
 import Checkbox from './Checkbox';
 
-const stories = storiesOf('Checkbox', module);
+const Red = props => <span style={{ color: 'red' }} {...props} />;
 
-stories.add(
-  'Checkbox',
-  () => {
+const TableComponent = ({ propDefinitions }) => {
+  const props = propDefinitions.map(
+    ({ property, propType, required, description, defaultValue }) => {
+      return (
+        <tr key={property}>
+          <td>
+            {property}
+            {required ? <Red>*</Red> : null}
+          </td>
+          <td>{propType.name}</td>
+          <td>{defaultValue}</td>
+          <td>{description}</td>
+        </tr>
+      );
+    }
+  );
+
+  return (
+    <table>
+      <thead>
+      <tr>
+        <th>name</th>
+        <th>type</th>
+        <th>default</th>
+        <th>description</th>
+      </tr>
+      </thead>
+      <tbody>{props}</tbody>
+    </table>
+  );
+};
+
+const story = storiesOf('Modules | Checkbox / Checkbox', module);
+
+story
+  .addParameters({
+    options: {
+      showAddonPanel: true,
+    },
+  });
+
+story
+  .add('Basic usage', () => {
     return (
       <Checkbox
-        label='Click me'
-        onChange={action('on-change')}
-      >
-        {'Click me'}
-      </Checkbox>
+        onChange={action('onChange')}
+      />
     );
-  },
-  { info: { inline: true } }
-);
+  }, {
+    info: {
+      inline: true,
+      source: false,
+      text: `
+Render simple checkbox
+
+~~~js
+<Button>Hello</Button>
+~~~
+      `,
+      TableComponent,
+    },
+  });
+
+// story
+//   .add('Icon as button', () => {
+//     return (
+//       <Icon
+//         name='other'
+//         as='button'
+//         onClick={action('onClick')}
+//       />
+//     );
+//   }, {
+//     info: {
+//       inline: true,
+//       text: 'Handle onClick event',
+//     },
+//   });
