@@ -1,0 +1,12 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+.ui.dimmer.modals {
+  z-index: 1050;
+}
+
+
+.ui.modal>.close .icon {
+  font-size: inherit;
+}
