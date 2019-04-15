@@ -10,6 +10,8 @@ export interface Props {
 
   /**
    * Icon container
+   *
+   * @default 'i'
    */
   as?: 'div'|'i'|'button'|'span';
 

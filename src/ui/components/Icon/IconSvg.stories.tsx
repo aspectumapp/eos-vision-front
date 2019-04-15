@@ -4,19 +4,19 @@ import { action } from '@storybook/addon-actions';
 
 import IconSvg from './IconSvg';
 
-const story = storiesOf('Elements | Icon / IconSvg', module);
+const story = storiesOf('UIComponents | Icon / IconSvg', module);
 
 story
   .add('Basic usage', () => {
     return (
       <IconSvg
-        name='some'
+        name='send_up'
       />
     );
   }, {
     info: {
       inline: true,
-      text: 'Wrapper for Icon component',
+      text: 'Svg icon',
     },
   });
 

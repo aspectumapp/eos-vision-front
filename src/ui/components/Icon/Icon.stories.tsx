@@ -4,13 +4,13 @@ import { action } from '@storybook/addon-actions';
 
 import Icon from './Icon';
 
-const story = storiesOf('Elements | Icon / Icon', module);
+const story = storiesOf('UIComponents | Icon / Icon', module);
 
 story
   .add('Basic usage', () => {
     return (
       <Icon
-        name='some'
+        name='open_new'
       />
     );
   }, {
@@ -29,7 +29,7 @@ story
   .add('Icon as button', () => {
     return (
       <Icon
-        name='other'
+        name='open_new'
         as='button'
         onClick={action('onClick')}
       />

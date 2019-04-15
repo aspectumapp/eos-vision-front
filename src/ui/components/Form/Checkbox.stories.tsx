@@ -60,10 +60,6 @@ story
       source: false,
       text: `
 Render simple checkbox
-
-~~~js
-<Button>Hello</Button>
-~~~
       `,
       TableComponent,
     },
