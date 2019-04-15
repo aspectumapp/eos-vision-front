@@ -1,0 +1,13 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+
+.ui.breadcrumb {
+  .section {
+    font-weight: 500;
+  }
+  .active.section {
+    margin-left: -3px;
+  }
+}
