@@ -1,0 +1,11 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+.ui.segment.loader-item {
+  min-height: 85px;
+  &.no-border {
+    border: 0;
+    box-shadow: none;
+  }
+}

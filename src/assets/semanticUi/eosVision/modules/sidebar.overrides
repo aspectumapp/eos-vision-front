@@ -1,0 +1,30 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+.ui.sidebar {
+  background-color: @sidebarBackground;
+  color: @eosGrey4-text;
+  border: 1px solid @sidebarBackground;
+}
+
+& when (@visionWeb = true) {
+  .ui.right.sidebar.visible~.pusher {
+    padding-right: @width + 6;
+  }
+
+  .ui.right.sidebar.wide.visible~.pusher {
+    padding-right: @wideWidth + 6;
+    > .upload-files-area {
+      right: @wideWidth + 20;
+    }
+  }
+}
+
+.ui.sidebar.vertical {
+  > .content {
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+}

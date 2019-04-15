@@ -1,0 +1,50 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+.ui.cards>.card {
+  .header, .meta {
+    line-height: 1.2;
+    letter-spacing: 0.15px;
+  }
+  & when (@visionMobile = false) {
+    .meta {
+      margin-top: 3px;
+    }
+    > .image {
+      flex: 1 0 147px;
+      + .content {
+        flex-grow: 0;
+      }
+    }
+  }
+  & when (@visionMobile = true) {
+    .meta {
+      margin-top: 1px;
+    }
+    > .image {
+      flex: 1 0 120px;
+      max-height: 120px;
+      + .content {
+        flex-grow: 0;
+      }
+    }
+  }
+  & when (@visionTablet = true) {
+    .meta {
+      margin-top: 1px;
+    }
+    > .image {
+      flex: 1 0 144px;
+      max-height: 144px;
+      + .content {
+        flex-grow: 0;
+      }
+    }
+  }
+}
+
+.ui.cards>.card.selected {
+  background-color: @selectedBackgroudColor;
+  box-shadow: 0 0 0 2px @selectedBorderColor;
+}

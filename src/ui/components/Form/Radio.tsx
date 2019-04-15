@@ -1,12 +1,13 @@
 import * as React from 'react';
+import './checkbox.less';
 
 import Base, {
   Props as BaseProps,
-} from './Base';
+} from './Checkbox/Base';
 
 export {
   DataOnChange,
-} from './Base';
+} from './Checkbox/Base';
 
 export interface Props extends BaseProps {
   inputType?: 'radio';

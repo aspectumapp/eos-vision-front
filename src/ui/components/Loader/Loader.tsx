@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './loader.less';
 
 export interface Props {
   active?: boolean;
