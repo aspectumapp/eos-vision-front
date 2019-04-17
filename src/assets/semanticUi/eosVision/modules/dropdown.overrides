@@ -91,8 +91,8 @@
 .ui.dropdown:not(.loading) .icon.add {
   font-size: 17.5px;
   color: @eosGrey6-text;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 10px 5px;
+  &:extend(.eos_ic_add all);
 }
 
 // Dropdown Context menu
@@ -142,9 +142,7 @@
           font-size: 22px;
           margin: 0;
           width: auto;
-          &:before {
-            content: @eos_ic_arrow_right;
-          }
+          &:extend(.eos_ic_arrow_right all);
         }
         &:not(.eos_ic_dropdown) {
           margin-left: -15px !important;

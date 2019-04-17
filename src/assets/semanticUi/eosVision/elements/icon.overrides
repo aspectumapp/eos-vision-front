@@ -2,7 +2,7 @@
          Site Overrides
 *******************************/
 
-@import "../../../fontIcons/style.less";
+@import '../../../fontIcons/style.less';
 
 i.mini.icon,
 i.mini.icons {
@@ -44,6 +44,9 @@ i.massive.icons {
   font-size: @massive;
 }
 
+.close.icon {
+  &:extend(.eos_ic_close all);
+}
 
 .icon.chevron.left {
   &:extend(.eos_ic_chevron_left all);
@@ -57,7 +60,4 @@ i.massive.icons {
 }
 .ui.label>.close.icon {
   &:extend(.eos_ic_close_tags all);
-}
-.ui.message>.close.icon {
-  &:extend(.eos_ic_close all);
 }
