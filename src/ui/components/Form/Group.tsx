@@ -3,6 +3,9 @@ import './form.less';
 
 export interface Props {
   children: React.ReactNode;
+  /**
+   * Label for group. This label also usage as title.
+   */
   label: string;
 }
 
