@@ -11,9 +11,9 @@ story
   .add('Basic usage', () => {
     return (
       <IconCss
-        name='some'
+        name='layer-type place'
       >
-        <Icon name='open_new' />
+        <Icon name='place' />
       </IconCss>
     );
   }, {
@@ -32,10 +32,10 @@ story
   .add('With onClick handler', () => {
     return (
       <IconCss
-        name='other'
+        name='layer-type polygon'
         onClick={action('onClick')}
       >
-        <Icon name='open_new' />
+        <Icon name='aoi_polygon' />
       </IconCss>
     );
   }, {

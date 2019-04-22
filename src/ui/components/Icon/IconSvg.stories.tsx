@@ -10,7 +10,7 @@ story
   .add('Basic usage', () => {
     return (
       <IconSvg
-        name='send_up'
+        name='select-agregation-1'
       />
     );
   }, {
@@ -29,7 +29,7 @@ story
   .add('With onClick handler', () => {
     return (
       <IconSvg
-        name='other'
+        name='select-agregation-2'
         onClick={action('onClick')}
       />
     );

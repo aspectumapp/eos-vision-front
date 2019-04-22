@@ -2,14 +2,14 @@ import * as React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
-import Checkbox from './Checkbox';
+import Radio from './Radio';
 
-const story = storiesOf('UIComponents | Form / Checkbox', module);
+const story = storiesOf('UIComponents | Form / Radio', module);
 
 story
   .add('Basic usage', () => {
     return (
-      <Checkbox
+      <Radio
         label='Checkbox label'
         checked
         onChange={action('onChange')}

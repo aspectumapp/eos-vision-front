@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './IconSvg.less';
 
 import IconBase, {
   Props,

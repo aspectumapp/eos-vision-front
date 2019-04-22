@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 
 import Loader from './Loader';
 
-const story = storiesOf('Elements | Loader / Loader', module);
+const story = storiesOf('UIComponents | Loader / Loader', module);
 
 story
   .add('Basic usage', () => {
@@ -18,11 +18,6 @@ story
   });
 
 story
-  .addParameters({
-    options: {
-      showAddonPanel: true,
-    },
-  })
   .add('Loader with text', () => {
     return (
       <Loader
