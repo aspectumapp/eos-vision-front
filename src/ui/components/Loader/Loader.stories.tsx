@@ -8,7 +8,13 @@ const story = storiesOf('UIComponents | Loader / Loader', module);
 story
   .add('Basic usage', () => {
     return (
-      <Loader />
+      <div
+        style={{
+          position: 'relative',
+        }}
+      >
+        <Loader />
+      </div>
     );
   }, {
     info: {
