@@ -21,11 +21,6 @@ story
   });
 
 story
-  .addParameters({
-    options: {
-      showAddonPanel: true,
-    },
-  })
   .add('With onClick handler', () => {
     return (
       <IconSvg
