@@ -24,7 +24,23 @@ module.exports = ({ config }) => {
     },
     {
       test: /\.less$/,
-      loaders: [ 'style-loader', 'css-loader', 'less-loader' ],
+      use: [
+        {
+          loader: 'style-loader',
+        },
+        {
+          loader: 'css-loader',
+          options: {
+            sourceMap: true,
+          },
+        },
+        {
+          loader: 'less-loader',
+          options: {
+            sourceMap: true,
+          },
+        },
+      ],
     }
   );
 

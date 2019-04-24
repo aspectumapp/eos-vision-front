@@ -8,6 +8,7 @@ import { withInfo } from '@storybook/addon-info';
 import addonAPI from '@storybook/addons';
 
 import './storybook.css';
+import '../src/assets/global.less';
 
 addParameters({
   options: {
