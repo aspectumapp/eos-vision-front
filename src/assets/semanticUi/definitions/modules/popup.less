@@ -52,7 +52,7 @@
   font-family: @headerFont;
   font-size: @headerFontSize;
   line-height: @headerLineHeight;
-  font-weight: bold;
+  font-weight: @headerFontWeight;
 }
 .ui.popup > .header + .content {
   padding-top: @headerDistance;
@@ -154,14 +154,14 @@
   transform: rotate(45deg) scale(0) !important;
   transform-origin: center top;
   transition:
-    all @tooltipDuration @tooltipEasing .2s
+    all @tooltipDuration @tooltipEasing
   ;
 }
 [data-tooltip]:after {
   opacity: 1;
   transform-origin: center bottom;
   transition:
-    all @tooltipDuration @tooltipEasing .2s
+    all @tooltipDuration @tooltipEasing
   ;
 }
 [data-tooltip]:hover:before,

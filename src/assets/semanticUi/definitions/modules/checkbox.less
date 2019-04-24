@@ -483,13 +483,6 @@
   padding-left: @toggleLabelDistance;
   color: @toggleOffLabelColor;
 }
-.ui.toggle.checkbox.label-left .box,
-.ui.toggle.checkbox.label-left label {
-  padding-left: 0;
-  padding-right: @toggleLabelDistance;
-}
-
-
 .ui.toggle.checkbox label {
   padding-top: @toggleLabelOffset;
 }
@@ -500,6 +493,7 @@
   display: block;
   position: absolute;
   content: '';
+  z-index: 1;
   transform: none;
   border: none;
 
@@ -512,12 +506,6 @@
   border-radius: @toggleHandleRadius;
 }
 
-.ui.toggle.checkbox.label-left .box:before,
-.ui.toggle.checkbox.label-left label:before {
-  left: auto;
-  right: 0;
-}
-
 /* Handle */
 .ui.toggle.checkbox .box:after,
 .ui.toggle.checkbox label:after {
@@ -525,6 +513,8 @@
   position: absolute;
   content: '' !important;
   opacity: 1;
+  z-index: 2;
+
   border: none;
   box-shadow: @handleBoxShadow;
   width: @toggleHandleSize;
@@ -534,16 +524,6 @@
 
   border-radius: @circularRadius;
   transition: @toggleHandleTransition;
-}
-
-.ui.toggle.checkbox.label-left .box:after,
-.ui.toggle.checkbox.label-left label:after {
-  left: auto;
-  right: @toggleOnOffset;
-  transition: 
-    background @sliderTransitionDuration @defaultEasing,
-    right @sliderTransitionDuration @defaultEasing
-  ;
 }
 
 .ui.toggle.checkbox input ~ .box:after,
@@ -579,12 +559,6 @@
 .ui.toggle.checkbox input:checked ~ label:after {
   left: @toggleOnOffset;
   box-shadow: @toggleOnHandleBoxShadow;
-}
-
-.ui.toggle.checkbox.label-left input:checked ~ .box:after,
-.ui.toggle.checkbox.label-left input:checked ~ label:after {
-  left: auto;
-  right: 0;
 }
 
 

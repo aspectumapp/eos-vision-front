@@ -23,7 +23,7 @@
 @labelDistance: @4px;
 @labelMargin: 0em 0em @labelDistance 0em;
 @labelFontSize: @relativeSmall;
-@labelFontWeight: bold;
+@labelFontWeight: @bold;
 @labelTextTransform: none;
 @labelColor: @textColor;
 
@@ -52,7 +52,7 @@
 
 /* Text Area */
 @textAreaPadding: @inputVerticalPadding @inputHorizontalPadding;
-@textAreaHeight: 8.28em;
+@textAreaHeight: 12em;
 @textAreaResize: vertical;
 @textAreaLineHeight: 1.2857;
 @textAreaMinHeight: 8em;

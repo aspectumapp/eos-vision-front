@@ -336,7 +336,43 @@
 }
 
 
+/* Tablet Only */
+@media only screen and (min-width: @tabletBreakpoint) and (max-width: @largestTabletScreen) {
+  .ui.items > .item {
+    margin: @tabletItemSpacing 0em;
+  }
+  .ui.items > .item > .image:not(.ui) {
+    width: @tabletImageWidth;
+  }
+  .ui.items > .item > .image + .content {
+    display: block;
+    padding: 0em 0em 0em @tabletContentImageDistance;
+  }
 
+}
+
+/* Mobile Only */
+@media only screen and (max-width: @largestMobileScreen) {
+  .ui.items:not(.unstackable) > .item {
+    flex-direction: column;
+    margin: @mobileItemSpacing 0em;
+  }
+  .ui.items:not(.unstackable) > .item > .image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ui.items:not(.unstackable) > .item > .image,
+  .ui.items:not(.unstackable) > .item > .image > img {
+    max-width: 100% !important;
+    width: @mobileImageWidth !important;
+    max-height: @mobileImageMaxHeight !important;
+  }
+  .ui.items:not(.unstackable) > .item > .image + .content {
+    display: block;
+    padding: @mobileContentImageDistance 0em 0em;
+  }
+}
 
 
 /*******************************

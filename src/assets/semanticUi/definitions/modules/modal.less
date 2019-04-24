@@ -224,7 +224,7 @@
 
   .ui.modal > .header {
     padding: @mobileHeaderPadding !important;
-    & when (@visionTablet = false) {
+    & when (@visionTablet = false) and (@visionMobile = false) {
       padding-right: @closeHitbox !important;
     }
   }

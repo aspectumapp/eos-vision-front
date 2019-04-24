@@ -129,9 +129,8 @@
 .ui.card > .image > img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
   border-radius: inherit;
-  object-fit: cover;
 }
 .ui.cards > .card > .image:not(.ui) > img,
 .ui.card > .image:not(.ui) > img {
@@ -174,8 +173,8 @@
 }
 
 /* Default Header Size */
-.ui.cards > .card > .content .header:not(.ui),
-.ui.card > .content .header:not(.ui) {
+.ui.cards > .card > .content > .header:not(.ui),
+.ui.card > .content > .header:not(.ui) {
   font-weight: @headerFontWeight;
   font-size: @headerFontSize;
   margin-top: @headerLineHeightOffset;
@@ -322,7 +321,17 @@
   color: @metaLinkHoverColor;
 }
 
+/*--------------
+     Buttons
+---------------*/
 
+.ui.cards > .card > .buttons,
+.ui.card > .buttons,
+.ui.cards > .card > .button,
+.ui.card > .button {
+  margin: @buttonMargin;
+  width: @buttonWidth;
+}
 
 /*--------------
       Dimmer

@@ -181,7 +181,7 @@
   margin: @menuDividerMargin;
 }
 
-.ui.dropdown .menu > .input {
+.ui.dropdown.dropdown .menu > .input {
   width: auto;
   display: flex;
   margin: @menuInputMargin;
@@ -550,7 +550,7 @@ select.ui.dropdown {
   border: none !important;
   box-shadow: none !important;
   cursor: text;
-  top: @searchInputTop;
+  top: 0em;
   left: @textCursorSpacing;
   width: 100%;
   outline: none;
@@ -571,11 +571,9 @@ select.ui.dropdown {
 }
 
 /* Search Selection */
-.ui.search.selection.dropdown:not(.mini):not(.multiple) > input.search {
-  padding: @searchSelectionInputPadding;
-}
 .ui.search.selection.dropdown > input.search {
   line-height: @searchSelectionLineHeight;
+  padding: @searchSelectionInputPadding;
 }
 
 /* Used to size multi select input to character width */
@@ -692,7 +690,7 @@ select.ui.dropdown {
 .ui.multiple.search.dropdown > .text {
   display: inline-block;
   position: absolute;
-  top: 1px;
+  top: 0;
   left: 0;
   padding: inherit;
   margin: @multipleSelectionChildMargin;
@@ -927,6 +925,18 @@ select.ui.dropdown {
 }
 
 
+/*--------------------
+        Clear
+----------------------*/
+
+.ui.dropdown > .clear.dropdown.icon {
+  opacity: @clearableIconOpacity;
+  transition: opacity @defaultDuration @defaultEasing;
+}
+.ui.dropdown > .clear.dropdown.icon:hover {
+  opacity: @clearableIconActiveOpacity;
+}
+
 
 /*--------------------
         Disabled
@@ -935,7 +945,7 @@ select.ui.dropdown {
 /* Disabled */
 .ui.disabled.dropdown,
 .ui.dropdown .menu > .disabled.item {
-  cursor: not-allowed;
+  cursor: default;
   pointer-events: none;
   opacity: @disabledOpacity;
 }
@@ -1079,7 +1089,6 @@ select.ui.dropdown {
   box-shadow: none !important;
   border-radius: 0 !important;
   margin: 0 !important;
-  padding: 0 !important;
   min-width: 100% !important;
   width: auto !important;
   border-top: @menuBorder;
@@ -1101,7 +1110,7 @@ select.ui.dropdown {
 @media all and (-ms-high-contrast:none) {
   .ui.scrolling.dropdown .menu,
   .ui.dropdown .scrolling.menu {
-    min-width: ~"calc(100% - "@scrollbarWidth~")";
+    min-width: calc(100% - @scrollbarWidth);
   }
 }
 @media only screen and (max-width : @largestMobileScreen) {

@@ -45,7 +45,6 @@
 .ui.form .field {
   clear: both;
   margin: @fieldMargin;
-  position: relative;
 }
 
 .ui.form .field:last-child,
@@ -70,7 +69,6 @@
   font-size: @labelFontSize;
   font-weight: @labelFontWeight;
   text-transform: @labelTextTransform;
-  letter-spacing: 0.2px;
 }
 
 /*--------------------
@@ -117,7 +115,6 @@
   margin: 0em;
   outline: none;
   -webkit-appearance: none;
-  -moz-appearance: textfield;
   tap-highlight-color:  rgba(255, 255, 255, 0);
 
   line-height: @inputLineHeight;
@@ -326,7 +323,7 @@
   color: @inputPlaceholderColor;
 }
 .ui.form :-ms-input-placeholder {
-  color: @inputPlaceholderColor;
+  color: @inputPlaceholderColor !important;
 }
 .ui.form ::-moz-placeholder {
   color: @inputPlaceholderColor;
@@ -336,7 +333,7 @@
   color: @inputPlaceholderFocusColor;
 }
 .ui.form :focus:-ms-input-placeholder {
-  color: @inputPlaceholderFocusColor;
+  color: @inputPlaceholderFocusColor !important;
 }
 .ui.form :focus::-moz-placeholder {
   color: @inputPlaceholderFocusColor;
@@ -442,6 +439,8 @@
 }
 
 /* On Field(s) */
+.ui.form .fields.error .field label,
+.ui.form .field.error label,
 .ui.form .fields.error .field .input,
 .ui.form .field.error .input {
   color: @formErrorColor;
@@ -482,7 +481,7 @@
 .ui.form .field.error input[type="file"],
 .ui.form .field.error input[type="url"] {
   background: @formErrorBackground;
-  border-color: @formErrorBorder !important;
+  border-color: @formErrorBorder;
   color: @formErrorColor;
   border-radius: @inputErrorBorderRadius;
   box-shadow: @inputErrorBoxShadow;
@@ -506,7 +505,6 @@
   color: @inputErrorFocusColor;
 
   -webkit-appearance: none;
-  -moz-appearance: textfield;
   box-shadow: @inputErrorFocusBoxShadow;
 }
 
@@ -597,7 +595,6 @@
 .ui.form .field :disabled {
   pointer-events: none;
   opacity: @disabledOpacity;
-  cursor: not-allowed;
 }
 .ui.form .field.disabled > label,
 .ui.form .fields.disabled > label {
@@ -605,7 +602,6 @@
 }
 .ui.form .field.disabled :disabled {
   opacity: 1;
-  cursor: not-allowed;
 }
 
 
@@ -1001,6 +997,7 @@
   margin-bottom: 0em;
 
   vertical-align: middle;
+  font-size: @inlineInputSize;
 }
 
 /* Label */

@@ -140,7 +140,7 @@
      Button
 ---------------*/
 
-.ui.menu:not(.vertical) .item > .button:not(.ui) {
+.ui.menu:not(.vertical) .item > .button {
   position: relative;
   top: @buttonOffset;
   margin: @buttonMargin;
@@ -211,8 +211,8 @@
 
 /* Menu */
 .ui.menu .dropdown.item .menu {
-  min-width: ~"calc(100% - 1px)";
-  border-radius: @dropdownMenuBorderRadius;
+  min-width: calc(100% - 1px);
+  border-radius: 0em 0em @dropdownMenuBorderRadius @dropdownMenuBorderRadius;
   background: @dropdownBackground;
   margin: @dropdownMenuDistance 0px 0px;
   box-shadow: @dropdownMenuBoxShadow;
@@ -225,16 +225,13 @@
   margin: 0;
   text-align: left;
   font-size: @dropdownItemFontSize !important;
-  
+  padding: @dropdownItemPadding;
   background: @dropdownItemBackground !important;
   color: @dropdownItemColor !important;
   text-transform: @dropdownItemTextTransform !important;
   font-weight: @dropdownItemFontWeight !important;
   box-shadow: @dropdownItemBoxShadow !important;
   transition: @dropdownItemTransition !important;
-}
-.ui.menu .ui.dropdown:not(.context-menu) .menu > .item {
-  padding: @dropdownItemPadding !important;
 }
 .ui.menu .ui.dropdown .menu > .item:hover {
   background: @dropdownHoveredItemBackground !important;
@@ -255,14 +252,9 @@
 }
 .ui.menu .ui.dropdown .menu > .item .icon:not(.dropdown) {
   display: inline-block;
-  
+  font-size: @dropdownItemIconFontSize !important;
   float: @dropdownItemIconFloat;
   margin: @dropdownItemIconMargin;
-}
-.ui.menu .ui.dropdown .menu > .item .icon:not(.dropdown),
-.ui.dropdown .menu > .item .icon:not(.dropdown) {
-  font-size: @dropdownItemIconFontSize !important;
-  color: @dropdownItemIconColor !important;
 }
 
 
@@ -358,6 +350,15 @@
 *******************************/
 
 /*--------------
+     List
+---------------*/
+
+/* Menu divider shouldnt apply */
+.ui.menu .list .item:before {
+  background: none !important;
+}
+
+/*--------------
      Sidebar
 ---------------*/
 
@@ -451,9 +452,9 @@
 
 .ui.menu .item.disabled,
 .ui.menu .item.disabled:hover {
-  cursor: default;
+  cursor: default !important;
   background-color: transparent !important;
-  color: @disabledTextColor;
+  color: @disabledTextColor !important;
 }
 
 
@@ -467,7 +468,7 @@ Floated Menu / Item
 
 /* Left Floated */
 .ui.menu:not(.vertical) .left.item,
-.ui.menu:not(.vertical) .left.menu {
+.ui.menu:not(.vertical) :not(.dropdown) > .left.menu {
   display: flex;
   margin-right: auto !important;
 }
@@ -908,7 +909,7 @@ Floated Menu / Item
   border-bottom-style: solid;
   border-radius: 0em;
   align-self: flex-end;
-  cursor: pointer;
+
   margin: 0em 0em -@secondaryPointingBorderWidth;
   padding: @secondaryPointingItemVerticalPadding @secondaryPointingItemHorizontalPadding;
   border-bottom-width: @secondaryPointingBorderWidth;
@@ -929,7 +930,7 @@ Floated Menu / Item
 /* Hover */
 .ui.secondary.pointing.menu .dropdown.item:hover,
 .ui.secondary.pointing.menu .link.item:hover,
-.ui.secondary.pointing.menu .item:hover {
+.ui.secondary.pointing.menu a.item:hover {
   background-color: transparent;
   color: @secondaryPointingHoverTextColor;
 }
@@ -937,7 +938,7 @@ Floated Menu / Item
 /* Pressed */
 .ui.secondary.pointing.menu .dropdown.item:active,
 .ui.secondary.pointing.menu .link.item:active,
-.ui.secondary.pointing.menu .item:active {
+.ui.secondary.pointing.menu a.item:active {
   background-color: transparent;
   border-color: @secondaryPointingBorderColor;
 }
@@ -946,7 +947,6 @@ Floated Menu / Item
 .ui.secondary.pointing.menu .active.item {
   background-color: transparent;
   box-shadow: none;
-  cursor: default;
   border-color: @secondaryPointingActiveBorderColor;
   font-weight: @secondaryPointingActiveFontWeight;
   color: @secondaryPointingActiveTextColor;
@@ -1193,7 +1193,7 @@ Floated Menu / Item
 }
 
 /* Item */
-.ui.labeled.icon.menu  .item {
+.ui.labeled.icon.menu .item {
   min-width: @labeledIconMinWidth;
   flex-direction: column;
 }
@@ -1389,11 +1389,11 @@ Floated Menu / Item
 }
 
 /*--- Active ---*/
-.ui.inverted.menu .active.item, .ui.inverted.menu .visible.item {
+.ui.inverted.menu .active.item {
   background: @invertedActiveBackground;
   color: @invertedActiveColor !important;
 }
-.ui.inverted.vertical.menu .item .menu .active.item, .ui.inverted.vertical.menu .item .menu .visible.item {
+.ui.inverted.vertical.menu .item .menu .active.item {
   background: @invertedSubMenuActiveBackground;
   color: @invertedSubMenuActiveColor;
 }
@@ -1405,7 +1405,7 @@ Floated Menu / Item
 }
 
 /*--- Active Hover ---*/
-.ui.inverted.menu .active.item:hover, .ui.inverted.menu .visible.item:hover {
+.ui.inverted.menu .active.item:hover {
   background: @invertedActiveHoverBackground;
   color: @invertedActiveHoverColor !important;
 }

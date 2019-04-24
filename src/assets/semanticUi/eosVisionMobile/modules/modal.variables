@@ -1,7 +1,7 @@
 @actionBorder: none;
 
 
-@mobileHeaderPadding: 15/14rem 1rem 19/14rem;
+@mobileHeaderPadding: round(15/14rem, 3) 1rem round(19/14rem, 3);
 
 @mobileContentPadding: 0 23px 5px;
 

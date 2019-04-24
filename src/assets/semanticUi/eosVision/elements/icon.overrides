@@ -2,7 +2,7 @@
          Site Overrides
 *******************************/
 
-
+@import '../../../fontIcons/style.less';
 
 i.mini.icon,
 i.mini.icons {

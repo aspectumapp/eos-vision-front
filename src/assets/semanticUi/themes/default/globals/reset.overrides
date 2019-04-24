@@ -131,7 +131,7 @@ strong {
 
 b,
 strong {
-  font-weight: @fontSemiBold;
+  font-weight: bolder;
 }
 
 /**

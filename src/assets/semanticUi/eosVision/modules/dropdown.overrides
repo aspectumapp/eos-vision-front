@@ -18,13 +18,22 @@
   > .dropdown.icon {
     color: @eosGrey5-text;
   }
-  .menu .selected.item:hover {
-    background: @hoveredItemBackground;
-  }
-  .menu .item {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
+
+  .menu {
+    .item {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    .selected.item:hover {
+      background: @hoveredItemBackground;
+    }
+    .scrolling.menu {
+      &:first-child {
+        border: none !important;
+      }
+      padding: 0;
+    }
   }
   &:not(.upward) .menu {
     margin-top: 4px;
@@ -35,7 +44,7 @@
     border-bottom-width: 1px !important;
   }
   .ui.input {
-    width: auto;
+    width: auto !important;
   }
   &.mini, .ui.form.mini & {
     min-height: 32px;

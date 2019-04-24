@@ -1,11 +1,11 @@
 
-@white-bg: #1f2731;
+@white-bg: #25313d;
 @borderColor               : @eosGrey3;
-@textColor: #d3d7da;
+@textColor: @eosGrey11;
 
 @eosGrey1-text: #fff;
 @eosGrey2-text: @eosGrey11;
-@eosGrey3-text: @eosGrey10;
+@eosGrey3-text: @eosGrey11;
 @eosGrey4-text: @eosGrey9;
 @eosGrey5-text: @eosGrey8;
 @eosGrey6-text: @eosGrey7;

@@ -33,7 +33,6 @@
   line-height: @lineHeight;
   text-transform: @textTransform;
   color: @textColor;
-  letter-spacing: -0.05px;
 }
 
 .ui.header:first-child {
@@ -47,9 +46,9 @@
    Sub Header
 ---------------*/
 
-.ui.header .sub.header, .ui.header + .sub.header {
+.ui.header .sub.header {
   display: block;
-  font-weight: normal;
+  font-weight: @normal;
   padding: 0em;
   margin: @subHeaderMargin;
   font-size: @subHeaderFontSize;
@@ -61,7 +60,7 @@
       Icon
 ---------------*/
 
-.ui.header > .icon:not(.button) {
+.ui.header > .icon {
   display: table-cell;
   opacity: @iconOpacity;
   font-size: @iconSize;
@@ -70,7 +69,7 @@
 }
 
 /* With Text Node */
-.ui.header .icon:not(.button):only-child {
+.ui.header .icon:only-child {
   display: inline-block;
   padding: 0em;
   margin-right: @iconMargin;
@@ -205,6 +204,9 @@ h5.ui.header .sub.header {
 }
 .ui.large.header .sub.header {
   font-size: @hugeSubHeaderFontSize;
+}
+.ui.header .sub.header {
+  font-size: @subHeaderFontSize;
 }
 .ui.small.header .sub.header {
   font-size: @smallSubHeaderFontSize;
