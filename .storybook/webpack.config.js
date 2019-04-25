@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = ({ config }) => {
   config.resolve.extensions.push('.ts', '.tsx');
 
@@ -21,6 +23,13 @@ module.exports = ({ config }) => {
           },
         },
       ],
+    },
+    {
+      resolve: {
+        alias: {
+          '../../theme.config$': path.join(__dirname, '../src/assets/semanticUi/theme.config')
+        }
+      }
     },
     {
       test: /\.less$/,
