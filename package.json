@@ -25,18 +25,18 @@
   ],
   "homepage": "https://github.com/eos-vision/eos-vision-front",
   "devDependencies": {
-    "@babel/core": "^7.4.3",
-    "@storybook/addon-actions": "^5.0.6",
-    "@storybook/addon-info": "^5.0.6",
-    "@storybook/addon-options": "^5.0.6",
-    "@storybook/react": "^5.0.6",
-    "babel-loader": "^8.0.5",
-    "gulp": "^4.0.1",
-    "less": "^3.9.0",
-    "less-loader": "^4.1.0",
+    "@babel/core": "7.4.3",
+    "@storybook/addon-actions": "5.0.6",
+    "@storybook/addon-info": "5.0.6",
+    "@storybook/addon-options": "5.0.6",
+    "@storybook/react": "5.0.6",
+    "babel-loader": "8.0.5",
+    "gulp": "3.9.1",
+    "less": "3.9.0",
+    "less-loader": "4.1.0",
     "pre-commit": "1.2.2",
-    "react-docgen-typescript-loader": "^3.1.0",
-    "ts-loader": "^5.3.3",
+    "react-docgen-typescript-loader": "3.1.0",
+    "ts-loader": "5.3.3",
     "tslint": "5.14.0",
     "tslint-config-standard": "8.0.1",
     "tslint-react": "3.6.0",
@@ -44,12 +44,12 @@
     "typescript": "3.3.4000"
   },
   "dependencies": {
-    "@types/react": "^16.8.8",
-    "classnames": "^2.2.6",
-    "lodash-es": "^4.17.11",
-    "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "semantic-ui-less": "^2.4.1"
+    "@types/react": "16.8.8",
+    "classnames": "2.2.6",
+    "lodash-es": "4.17.11",
+    "prop-types": "15.7.2",
+    "react": "16.8.6",
+    "semantic-ui": "2.4.2"
   },
   "pre-commit": [
     "lint"
