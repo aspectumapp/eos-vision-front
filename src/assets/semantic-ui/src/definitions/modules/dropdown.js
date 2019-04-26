@@ -605,6 +605,7 @@ $.fn.dropdown = function(parameters) {
             else {
               if(settings.on == 'click') {
                 $module
+                  .on('click' + eventNamespace, selector.icon, module.event.icon.click)
                   .on('click' + eventNamespace, module.event.test.toggle)
                 ;
               }
@@ -620,7 +621,6 @@ $.fn.dropdown = function(parameters) {
                 ;
               }
               $module
-                .on('click' + eventNamespace, selector.icon, module.event.icon.click)
                 .on('mousedown' + eventNamespace, module.event.mousedown)
                 .on('mouseup'   + eventNamespace, module.event.mouseup)
                 .on('focus'     + eventNamespace, module.event.focus)
@@ -1022,7 +1022,7 @@ $.fn.dropdown = function(parameters) {
               if($icon.hasClass(className.clear)) {
                 module.clear();
               }
-              else if (module.can.click()) {
+              else {
                 module.toggle();
               }
             }

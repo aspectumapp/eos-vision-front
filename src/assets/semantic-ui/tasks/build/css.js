@@ -18,7 +18,7 @@ var
   less         = require('gulp-less'),
   minifyCSS    = require('gulp-clean-css'),
   plumber      = require('gulp-plumber'),
-  print        = require('gulp-print').default,
+  print        = require('gulp-print'),
   rename       = require('gulp-rename'),
   replace      = require('gulp-replace'),
   runSequence  = require('run-sequence'),
@@ -96,7 +96,7 @@ module.exports = function(callback) {
   ;
 
   // compressed component css
-  compressedStream
+  compressedStream = stream
     .pipe(plumber())
     .pipe(clone())
     .pipe(replace(assets.source, assets.compressed))

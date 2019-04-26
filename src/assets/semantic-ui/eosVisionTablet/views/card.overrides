@@ -1,0 +1,8 @@
+.ui.cards>.card, .ui.card {
+  @media screen and (min-width: 768px) {
+    width: ~'calc(100% / 2 - @{rowSpacing})';
+  }
+  @media screen and (min-width: 980px) {
+    width: ~'calc(100% / 3 - @{rowSpacing})';
+  }
+}

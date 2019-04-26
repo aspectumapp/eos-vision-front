@@ -1,0 +1,91 @@
+/*******************************
+        Import Directives
+*******************************/
+
+@import "../fontIcons/style.less";
+
+/*------------------
+       Theme
+-------------------*/
+
+@theme: @@element;
+
+/*--------------------
+   Site Variables
+---------------------*/
+
+/* Default site.variables */
+@import "./src/@{themesFolder}/default/globals/site.variables";
+
+/* Packaged site.variables */
+@import "./src/@{themesFolder}/@{site}/globals/site.variables";
+
+/* Component's site.variables */
+@import (optional) "./src/@{themesFolder}/@{theme}/globals/site.variables";
+
+/* Site theme site.variables */
+@import (optional) "@{siteFolder}/globals/site.variables";
+
+/* Site dark site.variables */
+@import (optional) "@{eosVisionDark}/globals/site.variables";
+
+/* Site mobile site.variables */
+@import (optional) "@{eosVisionMobile}/globals/site.variables";
+
+/* Site Tablet site.variables */
+@import (optional) "@{eosVisionTablet}/globals/site.variables";
+
+/* Site Iframe site.variables */
+@import (optional) "@{eosVisionIframe}/globals/site.variables";
+
+
+/*-------------------
+ Component Variables
+---------------------*/
+
+/* Default */
+@import "./src/@{themesFolder}/default/@{type}s/@{element}.variables";
+
+/* Packaged Theme */
+@import (optional) "./src/@{themesFolder}/@{theme}/@{type}s/@{element}.variables";
+
+/* Site Theme */
+@import (optional) "@{siteFolder}/@{type}s/@{element}.variables";
+
+/* Site Dark Theme */
+@import (optional) "@{eosVisionDark}/@{type}s/@{element}.variables";
+
+/* Site mobile Theme */
+@import (optional) "@{eosVisionMobile}/@{type}s/@{element}.variables";
+
+/* Site Tablet Theme */
+@import (optional) "@{eosVisionTablet}/@{type}s/@{element}.variables";
+
+/* Site Iframe Theme */
+@import (optional) "@{eosVisionIframe}/@{type}s/@{element}.variables";
+
+
+/*******************************
+             Mix-ins
+*******************************/
+
+/*------------------
+       Fonts
+-------------------*/
+
+.loadFonts() when (@importGoogleFonts) {
+  @import (css) url('@{googleProtocol}fonts.googleapis.com/css?family=@{googleFontRequest}');
+}
+
+/*------------------
+     Overrides
+-------------------*/
+
+.loadUIOverrides() {
+  @import (optional) "./src/@{themesFolder}/@{theme}/@{type}s/@{element}.overrides";
+  @import (optional) "@{siteFolder}/@{type}s/@{element}.overrides";
+  @import (optional) "@{eosVisionDark}/@{type}s/@{element}.overrides";
+  @import (optional) "@{eosVisionMobile}/@{type}s/@{element}.overrides";
+  @import (optional) "@{eosVisionTablet}/@{type}s/@{element}.overrides";
+  @import (optional) "@{eosVisionIframe}/@{type}s/@{element}.overrides";
+}

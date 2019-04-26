@@ -1,0 +1,12 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+
+.ui.header .sub.header.link, .ui.header+.sub.header.link {
+  color: @linkColor;
+  &:hover {
+    color: @linkHoverColor;
+    text-decoration: @linkHoverUnderline;
+  }
+}
