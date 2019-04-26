@@ -1,8 +1,8 @@
 /*******************************
      User Global Variables
 *******************************/
-@imagePath : '../../../../../node_modules/semantic-ui-less/themes/default/assets/images';
-@fontPath  : '../../../../../node_modules/semantic-ui-less/themes/default/assets/fonts';
+@imagePath : '~semantic-ui-less/themes/default/assets/images';
+@fontPath  : '~semantic-ui-less/themes/default/assets/fonts';
 /*-------------------
         Page
 --------------------*/
