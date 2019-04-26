@@ -56,8 +56,14 @@
       .sub-label {
         display: block;
         color: @eosGrey6-text;
-        font-size: 12/13em;
-        line-height: 14/13em;
+        & when (@visionTablet = false) {
+          font-size: 12/13em;
+          line-height: 15/13em;
+        }
+        & when (@visionTablet = true) {
+          font-size: 14/16em;
+          line-height: 18/16em;
+        }
         &.orange {
           color: #ffae44;
         }

@@ -7,7 +7,14 @@
     line-height: 1.2;
     letter-spacing: 0.15px;
   }
-  & when (@visionMobile = false) {
+  > .content > .text > .header:not(.ui) {
+    &:extend(.ui.cards > .card > .content > .header:not(.ui));
+  }
+  .button {
+    width: auto;
+  }
+
+  & when (@visionWeb = true) {
     .meta {
       margin-top: 3px;
     }
