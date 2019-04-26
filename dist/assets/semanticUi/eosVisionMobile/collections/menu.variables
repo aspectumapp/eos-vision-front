@@ -1,0 +1,3 @@
+@pressedItemBackground: transparent;
+@secondaryActiveItemColor: @textColor;
+@dividerSize: 0;

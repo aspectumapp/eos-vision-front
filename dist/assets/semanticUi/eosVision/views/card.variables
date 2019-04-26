@@ -1,0 +1,34 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+
+@headerFontSize: 12/13em;
+@headerFontWeight: @fontSemiBold;
+@headerColor: @textColor;
+@headerLineHeightOffset: 0;
+
+@metaFontSize: 12/13em;
+@metaColor: @eosGrey7-text;
+
+@background: @white-bg;
+
+
+@borderShadow: 0px 0px 0px @borderWidth @borderColor;
+@boxShadow:
+  @borderShadow,
+  0 2px 4px rgba(0, 0, 0, 0)
+;
+
+@contentDivider: 0;
+
+@contentPaddingVertical: 9/13em;
+@contentPaddingHorizontal: 1em;
+@contentPadding: @contentPaddingVertical @contentPaddingHorizontal;
+
+/* Card Group */
+@horizontalSpacing: 20px;
+@rowSpacing: 20px;
+
+@width: 208px;
+@imageBackground: transparent;

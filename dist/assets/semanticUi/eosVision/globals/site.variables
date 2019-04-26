@@ -1,0 +1,262 @@
+/*******************************
+     User Global Variables
+*******************************/
+@imagePath : '~semantic-ui-less/themes/default/assets/images';
+@fontPath  : '~semantic-ui-less/themes/default/assets/fonts';
+/*-------------------
+        Page
+--------------------*/
+
+@pageBackground      : @eosGrey11-bg;
+
+@textColor           : @eosGrey3-text;
+
+/* Minimum Mobile Width */
+@pageMinWidth       : 992px;
+@pageOverflowX      : auto;
+
+/*-------------------
+       Fonts
+--------------------*/
+
+@fontName          : 'Roboto';
+@googleFontName    : @fontName;
+@fontSmoothing     : antialiased;
+@importGoogleFonts : true;
+@googleFontSizes   : '@{fontNormal},@{fontSemiBold},@{fontBold}';
+@googleSubset      : 'latin';
+
+@googleProtocol    : 'https://';
+@googleFontRequest : '@{googleFontName}:@{googleFontSizes}&subset=@{googleSubset}';
+
+@fontBold              : 700;
+@fontSemiBold          : 500;
+@fontNormal            : 400;
+
+/*-------------------
+       Links
+--------------------*/
+
+@linkColor           : @blue;
+@linkHoverUnderline: underline;
+
+/*-------------------
+      Base Sizes
+--------------------*/
+
+@fontSize : unit((13 / 14), rem);
+
+/*--------------
+  Page Heading
+---------------*/
+
+@h1 : unit((28 / 14), rem);
+@h2 : unit((24 / 14), rem);
+@h3 : unit((15 / 14), rem);
+@h4 : unit((14 / 14), rem);
+@h5 : unit((13 / 14), rem);
+
+@headerFontWeight : @fontSemiBold;
+
+/*--------------
+   Form Input
+---------------*/
+@inputPadding           : 10px @inputHorizontalPadding;
+
+@inputLineHeight: unit((16 / 14), rem);
+
+@inputBackground        : @white-bg;
+
+/* Input Text Color */
+
+@inputPlaceholderColor: @eosGrey8-text;
+@inputPlaceholderFocusColor: @inputPlaceholderColor;
+@inputBorderColor: @eosGrey8-bg;
+@inputHoverBorderColor: @eosGrey7-bg;
+
+@selectedTextColor           : @textColor;
+
+/*-------------------
+      Borders
+--------------------*/
+
+@borderColor               : @eosGrey9;
+@internalBorderColor       : @borderColor;
+/*-------------------
+     Neutral Text
+--------------------*/
+
+@darkTextColor               : @eosGrey2-text;
+/*-------------------
+      Site Colors
+--------------------*/
+
+/*--- EOS  Colors  ---*/
+
+@eosGrey1: #1B212B;
+@eosGrey2: #2B3545;
+@eosGrey3: #333F52;
+@eosGrey4: #515B6B;
+@eosGrey5: #6E7885;
+@eosGrey6: #8B939F;
+@eosGrey7: #AAB0B8;
+@eosGrey8: #C7CBD1;
+@eosGrey9: #E4E8EB;
+@eosGrey9-1: #d8d8d8;
+@eosGrey9-2: #d2d6da;
+@eosGrey10: #F4F4F5;
+@eosGrey11: #F9F9F9;
+
+@eosBlue1: #3F7FBF;
+@eosBlue2: #468DD4;
+@eosBlue3: #4C9AE7;
+@eosBlue4: #64A6E8;
+@eosBlue5: #7BB2E8;
+@eosBlue6: #92BDE8;
+@eosBlue6-1: #96c7fd;
+@eosBlue7: #A9C9E8;
+@eosBlue8: #D4E9FF;
+@eosBlue9: #f2f8ff;
+
+@eosRed1: #FF5440;
+@eosRed2: #E73C1E;
+@eosRed3: #D7381C;
+
+@eosGreen1: #33CE95;
+@eosGreen2: #00B874;
+@eosGreen3: #02A76A;
+
+
+
+/*---  Colors  ---*/
+@blue             : @eosBlue3;
+@blueHover        : @eosBlue2;
+@blueDown         : @eosBlue1;
+@blueFocus        : @blue;
+
+@red              : @eosRed1;
+@redHover         : @eosRed2;
+@redDown          : @eosRed3;
+@redFocus         : @red;
+
+@green              : @eosGreen1;
+@greenHover         : @eosGreen2;
+@greenDown          : @eosGreen3;
+@greenFocus         : @green;
+
+@orange           : #ffae44;
+@yellow           : #fda500;
+@violet           : #9575cd;
+@grey             : @eosGrey5;
+@grey-1           : @eosGrey6;
+
+
+@grey-1Hover            : darken(@grey-1, 5);
+
+@grey-1Down            : darken(@grey-1, 10);
+
+@grey-1Focus            : darken(@grey-1, 8);
+
+
+
+@mutedTextColor              : rgba(0, 0, 0, 0.6);
+
+@white-text: #fff;
+@white-bg: #fff;
+
+@eosGrey1-text: @eosGrey1;
+@eosGrey2-text: @eosGrey2;
+@eosGrey3-text: @eosGrey3;
+@eosGrey4-text: @eosGrey4;
+@eosGrey5-text: @eosGrey5;
+@eosGrey6-text: @eosGrey6;
+@eosGrey7-text: @eosGrey7;
+@eosGrey8-text: @eosGrey8;
+@eosGrey9-text: @eosGrey9;
+@eosGrey9-1-text: @eosGrey9-1;
+@eosGrey9-2-text: @eosGrey9-2;
+@eosGrey10-text: @eosGrey10;
+@eosGrey11-text: @eosGrey11;
+
+@eosGrey1-bg: @eosGrey1;
+@eosGrey2-bg: @eosGrey2;
+@eosGrey3-bg: @eosGrey3;
+@eosGrey4-bg: @eosGrey4;
+@eosGrey5-bg: @eosGrey5;
+@eosGrey6-bg: @eosGrey6;
+@eosGrey7-bg: @eosGrey7;
+@eosGrey8-bg: @eosGrey8;
+@eosGrey9-bg: @eosGrey9;
+@eosGrey9-1-bg: @eosGrey9-1;
+@eosGrey9-2-bg: @eosGrey9-2;
+@eosGrey10-bg: @eosGrey10;
+@eosGrey11-bg: @eosGrey11;
+
+@selectedBackgroudColor: @eosBlue9;
+@selectedBorderColor: @blue;
+
+
+/* Negative */
+@negativeColor           : @red;
+@negativeBackgroundColor : @white-bg;
+@negativeBorderColor     : @red;
+@negativeHeaderColor     : #912D2B;
+@negativeTextColor       : @textColor;
+
+/*-------------------
+    Scroll Bars
+--------------------*/
+
+@customScrollbarWidth: 9px;
+
+@trackBackground: fade(@eosGrey9-1-bg, 22%);
+
+@thumbBorderRadius: 3px;
+@thumbBackground: @eosGrey9-1-bg;
+
+/*-------------------
+    inputs disabled
+--------------------*/
+  @inputDisabledBackground: @eosGrey11-bg;
+  @inputDisabledcolor: @eosGrey4-text;
+  @inputDisabledBorder: @borderColor;
+
+
+/*-------------------
+    Focused Input
+--------------------*/
+
+/* Used on inputs, textarea etc */
+@focusedFormBorderColor: @eosBlue4;
+
+@loaderLineWidth: 0.2rem;
+@loaderFillColor         : rgba(0, 0, 0, 0.15);
+@loaderLineColor         : @blue;
+
+
+/*-------------------
+        Sizes
+--------------------*/
+
+
+@miniSize        : (12 / 14);
+
+@relativeBorderRadius: @relative4px;
+@absoluteBorderRadius: @4px;
+
+
+/*-------------------
+       Custom EOS Variables
+--------------------*/
+
+@eos-header-height: 52px;
+@eos-subHeader-height: 52px;
+@eos-header-zIndex: 1040;
+@eos-subHeader-zIndex: 1030;
+
+@eos-sidebar-zIndex: 102;
+
+@eos-notificationsMessagesList-zIndex: 1060;
+@eos-lasso-zIndex: 1070;
+
+@eos-basemapPopup-zIndex: 104;

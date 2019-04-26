@@ -1,0 +1,40 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+@headerFontSize: 13/12em;
+@headerColor: @textColor;
+
+@contentFontSize: 12/13em;
+
+@headerFontWeight: @fontSemiBold;
+
+@metaFontSize: inherit;
+@metaLineHeight: 1.2;
+@metaColor: @eosGrey6-text;
+@metaMargin: -1px 0 0;
+
+@extraColor: @eosGrey6-text;
+@extraHorizontalSpacing: 8/14rem;
+@extraMargin: 7px 0 0;
+
+@boxShadow: inset 0 0 0 1px @borderColor;
+@padding: 10px 10px 7px 10px;
+
+@borderRadius: @absoluteBorderRadius;
+
+@contentImageDistance: 10px;
+
+@itemSpacing: 10/13em;
+
+@background: @white-bg;
+
+
+@imageBorderRadius: 3px;
+
+@groupMarginVerticalTop: 15/13em;
+@groupMarginVerticalBottom: 10/13em;
+
+@groupMargin: @groupMarginVerticalTop 0em @groupMarginVerticalBottom;
+
+@imageVerticalAlign: center;
