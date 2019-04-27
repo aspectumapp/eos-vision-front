@@ -2,6 +2,8 @@
         Import Directives
 *******************************/
 
+@import "../fontIcons/style.less";
+
 /*------------------
        Theme
 -------------------*/
@@ -61,6 +63,8 @@
 
 /* Site Iframe Theme */
 @import (optional) "@{eosVisionIframe}/@{type}s/@{element}.variables";
+
+
 /*******************************
              Mix-ins
 *******************************/
@@ -70,7 +74,7 @@
 -------------------*/
 
 .loadFonts() when (@importGoogleFonts) {
-  @import url('@{googleProtocol}fonts.googleapis.com/css?family=@{googleFontRequest}');
+  @import (css) url('@{googleProtocol}fonts.googleapis.com/css?family=@{googleFontRequest}');
 }
 
 /*------------------

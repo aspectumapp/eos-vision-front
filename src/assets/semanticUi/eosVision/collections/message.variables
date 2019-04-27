@@ -17,3 +17,4 @@
 @horizontalPadding: 15px;
 
 @headerFontWeight: @fontSemiBold;
+@relativeSmall: @fontSize;

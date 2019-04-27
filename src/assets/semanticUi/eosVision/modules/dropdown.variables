@@ -85,3 +85,5 @@
 @disabledOpacity: .45;
 
 @labelPadding: 5/13em 0 6/13em 8/13em;
+
+@dropdownIconSize: 12px;
