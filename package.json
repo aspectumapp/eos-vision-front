@@ -5,7 +5,7 @@
   "main": "./dist",
   "scripts": {
     "prebuild": "rm -fr ./dist/",
-    "build": "npm run tsc && gulp copy:dist && storybook:build",
+    "build": "gulp clean && npm run tsc && gulp copy:dist && npm run storybook:build",
     "tsc": "tsc",
     "lint": "tslint -c tslint.json --project .",
     "storybook": "start-storybook",

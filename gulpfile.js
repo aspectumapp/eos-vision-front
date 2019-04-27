@@ -7,9 +7,9 @@ gulp.task('clean', function(){
   return del(`${constants.DIST_DIR}/**`, {force:true});
 });
 
-gulp.task('copy:dist', ['clean'],  function () {
+gulp.task('copy:dist', function () {
   gulp
-    .src([`${constants.SRC_DIR}/**/*`, `!${constants.SRC_DIR}/**/*.stories.*`])
-    .pipe(gulp.dest(`${constants.DIST_DIR}/`))
+    .src(`${constants.SRC_DIR}/assets/**/*`)
+    .pipe(gulp.dest(`${constants.DIST_DIR}/assets/`))
   ;
 });
