@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 34 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<path id="wd-9-a" d="m10 20c-5.5228 0-10-4.4772-10-10s4.4772-10 10-10 10 4.4772 10 10-4.4772 10-10 10zm0-5c2.7614 0 5-2.2386 5-5 0-2.7614-2.2386-5-5-5-2.7614 0-5 2.2386-5 5 0 2.7614 2.2386 5 5 5z"/>
+</defs>
+<g fill="none" fill-rule="evenodd">
+<rect width="34" height="20"/>
+<g transform="translate(7)" fill-rule="nonzero">
+<mask id="wd-9-b" fill="white">
+<use xlink:href="#wd-9-a"/>
+</mask>
+<use fill="#64A6E8" xlink:href="#wd-9-a"/>
+<polygon transform="translate(17.486 8.3464) rotate(36) translate(-17.486 -8.3464)" points="12.538 2.9906 12.538 14.272 22.435 8.55 20.475 6.2125 14.266 2.4212" fill="#E73C1E" mask="url(#wd-9-b)"/>
+<polygon points="10 -1.4234 10 10 19.331 1.5311 20 -0.31425 11.728 -2" fill="#FDA500" mask="url(#wd-9-b)"/>
+</g>
+</g>
+</svg>
