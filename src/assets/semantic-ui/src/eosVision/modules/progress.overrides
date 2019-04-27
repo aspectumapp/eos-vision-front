@@ -1,8 +1,0 @@
-/*******************************
-         Site Overrides
-*******************************/
-
-
-.ui.progress.success .bar {
-  background-image: none;
-}

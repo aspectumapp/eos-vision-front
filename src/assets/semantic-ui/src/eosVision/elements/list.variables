@@ -1,8 +1,0 @@
-/*******************************
-    User Variable Overrides
-*******************************/
-
-
-@itemHeaderFontWeight: @fontSemiBold;
-@margin: 0;
-@relativeMedium: @fontSize;
