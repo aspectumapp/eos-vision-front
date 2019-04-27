@@ -9,8 +9,7 @@
     "tsc": "tsc",
     "lint": "tslint -c tslint.json --project .",
     "storybook": "start-storybook",
-    "storybook:build": "build-storybook -c .storybook -o docs",
-    "postinstall": "gulp copy:semantic-ui-less"
+    "storybook:build": "build-storybook -c .storybook -o docs"
   },
   "author": "odevyatkov <odevyatkov@gmail.com>",
   "license": "MIT",
@@ -48,8 +47,7 @@
     "classnames": "2.2.6",
     "lodash-es": "4.17.11",
     "prop-types": "15.7.2",
-    "react": "16.8.6",
-    "semantic-ui-less": "2.4.1"
+    "react": "16.8.6"
   },
   "pre-commit": [
     "lint"
