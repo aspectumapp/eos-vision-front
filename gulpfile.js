@@ -12,4 +12,9 @@ gulp.task('copy:dist', function () {
     .src(`${constants.SRC_DIR}/assets/**/*`)
     .pipe(gulp.dest(`${constants.DIST_DIR}/assets/`))
   ;
+
+  gulp
+    .src(`${constants.SRC_DIR}/ui/**/*.less`)
+    .pipe(gulp.dest(`${constants.DIST_DIR}/ui/`))
+  ;
 });
