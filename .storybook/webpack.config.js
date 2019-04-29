@@ -13,6 +13,9 @@ module.exports = ({ config }) => {
         },
         {
           loader: require.resolve('ts-loader'),
+          options: {
+            configFile: '../tsconfig.storybook.json',
+          },
         },
         {
           loader: require.resolve('react-docgen-typescript-loader'),
