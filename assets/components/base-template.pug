@@ -6,51 +6,15 @@ mixin base-template(title)
       meta(http-equiv="X-UA-Compatible", content="IE=edge")
       meta(name="viewport", content="width=device-width, initial-scale=1")
       title= title
-      link(type="text/css" rel="stylesheet" href="../static/eos-icons-products/style.css")
-      link(type="text/css" rel="stylesheet" href="../notifications.css")
-      style(type="text/css").
-        body {
-          margin: 0;
-          padding: 0;
-          overflow-y: scroll;
-        }
-        header.site-header {
-          height: 56px;
-          background-color: #1f2733;
-        }
-        .header-menu {
-          float: right;
-        }
-        .go-back {
-          color: #fff;
-          text-decoration: none;
-          margin: 18px;
-          display: inline-block;
-        }
-        .header-menu .search,
-        .header-menu .eos-notifications,
-        .header-menu .products {
-          float: left;
-          padding: 15px;
-        }
-        .icon {
-          display: inline-block;
-          width: 20px;
-          height: 20px;
-          color: #fff;
-          font-size: 18px;
-        }
+      link(href="index.css", rel="stylesheet")
     body
       header.site-header
         a.go-back(href="/") &#8592; Back
         .header-menu
           .search
             i.icon.eos_ic_search
-          .eos-notifications
-            .eos-notifications_container-slider.eos-notifications_container-slider--close
-              section.eos-notifications_notification-wrap
-                .eos-notifications_notification-content
-                  block
+          .content
+            block
           .products
             i.icon.eos_ic_apps
-      script(type="text/javascript" src="../js/notifications.js")
+      script(type="text/javascript" src="../js/index.js")
