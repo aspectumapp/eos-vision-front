@@ -4,8 +4,8 @@
   "description": "Components for SinglePageApplication from EOS Vision",
   "main": "./dist",
   "scripts": {
-    "prebuild": "gulp clean:dist",
-    "build": "npm run tsc && npm run storybook:build",
+    "prebuild": "gulp svg:sprite && gulp clean:dist",
+    "build": "npm run tsc",
     "postbuild": "gulp copy:dist",
     "tsc": "tsc",
     "lint": "tslint -c tslint.json --project .",

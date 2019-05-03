@@ -10,7 +10,14 @@ gulp.task('clean:dist', function(){
   return del(`${constants.DIST_DIR}/**`, {force:true});
 });
 
-gulp.task('copy:dist', function () {
+gulp.task('copy:assets', function() {
+  gulp
+    .src(`${constants.ASSETS_ROOT}/images/svg-sprite/*`)
+    .pipe(gulp.dest(`${constants.SRC_DIR}/assets/svgSprite/`))
+  ;
+});
+
+gulp.task('copy:dist', ['copy:assets'], function () {
   gulp
     .src(`${constants.SRC_DIR}/assets/**/*`)
     .pipe(gulp.dest(`${constants.DIST_DIR}/assets/`))
