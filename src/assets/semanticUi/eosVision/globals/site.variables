@@ -49,9 +49,9 @@
   Page Heading
 ---------------*/
 
-@h1 : unit((28 / 14), rem);
+@h1 : unit((24 / 14), rem);
 @h2 : unit((24 / 14), rem);
-@h3 : unit((15 / 14), rem);
+@h3 : unit((18 / 14), rem);
 @h4 : unit((14 / 14), rem);
 @h5 : unit((13 / 14), rem);
 
@@ -144,7 +144,7 @@
 @greenFocus         : @green;
 
 @orange           : #ffae44;
-@yellow           : #fda500;
+@yellow           : #ffb731;
 @violet           : #9575cd;
 @grey             : @eosGrey5;
 @grey-1           : @eosGrey6;
@@ -254,8 +254,11 @@
 @eos-subHeader-zIndex: 1030;
 
 @eos-sidebar-zIndex: 102;
+@eos-upgrade-alert-zIndex: 103;
 
 @eos-notificationsMessagesList-zIndex: 1060;
 @eos-lasso-zIndex: 1070;
 
 @eos-basemapPopup-zIndex: 104;
+
+@import "../../../fontIcons/variables.less";

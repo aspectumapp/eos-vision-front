@@ -20,12 +20,16 @@
 // & { @import "definitions/elements/divider"; }
 & { @import "definitions/elements/flag"; }
 & { @import "definitions/elements/header"; }
-& { @import "definitions/elements/icon"; }
+& when (@devVersion = true) {
+  & { @import "definitions/elements/icon"; }
+}
 & { @import "definitions/elements/image"; }
 & { @import "definitions/elements/input"; }
 & { @import "definitions/elements/label"; }
 & { @import "definitions/elements/list"; }
-& { @import "definitions/elements/loader"; }
+& when (@devVersion = true) {
+  & { @import "definitions/elements/loader"; }
+}
 // & { @import "definitions/elements/placeholder"; }
 // & { @import "definitions/elements/rail"; }
 // & { @import "definitions/elements/reveal"; }
@@ -34,7 +38,9 @@
 
 /* Collections */
 & { @import "definitions/collections/breadcrumb"; }
-& { @import "definitions/collections/form"; }
+& when (@devVersion = true) {
+  & { @import "definitions/collections/form"; }
+}
 & { @import "definitions/collections/grid"; }
 & { @import "definitions/collections/menu"; }
 & { @import "definitions/collections/message"; }
@@ -50,7 +56,9 @@
 
 /* Modules */
 & { @import "definitions/modules/accordion"; }
-& { @import "definitions/modules/checkbox"; }
+& when (@devVersion = true) { 
+  & { @import "definitions/modules/checkbox"; } 
+}
 & { @import "definitions/modules/dimmer"; }
 & { @import "definitions/modules/dropdown"; }
 & { @import "definitions/modules/embed"; }

@@ -86,4 +86,8 @@
 
 @labelPadding: 5/13em 0 6/13em 8/13em;
 
-@dropdownIconSize: 12px;
+
+@selectionMobileMaxMenuHeight: (@selectionItemHeight * @selectionMobileMaxItems) + 12;
+@selectionTabletMaxMenuHeight: (@selectionItemHeight * @selectionTabletMaxItems) + 12;
+@selectionComputerMaxMenuHeight: (@selectionItemHeight * @selectionComputerMaxItems) + 12;
+@selectionWidescreenMaxMenuHeight: (@selectionItemHeight * @selectionWidescreenMaxItems) + 12;

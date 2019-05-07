@@ -2,6 +2,11 @@
     User Variable Overrides
 *******************************/
 
+@mini: @fontSize;
+@tiny: @fontSize;
+@small: @fontSize;
+@medium: @fontSize;
+
 
 /* Form */
 @gutterWidth: unit((15/13), em);
