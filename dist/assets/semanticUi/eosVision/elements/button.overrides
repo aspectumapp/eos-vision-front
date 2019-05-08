@@ -54,7 +54,7 @@
 
 /*--- buttons new colors START---*/
 
-.ui.buttons.white, .ui.button.white {
+.ui.buttons.white, .ui.button.white:not(.transparent) {
   background-color: @white-bg;
   color: @eosGrey5-text;
   border-radius: 3px;
@@ -222,6 +222,51 @@
   margin: -1px 5px 0 -3px !important;
 }
 
+.button-radio, .button-checkbox {
+  display: inline-block;
+  margin: 0 .25em 0 0;
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0 !important;
+  }
+  input:not(:checked) {
+    + .button {
+      opacity: .5;
+    }
+  }
+  .button {
+    margin: 0;
+  }
+}
+.button-checkbox {
+  .ui.button {
+    padding: 8px 0;
+  }
+  input:not(:checked) {
+    + .button {
+      opacity: 1;
+      background-color: @eosGrey10-bg;
+      color: @eosGrey6-text;
+    }
+  }
+  &:hover {
+    input:not(:checked) {
+      + .button {
+        background-color: @eosGrey9-bg;
+        color: @eosGrey5-text;
+      }
+    }
+  }
+  input:checked {
+    + .button {
+      background-color: @blue;
+      color: @white-text;
+    }
+  }
+}
+
 .ui.button.icon {
   &.transparent {
     background-color: transparent;
@@ -246,6 +291,10 @@
     }
     &.dark, &.blue, &.red {
       background-color: transparent !important;
+    }
+    &.white {
+      color: @white;
+      background-color: rgba(255, 255, 255, 0.2);
     }
 
     &.info.active {

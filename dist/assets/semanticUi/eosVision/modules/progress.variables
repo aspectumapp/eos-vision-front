@@ -6,3 +6,5 @@
 @barMinWidth: 0;
 
 @barBackground:  @eosGrey8-bg;
+
+@smallBarHeight: round(8/13em, 3);

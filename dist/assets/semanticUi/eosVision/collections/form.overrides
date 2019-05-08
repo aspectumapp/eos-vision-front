@@ -2,18 +2,7 @@
          Site Overrides
 *******************************/
 
-
-.ui.mini.form {
-  font-size: @fontSize;
-}
-.ui.tiny.form {
-  font-size: @fontSize;
-}
-.ui.small.form {
-  font-size: @fontSize;
-}
 .ui.form {
-  font-size: @fontSize;
   input:not([type]),
   input[type="date"],
   input[type="datetime-local"],
@@ -153,6 +142,9 @@
 
 
 .ui.form.mini {
+  + .ui.form.mini {
+    margin-top: 25px;
+  }
   .field > label {
     font-size: 1em;
   }
@@ -168,6 +160,9 @@
   }
   .field, .group {
     margin-bottom: 15px;
+    .ui.form.mini+.ui.form.mini {
+      margin-top: 0;
+    }
     &:last-child {
       margin-bottom: 0;
     }

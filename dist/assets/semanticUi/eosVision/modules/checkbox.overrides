@@ -69,9 +69,9 @@
 
 .ui.checkbox:not(.toggle) input:checked ~ .box:after,
 .ui.checkbox:not(.toggle) input:checked ~ label:after {
-  font-family: 'eos-icons-products' !important;
-  &:extend(.eos_ic_done:before all);
+  content: @eos_ic_done;
   line-height: 1.6;
+  font-family: '@{icomoon-font-family}' !important;
 }
 
 /* Indeterminate */

@@ -31,13 +31,11 @@
     }
   }
   .close.icon {
-    top: 50%;
-    transform: translate(0,-50%);
+    top: 0;
     right: 0;
     color: @closeNotificationColor;
     opacity: @closeNotificationOpacity;
     padding: @closeNotificationPadding;
-    font-size: @closeSize;
 
     &:hover {
       color: @closeNotificationHoverColor;

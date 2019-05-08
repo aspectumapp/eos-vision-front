@@ -10,6 +10,10 @@ gulp.task('clean:dist', function(){
   return del(`${constants.DIST_DIR}/**`, {force:true});
 });
 
+gulp.task('clean:docs', function(){
+  return del(`${constants.DOCS_DIR}/**`, {force:true});
+});
+
 gulp.task('copy:dist', function () {
   gulp
     .src(`${constants.SRC_DIR}/assets/**/*`)
