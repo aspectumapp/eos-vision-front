@@ -233,6 +233,9 @@
       left: 5px;
     }
   }
+  .ui.form.mini + .ui.form.mini {
+    margin-top: 0;
+  }
 }
 
 .field.horizontal {

@@ -50,6 +50,9 @@
         pointer-events: none;
       }
     }
+    .ui.checkbox.toggle.fitted {
+      left: -8px;
+    }
   }
 
   > .ui.form {

@@ -49,21 +49,21 @@
   top: 100%;
   min-width: max-content;
   transition: @menuTransition;
-
   margin: @menuMargin;
-  padding: @menuPadding;
   background: @menuBackground;
-
   font-size: @relativeMedium;
   text-shadow: none;
   text-align: @menuTextAlign;
-
   box-shadow: @menuBoxShadow;
   border: @menuBorder;
   border-radius: @menuBorderRadius;
   transition: @menuTransition;
   z-index: @menuZIndex;
   will-change: transform, opacity;
+}
+
+.ui.dropdown:not(.selection):not(.multiple) .menu {
+  padding: @menuPadding;
 }
 
 .ui.dropdown .menu > * {
