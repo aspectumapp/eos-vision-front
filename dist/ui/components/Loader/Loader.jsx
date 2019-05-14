@@ -20,6 +20,6 @@ export default class Loader extends React.PureComponent {
 Loader.defaultProps = {
     active: true,
     text: '',
-    size: 'small',
+    size: '',
 };
 //# sourceMappingURL=Loader.jsx.map

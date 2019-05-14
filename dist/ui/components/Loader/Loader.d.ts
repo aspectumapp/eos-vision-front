@@ -18,7 +18,7 @@ export interface Props {
      *
      * @default 'small'
      */
-    size?: 'mini' | 'tiny' | 'small' | 'medium' | 'large' | 'big' | 'huge' | 'massive';
+    size?: 'mini' | 'tiny' | 'small' | 'medium' | 'large' | 'big' | 'huge' | 'massive' | '';
 }
 export default class Loader extends React.PureComponent<Props> {
     static defaultProps: Partial<Props>;
