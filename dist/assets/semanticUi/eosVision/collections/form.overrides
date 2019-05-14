@@ -160,9 +160,6 @@
   }
   .field, .group {
     margin-bottom: 15px;
-    .ui.form.mini+.ui.form.mini {
-      margin-top: 0;
-    }
     &:last-child {
       margin-bottom: 0;
     }

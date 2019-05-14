@@ -2,44 +2,44 @@
 export {
   default as HorizontalField,
   Props as HorizontalFieldProps,
-} from './Form/HorizontalField';
+} from './components/Form/HorizontalField';
 export {
   default as Group,
   Props as GroupProps,
-} from './Form/Group';
+} from './components/Form/Group';
 export {
   default as FormWrap,
   Props as FormWrapProps,
-} from './Form/FormWrap';
+} from './components/Form/FormWrap';
 export {
   default as FieldWrap,
   Props as FieldWrapProps,
-} from './Form/FieldWrap';
+} from './components/Form/FieldWrap';
 export {
   default as Checkbox,
   Props as CheckboxProps,
-} from './Form/Checkbox';
+} from './components/Form/Checkbox';
 export {
   default as Radio,
   Props as RadioProps,
-} from './Form/Radio';
+} from './components/Form/Radio';
 export {
   default as Transition,
   Props as TransitionProps,
-} from './Transition/Transition';
+} from './components/Transition/Transition';
 export {
   default as Icon,
   Props as IconProps,
-} from './Icon/Icon';
+} from './components/Icon/Icon';
 export {
   default as IconCss,
   Props as IconCssProps,
-} from './Icon/IconCss';
+} from './components/Icon/IconCss';
 export {
   default as IconSvg,
   Props as IconSvgProps,
-} from './Icon/IconSvg';
+} from './components/Icon/IconSvg';
 export {
   default as Loader,
   Props as LoaderProps,
-} from './Loader/Loader';
+} from './components/Loader/Loader';
