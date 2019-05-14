@@ -157,6 +157,7 @@ export default class Base extends React.PureComponent<Props> {
     return (
       <div
         className={className}
+        onClick={this.handleClick}
       >
         <input
           type={this.props.inputType}
