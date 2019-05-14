@@ -67,7 +67,7 @@
 @hoveredItemBackground: @eosGrey10-bg;
 
 
-@menuInputMargin: round(5/14rem, 3) round(12/14rem, 3) round(10/14rem, 3);
+@menuInputMargin: round(10/14rem, 3) round(12/14rem, 3);
 
 @selectionMinHeight: 38px;
 @selectionItemHeight: 34px;
@@ -85,9 +85,3 @@
 @disabledOpacity: .45;
 
 @labelPadding: 5/13em 0 6/13em 8/13em;
-
-
-@selectionMobileMaxMenuHeight: (@selectionItemHeight * @selectionMobileMaxItems) + 12;
-@selectionTabletMaxMenuHeight: (@selectionItemHeight * @selectionTabletMaxItems) + 12;
-@selectionComputerMaxMenuHeight: (@selectionItemHeight * @selectionComputerMaxItems) + 12;
-@selectionWidescreenMaxMenuHeight: (@selectionItemHeight * @selectionWidescreenMaxItems) + 12;
