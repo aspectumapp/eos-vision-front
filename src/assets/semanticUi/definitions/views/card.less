@@ -174,7 +174,9 @@
 
 /* Default Header Size */
 .ui.cards > .card > .content > .header:not(.ui),
-.ui.card > .content > .header:not(.ui) {
+.ui.card > .content > .header:not(.ui),
+.ui.cards > .card > .content > .text > .header:not(.ui),
+.ui.card > .content > .text > .header:not(.ui) {
   font-weight: @headerFontWeight;
   font-size: @headerFontSize;
   margin-top: @headerLineHeightOffset;
@@ -327,8 +329,8 @@
 
 .ui.cards > .card > .buttons,
 .ui.card > .buttons,
-.ui.cards > .card > .button,
-.ui.card > .button {
+.ui.cards > .card > .button:not(.icon),
+.ui.card > .button:not(.icon) {
   margin: @buttonMargin;
   width: @buttonWidth;
 }

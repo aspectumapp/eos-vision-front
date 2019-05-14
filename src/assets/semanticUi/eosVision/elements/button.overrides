@@ -54,7 +54,7 @@
 
 /*--- buttons new colors START---*/
 
-.ui.buttons.white, .ui.button.white:not(.transparent) {
+.ui.buttons.white, .ui.button.white {
   background-color: @white-bg;
   color: @eosGrey5-text;
   border-radius: 3px;
@@ -291,10 +291,6 @@
     }
     &.dark, &.blue, &.red {
       background-color: transparent !important;
-    }
-    &.white {
-      color: @white;
-      background-color: rgba(255, 255, 255, 0.2);
     }
 
     &.info.active {
