@@ -44,7 +44,7 @@ export default class Base extends React.PureComponent {
             radio: this.props.inputType === 'radio',
             fitted: !this.props.label,
         });
-        return (<div className={className}>
+        return (<div className={className} onClick={this.handleClick}>
         <input type={this.props.inputType} name={this.props.name} checked={this.props.checked} tabIndex={this.computeTabIndex()} className='hidden' disabled={this.props.disabled} onChange={this.handleChange}/>
         {this.renderLabel()}
       </div>);
