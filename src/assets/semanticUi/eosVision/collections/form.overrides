@@ -295,3 +295,18 @@
   color: @inputDisabledcolor;
   border-color: @inputDisabledBorder;
 }
+
+.fake-input {
+  &:extend(.ui.form input[type="text"]);
+  white-space: nowrap;
+  padding: 0;
+  &.focus {
+    &:extend(.ui.form input[type="text"]:focus);
+  }
+  input {
+    border: none !important;
+  }
+}
+.ui.input input.focus {
+  &:extend(.ui.form input[type="text"]:focus);
+}
