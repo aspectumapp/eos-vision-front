@@ -1,6 +1,6 @@
 {
   "name": "eos-vision-front",
-  "version": "0.0.2-alpha.7",
+  "version": "0.0.2-alpha.8",
   "description": "Components for SinglePageApplication from EOS Vision",
   "main": "./dist/ui/index.ts",
   "types": "./dist/ui/index.d.ts",
