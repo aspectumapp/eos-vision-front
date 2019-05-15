@@ -15,6 +15,7 @@
 
 .check-list {
   &.scrolling.menu {
+    max-width: 221px;
     .ui.dropdown & {
       max-height: 37px * 9;
       .ui.checkbox {
