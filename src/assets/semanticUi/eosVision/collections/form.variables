@@ -7,7 +7,7 @@
 @small: @fontSize;
 @medium: @fontSize;
 
-
+@labelFontSize: inherit;
 /* Form */
 @gutterWidth: unit((15/13), em);
 @rowDistance: unit((15/13), em);
