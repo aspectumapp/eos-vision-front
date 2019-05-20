@@ -15,6 +15,7 @@ module.exports = {
   devServer: {
     contentBase: constants.ASSETS_DIST,
     port: 9000,
+    host: '0.0.0.0',
   },
   resolve: {
     extensions: ['.js', '.less', '.pug'],
