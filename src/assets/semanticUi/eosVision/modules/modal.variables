@@ -39,3 +39,8 @@
 @contentPadding: 23px;
 
 @smallWidescreenMonitorWidth: 720px;
+
+@fullScreenWidth: 100%;
+@innerCloseTop: 20px;
+@innerCloseRight: 25px;
+@innerCloseColor: @eosGrey5-bg;
