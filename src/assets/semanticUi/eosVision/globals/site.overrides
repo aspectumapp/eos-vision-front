@@ -2,6 +2,10 @@
          Site Overrides
 *******************************/
 
+body {
+  overflow: hidden;
+}
+
 .eos-AddScrollbars() {
   .ui.message,
   .analysis-info-panel,
