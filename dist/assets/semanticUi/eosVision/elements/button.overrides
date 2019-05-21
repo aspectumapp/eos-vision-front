@@ -127,6 +127,14 @@
   color: @grey-1Focus !important;
 }
 
+.ui.buttons .disabled.button.basic, 
+.ui.disabled.button.basic, 
+.ui.button.basic:disabled, 
+.ui.disabled.button.basic:hover, 
+.ui.disabled.active.button.basic {
+  background-color: @eosGrey11-bg !important;
+}
+
 /*--- buttons new colors END---*/
 
 
