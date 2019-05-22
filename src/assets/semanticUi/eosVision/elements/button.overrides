@@ -57,8 +57,11 @@
 .ui.buttons.white, .ui.button.white {
   background-color: @white-bg;
   color: @eosGrey5-text;
-  border-radius: 3px;
+  
   box-shadow: 0 1px 4px rgba(27, 33, 43, 0.3) !important;
+}
+.ui.buttons.white:not(.icon), .ui.button.white:not(.icon) {
+  border-radius: 3px;
 }
 .ui.buttons.white .ui.button,
 .ui.button.white {
@@ -299,6 +302,12 @@
     }
     &.dark, &.blue, &.red {
       background-color: transparent !important;
+    }
+
+    &.white {
+      background-color: fade(@white, 20%);
+      color: @white;
+      box-shadow: none !important;
     }
 
     &.info.active {
