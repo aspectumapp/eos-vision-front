@@ -4,6 +4,7 @@
 
 body {
   overflow: hidden;
+  font-weight: @fontNormal;
 }
 
 .eos-AddScrollbars() {

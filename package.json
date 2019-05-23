@@ -5,9 +5,9 @@
   "main": "./dist/ui/index.ts",
   "types": "./dist/ui/index.d.ts",
   "scripts": {
-    "prebuild": "gulp svg:sprite && gulp clean:dist && gulp clean:docs",
-    "build": "npm run tsc",
-    "postbuild": "gulp copy:dist && npm run storybook:build",
+    "_prebuild": "gulp svg:sprite && gulp clean:dist && gulp clean:docs",
+    "build": "gulp svg:sprite && gulp clean:dist && npm run tsc && gulp copy:dist",
+    "_postbuild": "gulp copy:dist && npm run storybook:build",
     "tsc": "tsc",
     "lint": "tslint -c tslint.json --project .",
     "storybook": "start-storybook",
