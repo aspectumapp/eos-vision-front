@@ -36,7 +36,7 @@
     color: @closeNotificationColor;
     opacity: @closeNotificationOpacity;
     padding: @closeNotificationPadding;
-
+    font-size: round(16/13em, 3);
     &:hover {
       color: @closeNotificationHoverColor;
     }
