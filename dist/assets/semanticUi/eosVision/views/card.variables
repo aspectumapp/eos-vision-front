@@ -3,7 +3,7 @@
 *******************************/
 
 
-@headerFontSize: 12/13em;
+@headerFontSize: 1em;
 @headerFontWeight: @fontSemiBold;
 @headerColor: @textColor;
 @headerLineHeightOffset: 0;
