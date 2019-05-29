@@ -9,11 +9,6 @@
   margin-top: 0;
 }
 
-
-.ui.items > .item {
-  font-size: @fontSize;
-}
-
 .ui.items>.item .meta.link {
   color: @linkColor;
   text-decoration: @linkUnderline;
@@ -22,4 +17,7 @@
     color: @linkHoverColor;
     text-decoration: @linkHoverUnderline;
   }
+}
+.ui.items > .item > .content > .header {
+  display: block;
 }
