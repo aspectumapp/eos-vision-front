@@ -145,9 +145,6 @@
   + .ui.form.mini {
     margin-top: 25px;
   }
-  .field > label {
-    font-size: 1em;
-  }
   .group {
     padding-top: 2px;
     margin-top: 32px;
@@ -220,7 +217,7 @@
 
 
 .field {
-  > .ui.label {
+  > .ui.label, > .ui.label.pointing, > .ui.label.pointing.error {
     position: absolute;
     left: 0;
     z-index: 2;
@@ -262,7 +259,7 @@
       margin-left: auto !important;
     }
   }
-  > .ui.label {
+  > .ui.label, > .ui.label.pointing, > .ui.label.pointing.error {
     left: 100% - 67.406;
     max-width: 213px;
   }

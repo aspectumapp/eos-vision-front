@@ -52,7 +52,9 @@
 }
 
 .ui.selection.dropdown {
-  font-size: @fontSize;
+  & when (@visionMobile = false) {
+    font-size: @fontSize;
+  }
   line-height: 1.14285714rem;
   > .text {
     display: block;
@@ -141,7 +143,12 @@
 .ui.dropdown:not(.loading) .icon.add {
   font-size: 17.5px;
   color: @eosGrey6-text;
-  padding: 10px 5px;
+  & when (@visionTablet = true) {
+    padding: 11px 6px;
+  }
+  & when (@visionTablet = false) {
+    padding: 10px 5px;
+  }
   &:before {
     content: @eos_ic_add;
   }

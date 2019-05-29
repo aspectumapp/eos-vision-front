@@ -3,13 +3,17 @@
 *******************************/
 
 [data-tooltip] {
-  font-weight: 400;
+  font-weight: @fontNormal;
   position: relative;
 }
 
 [data-tooltip]:after {
   letter-spacing: 0.15px;
-
+  .tooltip-custom-width& {
+    width: 220px;
+    white-space: normal;
+      padding: 10px;
+  }
 }
 
 [data-position="left center"][data-tooltip]:before {
