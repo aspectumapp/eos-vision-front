@@ -217,7 +217,7 @@
 
 
 .field {
-  > .ui.label {
+  > .ui.label, > .ui.label.pointing, > .ui.label.pointing.error {
     position: absolute;
     left: 0;
     z-index: 2;
@@ -259,7 +259,7 @@
       margin-left: auto !important;
     }
   }
-  > .ui.label {
+  > .ui.label, > .ui.label.pointing, > .ui.label.pointing.error {
     left: 100% - 67.406;
     max-width: 213px;
   }
