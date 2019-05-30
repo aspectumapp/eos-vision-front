@@ -41,6 +41,7 @@
 
 .ui.form {
   .field {
+    position: relative;
     >label {
       .sub-label {
         display: block;
