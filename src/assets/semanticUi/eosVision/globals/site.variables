@@ -44,6 +44,7 @@
 --------------------*/
 
 @fontSize : unit((13 / 14), rem);
+@lineHeight          : 1.4;
 
 /*--------------
   Page Heading

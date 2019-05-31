@@ -61,6 +61,10 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    position: absolute;
+    left: @selectionHorizontalPadding;
+    right: @selectionIconDistance;
+    top: @selectionVerticalPadding;
   }
   > .dropdown.icon {
     color: @eosGrey5-text;
@@ -93,6 +97,9 @@
     min-height: 32px;
     padding-top: 7px;
     padding-bottom: 7px;
+    > .text {
+      top: 7px;
+    }
     &:not(.mini)>input.search {
       padding-top: 7px;
       padding-bottom: 7px;
