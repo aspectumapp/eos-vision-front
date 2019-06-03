@@ -94,11 +94,21 @@
     width: auto;
   }
   &.mini, .ui.form.mini & {
-    min-height: 32px;
+    & when (@visionMobile = false) {
+      min-height: 32px;
+    }
+    & when (@visionMobile = true) {
+      min-height: 34px;
+    }
     padding-top: 7px;
     padding-bottom: 7px;
     > .text {
-      top: 7px;
+      & when (@visionMobile = false) {
+        top: 7px;
+      }
+      & when (@visionMobile = true) {
+        top: 9px;
+      }
     }
     &:not(.mini)>input.search {
       padding-top: 7px;

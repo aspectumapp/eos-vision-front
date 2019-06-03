@@ -211,6 +211,8 @@
   & when (@visionTablet = false) {
     font-size: 14px;
     height: 10px;
+  }
+  & when (@visionWeb = true) {
     top: -0.5px;
   }
   & when (@visionTablet = true) {
