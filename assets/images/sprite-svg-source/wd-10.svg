@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="20px" viewBox="0 0 34 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>elements / input-img / widghets / wd-10</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M27,10 C27,4.4771525 22.5228475,0 17,0 C11.4771525,0 7,4.4771525 7,10 C7,15.5228475 11.4771525,20 17,20 C19.8233905,20 22.3734928,18.8299143 24.191846,16.9482038 L23.4726614,16.2533834 C21.8361435,17.9469229 19.5410514,19 17,19 C12.0294373,19 8,14.9705627 8,10 C8,5.02943725 12.0294373,1 17,1 C21.9705627,1 26,5.02943725 26,10 L27,10 Z" id="path-1"></path>
+        <path d="M13,10 C13,7.790861 14.790861,6 17,6 C19.209139,6 21,7.790861 21,10 L20,10 C20,8.34314575 18.6568542,7 17,7 C15.3431458,7 14,8.34314575 14,10 L13,10 Z" id="path-3"></path>
+        <path d="M25,10 C25,5.581722 21.418278,2 17,2 C12.581722,2 9,5.581722 9,10 C9,14.418278 12.581722,18 17,18 L17,17 C13.1340068,17 10,13.8659932 10,10 C10,6.13400675 13.1340068,3 17,3 C20.8659932,3 24,6.13400675 24,10 L25,10 Z" id="path-5"></path>
+        <path d="M12.3003819,13.7304694 C11.4863258,12.7062975 11,11.4099425 11,10 C11,6.6862915 13.6862915,4 17,4 C20.3137085,4 23,6.6862915 23,10 L22,10 C22,7.23857625 19.7614237,5 17,5 C14.2385763,5 12,7.23857625 12,10 C12,11.1795028 12.4084169,12.2636148 13.0915462,13.1186312 L12.3003819,13.7304694 Z" id="path-7"></path>
+        <path d="M17,8 C18.1045695,8 19,8.8954305 19,10 L18,10 C18,9.44771525 17.5522847,9 17,9 L17,8 Z" id="path-9"></path>
+    </defs>
+    <g id="elements-/-input-img-/-widghets-/-wd-10" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="img">
+            <rect id="bg" x="0" y="0" width="34" height="20"></rect>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask-2" fill="#64A6E8" fill-rule="nonzero" xlink:href="#path-1"></use>
+            <mask id="mask-4" fill="white">
+                <use xlink:href="#path-3"></use>
+            </mask>
+            <use id="Mask-2" fill="#E73C1E" fill-rule="nonzero" xlink:href="#path-3"></use>
+            <mask id="mask-6" fill="white">
+                <use xlink:href="#path-5"></use>
+            </mask>
+            <use id="Mask-2" fill="#64A6E8" fill-rule="nonzero" xlink:href="#path-5"></use>
+            <mask id="mask-8" fill="white">
+                <use xlink:href="#path-7"></use>
+            </mask>
+            <use id="Mask-2" fill="#FDA500" fill-rule="nonzero" xlink:href="#path-7"></use>
+            <mask id="mask-10" fill="white">
+                <use xlink:href="#path-9"></use>
+            </mask>
+            <use id="Mask-2" fill="#E73C1E" fill-rule="nonzero" xlink:href="#path-9"></use>
+        </g>
+    </g>
+</svg>

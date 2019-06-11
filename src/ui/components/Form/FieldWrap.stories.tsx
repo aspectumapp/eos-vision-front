@@ -4,7 +4,7 @@ import { action } from '@storybook/addon-actions';
 
 import FieldWrap from './FieldWrap';
 
-const story = storiesOf('Components | Collections / Form / FieldWrap', module);
+const story = storiesOf('UIComponents | Form / FieldWrap', module);
 
 story
   .add('Basic usage', () => {

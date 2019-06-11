@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 
 import Group from './Group';
 
-const story = storiesOf('Components | Collections / Form / Group', module);
+const story = storiesOf('UIComponents | Form / Group', module);
 
 story
   .add('Basic usage', () => {

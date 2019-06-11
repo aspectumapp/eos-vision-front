@@ -1,0 +1,14 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+@dividerColor:   @eosGrey6;
+
+@iconDividerSize: 1em;
+@iconDividerVerticalAlign: middle;
+@dividerOpacity: 1;
+
+@dividerSpacing: @6px;
+
+@font-weight: @fontSemiBold;
+@activeFontWeight: @fontSemiBold;

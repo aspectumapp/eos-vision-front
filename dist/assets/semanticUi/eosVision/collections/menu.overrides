@@ -1,0 +1,148 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+.ui.menu {
+  font-size: @fontSize;
+  position: relative;
+  .pointing {
+    height: 100%;
+  }
+  .item {
+    .ui.label.floating {
+      font-size: 9px;
+      font-weight: 700;
+      padding: 0 5px;
+      height: 13px;
+      display: flex;
+      align-items: center;
+      border-radius: 30px;
+      top: 5px;
+      margin-left: -17px !important;
+      span {
+        display: block;
+        line-height: 4px;
+        overflow: hidden;
+        height: 5px;
+        min-width: 17px;
+      }
+    }
+    &.disabled {
+      opacity: .3;
+      cursor: default;
+      pointer-events: none;
+    }
+  }
+}
+
+.ui.menu .item.menu {
+  padding: 0;
+}
+
+.ui.secondary.pointing.menu {
+  .item {
+    align-self: stretch;
+    padding: 14/14rem 11/14rem 11/14rem;
+  }
+  &.tabs-menu {
+    border-bottom-color: @borderColor;
+    border-bottom-width: 2px;
+    .item {
+      border-bottom-color: transparent;
+      border-bottom-width: 2px;
+      margin-bottom: -2px;
+      color: @eosGrey5-text;
+      font-size: 1rem;
+      padding: 16/13em 12/13em;
+      &:hover {
+        color: @darkTextColor;
+      }
+      &:active {
+        border-bottom-color: transparent;
+      }
+      &.active {
+        border-bottom-color: @blue;
+        color: @darkTextColor;
+        .icon {
+          color: @eosGrey4-text;
+        }
+      }
+    }
+    .icon {
+      font-size: 16px;
+    }
+    &.small .item {
+      font-size: 13/14rem;
+      .icon {
+        height: 14px;
+      }
+    }
+    &.tiny .item {
+      font-size: 12/14rem;
+    }
+  }
+}
+
+
+
+.item.ui.dropdown .scrolling.menu {
+  border-radius: 0 0 @dropdownMenuBorderRadius @dropdownMenuBorderRadius !important;
+}
+
+.ui.menu .ui.dropdown.sort .menu>.item {
+  .icon {
+    height: 0;
+    vertical-align: top;
+    width: 15px;
+    top: -3px;
+    margin-left: -5px;
+  }
+}
+
+.ui.vertical.menu.icon {
+  display: flex;
+  > .bottom {
+    margin-top: auto;
+  }
+  > .item {
+    padding: 14px 0;
+    color: @eosGrey5-text;
+    .tooltip-wrap {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 7px;
+    }
+    &.logo {
+      padding: 17px 0 16px;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 2px;
+    }
+
+    &:hover {
+      background-color: fade(@eosGrey11-bg, 50%);
+      color: @eosGrey4-text;
+    }
+
+    &.active {
+      background-color: @eosGrey11-bg;
+      color: @eosGrey4-text;
+      &:after {
+        background-color: @blue;
+      }
+    }
+    &.logo {
+      background-color: transparent;
+    }
+    .icon {
+      font-size: 18px;
+    }
+  }
+}

@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 
 import FormWrap from './FormWrap';
 
-const story = storiesOf('Components | Collections / Form / FormWrap', module);
+const story = storiesOf('UIComponents | Form / FormWrap', module);
 
 story
   .add('Basic usage', () => {

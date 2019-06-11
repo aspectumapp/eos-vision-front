@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 34 20" xmlns="http://www.w3.org/2000/svg">
+<g fill="none" fill-rule="evenodd">
+<rect width="34" height="20"/>
+<path d="m16.984 1.5v17" fill-rule="nonzero" stroke="#AAB0B8" stroke-linecap="square"/>
+<path d="m9.4937 14.139l15.068-8.1394" fill-rule="nonzero" stroke="#AAB0B8" stroke-linecap="square"/>
+<path d="m9.5 6l15.062 8.1394" fill-rule="nonzero" stroke="#AAB0B8" stroke-linecap="square"/>
+<path d="m24.817 5.5495l-7.6364-4.5c-0.11199-0.065988-0.24873-0.065988-0.36072 0l-7.6364 4.5c-0.11345 0.066762-0.18327 0.19125-0.18327 0.32551v8.25c0 0.13426 0.069818 0.25875 0.18327 0.32551l7.6364 4.5c0.056011 0.033012 0.11782 0.0495 0.18037 0.0495s0.12436-0.016488 0.18037-0.0495l7.6364-4.5c0.11345-0.066762 0.18327-0.19125 0.18327-0.32551v-8.25c-3.41e-5 -0.13426-0.069852-0.25875-0.18331-0.32551z" stroke="#AAB0B8"/>
+<polygon points="11 6.7609 17.028 3 22 7.3075 21.623 12.56 17.028 16 15 11" fill="#64A6E8" fill-rule="nonzero"/>
+</g>
+</svg>

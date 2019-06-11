@@ -10,7 +10,7 @@ story
   .add('Basic usage', () => {
     return (
       <IconSvg
-        name='send_up'
+        name='select-agregation-1'
       />
     );
   }, {
@@ -21,15 +21,10 @@ story
   });
 
 story
-  .addParameters({
-    options: {
-      showAddonPanel: true,
-    },
-  })
   .add('With onClick handler', () => {
     return (
       <IconSvg
-        name='other'
+        name='select-agregation-2'
         onClick={action('onClick')}
       />
     );

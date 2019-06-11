@@ -1,0 +1,63 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+@import '../../../fontIcons/style.less';
+
+i.mini.icon,
+i.mini.icons {
+  line-height: 1;
+  font-size: @mini;
+}
+i.tiny.icon,
+i.tiny.icons {
+  line-height: 1;
+  font-size: @tiny;
+}
+i.small.icon,
+i.small.icons {
+  line-height: 1;
+  font-size: @small;
+}
+i.large.icon,
+i.large.icons {
+  line-height: 1;
+  vertical-align: middle;
+  font-size: @large;
+}
+i.big.icon,
+i.big.icons {
+  line-height: 1;
+  vertical-align: middle;
+  font-size: @big;
+}
+i.huge.icon,
+i.huge.icons {
+  line-height: 1;
+  vertical-align: middle;
+  font-size: @huge;
+}
+i.massive.icon,
+i.massive.icons {
+  line-height: 1;
+  vertical-align: middle;
+  font-size: @massive;
+}
+
+.close.icon {
+  &:extend(.eos_ic_close all);
+}
+
+.icon.chevron.left {
+  &:extend(.eos_ic_chevron_left all);
+}
+.icon.chevron.right {
+  &:extend(.eos_ic_chevron_right all);
+}
+
+.ui.label>.delete.icon {
+  &:extend(.eos_ic_close_tags all);
+}
+.ui.label>.close.icon {
+  &:extend(.eos_ic_close_tags all);
+}

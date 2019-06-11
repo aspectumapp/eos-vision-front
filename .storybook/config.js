@@ -5,8 +5,10 @@ import {
   addDecorator,
 } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
+import addonAPI from '@storybook/addons';
 
 import './storybook.css';
+import '../src/assets/global.less';
 
 addParameters({
   options: {
@@ -42,10 +44,21 @@ addDecorator(withInfo({
   }
 }));
 
-const req = require.context('../src/ui', true, /\.stories\.tsx$/);
+const req = require.context('../src', true, /\.stories\.tsx$/);
 
 function loadStories() {
   req.keys().forEach(req);
 }
 
 configure(loadStories, module);
+
+let firstLoad = true;
+addonAPI.register('eos/my-addon', (storybookAPI) => {
+  storybookAPI.onStory((kind, story) => {
+    // when you enter a story, if you are just loading storybook up, default to a specific kind/story.
+    if (firstLoad) {
+      firstLoad = false; // make sure to set this flag to false, otherwise you will never be able to look at another story.
+      storybookAPI.selectStory('About | About', 'About library');
+    }
+  });
+});

@@ -1,0 +1,20 @@
+mixin base-template(title)
+  doctype html
+  html(lang="en")
+    head
+      meta(charset="utf-8")
+      meta(http-equiv="X-UA-Compatible", content="IE=edge")
+      meta(name="viewport", content="width=device-width, initial-scale=1")
+      title= title
+      link(href="index.css", rel="stylesheet")
+    body
+      header.site-header
+        a.go-back(href="/") &#8592; Back
+        .header-menu
+          .search
+            i.icon.eos_ic_search
+          .content
+            block
+          .products
+            i.icon.eos_ic_apps
+      script(type="text/javascript" src="../js/index.js")

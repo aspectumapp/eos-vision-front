@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="20px" viewBox="0 0 34 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 14</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="img-for-analysis12">
+            <rect id="Rectangle-14" x="0" y="0" width="34" height="20"></rect>
+            <g id="Group" transform="translate(3.000000, 1.000000)" fill-rule="nonzero" stroke="#D1E4F8">
+                <rect id="Rectangle-7" fill-opacity="0.2" fill="#FFFFFF" x="7" y="5" width="14" height="8"></rect>
+                <rect id="Rectangle-7-Copy" fill-opacity="0.0958446558" fill="#FFFFFF" x="21" y="5" width="7" height="8"></rect>
+                <rect id="Rectangle-7-Copy-5" x="21" y="0" width="7" height="5"></rect>
+                <rect id="Rectangle-7-Copy-6" fill-opacity="0.0958446558" fill="#FFFFFF" x="0" y="0" width="7" height="5"></rect>
+                <rect id="Rectangle-7-Copy-7" fill-opacity="0.0958446558" fill="#FFFFFF" x="0" y="13" width="7" height="5"></rect>
+                <rect id="Rectangle-7-Copy-8" fill-opacity="0.0958446558" fill="#FFFFFF" x="21" y="13" width="7" height="5"></rect>
+                <rect id="Rectangle-7-Copy-2" fill-opacity="0.0958446558" fill="#FFFFFF" x="0" y="5" width="7" height="8"></rect>
+                <rect id="Rectangle-7-Copy-3" fill-opacity="0.0958446558" fill="#FFFFFF" x="7" y="13" width="14" height="5"></rect>
+                <rect id="Rectangle-7-Copy-4" fill-opacity="0.0958446558" fill="#FFFFFF" x="7" y="0" width="14" height="5"></rect>
+            </g>
+            <circle id="Oval-2" fill="#64A6E8" fill-rule="nonzero" cx="17" cy="10" r="2"></circle>
+            <circle id="Oval-2" stroke="#64A6E8" fill-opacity="0.2" fill="#64A6E8" fill-rule="nonzero" cx="17" cy="10" r="10"></circle>
+        </g>
+    </g>
+</svg>

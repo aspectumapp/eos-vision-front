@@ -1,13 +1,10 @@
 # eos-vision-front
-React UI компоненты для SPA от команды EOS Vision.
-Мы используем эти компоненты в проекте Vision, но решили поделится с миром.
-Основным преимуществом перед другими библиотеками react компонент,
-как например react-semantic-ui - легковесность.
-Не нужно подтягивать весь css в проект, а только по надобности (on demand).
+React UI components for SPA from EOS Vision team.
+We are using these components in our project Vision, but decided to share with world.
 
 [Documentation and demos](...)
 
-## Разработка
+## Development
 
 ### Install NPM packages
 
@@ -28,19 +25,31 @@ $ npm run build
 ```
 
 ## Writing documentation
-Для написания документации мы используем генератор [storybook](https://storybook.js.org).
-
-### Run dev environment
+For writing documentation we are using generator [storybook](https://storybook.js.org).
+In order to write stories you can run command:
 ```bash
 $ npm run storybook
 ```
 
-### Build production version
+In order to build docs you can run command:
 ```bash
 $ npm run storybook:build
 ```
 
-## Lisense
+### Run dev environment
+In order to develop assets party you can run `npm` script:
+```bash
+$ npm run assets:dev
+```
+and open in browser `localhost:9000`.
+
+### Build production version
+Run following `npm` script
+```bash
+$ npm run build
+```
+
+## License
 MIT License
 
 Copyright (c) 2019 eos-vision

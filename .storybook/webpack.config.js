@@ -13,6 +13,9 @@ module.exports = ({ config }) => {
         },
         {
           loader: require.resolve('ts-loader'),
+          options: {
+            configFile: '../tsconfig.storybook.json',
+          },
         },
         {
           loader: require.resolve('react-docgen-typescript-loader'),
@@ -24,7 +27,23 @@ module.exports = ({ config }) => {
     },
     {
       test: /\.less$/,
-      loaders: [ 'style-loader', 'css-loader', 'less-loader' ],
+      use: [
+        {
+          loader: 'style-loader',
+        },
+        {
+          loader: 'css-loader',
+          options: {
+            sourceMap: true,
+          },
+        },
+        {
+          loader: 'less-loader',
+          options: {
+            sourceMap: true,
+          },
+        },
+      ],
     }
   );
 

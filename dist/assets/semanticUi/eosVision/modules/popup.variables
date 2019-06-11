@@ -1,0 +1,40 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+@background: @white-bg;
+@arrowBackground: @white-bg;
+
+@tooltipInvertedBackground: #191b1b;
+@invertedArrowCenterBackground: @tooltipInvertedBackground;
+@tooltipBorderRadius: 3px;
+
+@tooltipFontSize: 13px;
+
+@tooltipPadding: 6px 10px;
+
+@maxWidth: 375px;
+
+
+@arrowSize: 10px;
+
+@tooltipDistanceAway: 7px;
+
+
+@arrowColor: #e1e1e1;
+// @arrowWidth: 1em;
+@arrowDistanceFromEdge: 10px;
+// @tooltipArrowVerticalOffset: 0;
+// @tooltipArrowHorizontalOffset: 0;
+
+@invertedArrowBottomBackground: @tooltipInvertedBackground;
+@invertedArrowTopBackground: @tooltipInvertedBackground;
+
+@verticalPadding: 10.5/14em;
+@horizontalPadding: 15/14em;
+
+@tooltipZIndex: 2;
+@arrowZIndex: 1;
+
+@borderColor: #e1e1e1;
+@boxShadow: 0 4px 10px rgba(0, 0, 0, 0.2);
