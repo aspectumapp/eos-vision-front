@@ -1,0 +1,18 @@
+@upwardMenuBorderRadius: 8px;
+@itemFontSize: 16/14em;
+@selectionItemHeight: 44px;
+
+@itemVerticalPadding: 13.5/14em;
+
+@itemHorizontalPadding: 15/14em;
+
+@selectionItemVerticalPadding: 13.5/16em;
+
+@selectionItemHorizontalPadding: 15/16em;
+
+@selectionVerticalPadding: 11/14em;
+
+@searchSelectionVerticalPadding: 12/14em;
+
+
+@dropdownIconMargin: 0em 0em 0em round(10/14em, 3);

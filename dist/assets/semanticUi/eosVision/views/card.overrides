@@ -1,0 +1,16 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+.ui.cards>.card {
+  .header, .meta {
+    line-height: 1.2;
+    letter-spacing: 0.15px;
+  }
+  
+}
+
+.ui.cards>.card.selected {
+  background-color: @selectedBackgroudColor;
+  box-shadow: 0 0 0 2px @selectedBorderColor;
+}

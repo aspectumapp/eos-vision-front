@@ -1,0 +1,41 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+.ui.dimmer.modals {
+  z-index: 1050;
+}
+
+
+.ui.modal>.close .icon {
+  font-size: inherit;
+}
+
+.modals.dimmer .ui.scrolling.modal.fullscreen, .ui.scrolling.modal.fullscreen, .ui.modal.fullscreen {
+  margin: 0 !important;
+  position: fixed !important;
+}
+
+.ui.modal.fullscreen {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 0;
+  overflow: auto;
+  .close {
+    font-size: 20px;
+    background-color: @eosGrey10-bg;
+    padding: 12px;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    .icon {
+      display: block;
+    }
+    &:hover {
+      background-color: @eosGrey9-bg;
+      color: @eosGrey4-bg;
+    }
+  }
+}

@@ -1,0 +1,120 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+.ui.checkbox:not(.toggle) {
+  max-width: 100%;
+  label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+ 
+
+.check-list {
+  &.scrolling.menu {
+    max-width: 221px;
+    .ui.dropdown & {
+      max-height: 37px * 9;
+      .ui.checkbox {
+        &.item {
+          padding: .61429rem 1rem .61429rem .857rem !important;
+          //padding-right: .857rem;
+        }
+      }
+    }
+  }
+  
+  .ui.checkbox {
+    label, .box {
+      margin-top: .1rem;
+      padding-top: .1429rem;
+      padding-bottom: .2429rem;
+    }
+  }
+}
+
+.ui.checkbox input:focus~label:hover {
+  color: @labelHoverColor;
+}
+
+.ui.checkbox input:focus~.box:hover:before, 
+.ui.checkbox input:focus~label:hover:before {
+  border-color: @checkboxHoverBorderColor;
+}
+
+.ui.checkbox input:checked:focus~.box:hover:before, 
+.ui.checkbox input:checked:focus~label:hover:before {
+  border-color: @checkboxActiveBorderColor;
+}
+
+/* Checkmark */
+.ui.checkbox input:checked ~ label,
+.ui.checkbox input:checked ~ .box {
+  color: @darkTextColor;
+}
+
+.ui.checkbox input:checked ~ label:hover,
+.ui.checkbox input:checked ~ .box:hover {
+  color: @darkTextColor;
+}
+
+/* Checked */
+.ui.checkbox:not(.small) input ~ .box,
+.ui.checkbox:not(.small) input ~ label {
+  font-weight: @fontSemiBold;
+  letter-spacing: 0.26px;
+}
+
+.ui.checkbox:not(.toggle) input:checked ~ .box:after,
+.ui.checkbox:not(.toggle) input:checked ~ label:after {
+  content: @eos_ic_done;
+  line-height: 1.6;
+  font-family: '@{icomoon-font-family}' !important;
+}
+
+/* Indeterminate */
+.ui.checkbox input:indeterminate ~ .box:after,
+.ui.checkbox input:indeterminate ~ label:after {
+  
+}
+
+.ui.checkbox {
+  font-weight: @fontNormal;
+  &.fluid {
+    display: block;
+  }
+}
+
+.ui.checkbox.small {
+  line-height: 12px;
+  min-width: 12px;
+  min-height: 14px;
+}
+
+.ui.checkbox.small .box,
+.ui.checkbox.small label {
+  font-size: 12px;
+  padding-left: 19px;
+  color: #3E475D;
+  min-height: 12px;
+}
+
+.ui.checkbox.small .box:before,
+.ui.checkbox.small label:before {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+.ui.checkbox.small .box:after,
+.ui.checkbox.small label:after {
+  font-size: 9px;
+  width: auto;
+  height: auto;
+  line-height: 9px !important;
+  left: 1.5px !important;
+  top: 1.8px !important;
+}

@@ -1,0 +1,13 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+
+.ui.table {
+  .ui.input.fluid {
+    width: 100%;
+  }
+}
+.ui.table tr.no-border td {
+  border-top: 0;
+}

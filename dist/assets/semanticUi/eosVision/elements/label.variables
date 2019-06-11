@@ -1,0 +1,50 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+
+@basicBorder: @basicBorderWidth solid @eosGrey8-bg;
+@basicColor: @eosGrey5-text;
+@basicBackground: none @white-bg;
+@fontWeight: @fontNormal;
+
+/* Group */
+@groupVerticalMargin: 0.83em;
+@groupHorizontalMargin: 0.41em;
+
+@deleteMargin: .69em;
+
+@deleteTransition: color @labelTransitionDuration @labelTransitionEasing;
+
+
+@pointingVerticalDistance: .7em;
+
+
+/* Colors */
+@redTextColor: @white-text;
+@orangeTextColor: @white-text;
+@yellowTextColor: @white-text;
+@oliveTextColor: @white-text;
+@greenTextColor: @white-text;
+@tealTextColor: @white-text;
+@blueTextColor: @white-text;
+@violetTextColor: @white-text;
+@purpleTextColor: @white-text;
+@pinkTextColor: @white-text;
+@brownTextColor: @white-text;
+@greyTextColor: @white-text;
+@blackTextColor: @white-text;
+
+@redHoverTextColor: @white-text;
+@orangeHoverTextColor: @white-text;
+@yellowHoverTextColor: @white-text;
+@oliveHoverTextColor: @white-text;
+@greenHoverTextColor: @white-text;
+@tealHoverTextColor: @white-text;
+@blueHoverTextColor: @white-text;
+@violetHoverTextColor: @white-text;
+@purpleHoverTextColor: @white-text;
+@pinkHoverTextColor: @white-text;
+@brownHoverTextColor: @white-text;
+@greyHoverTextColor: @white-text;
+@blackHoverTextColor: @white-text;

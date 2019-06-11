@@ -1,0 +1,81 @@
+/*******************************
+        User Overrides
+*******************************/
+
+
+.ui.accordion {
+  .accordion-item {
+    position: relative;
+    + .accordion-item {
+      margin-top: 10px;
+    }
+    .checkbox-wrap, .tools {
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      ~ .title {
+        padding-right: 50px;
+      }
+    }
+    .tools {
+      padding: 1px 10px;
+      .ui.button {
+        margin: 0;
+        .eos_ic_chain {
+          color: #92bde8;
+          top: -1px;
+        }
+      }
+    }
+    .checkbox-wrap {
+      padding: 7px 0 2px 10px;
+    }
+
+    > .content, div > div > .content {
+      padding: 20px 0 10px;
+    }
+    &:not(.active) {
+      &:after {
+        content: '';
+        position: absolute;
+        top: 30px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: fade(@white-bg, 70%);
+        z-index: 4;
+      }
+      > .content {
+        pointer-events: none;
+      }
+    }
+    .ui.checkbox.toggle.fitted {
+      left: -8px;
+    }
+  }
+
+  > .ui.form {
+    margin: 20px 0;
+  }
+}
+
+.ui.accordion.styled .title {
+  background-color: @eosGrey11-bg;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 4px;
+  &.active:hover {
+    background-color: @styledTitleHoverBackground;
+  }
+  .dropdown.icon {
+    color: @eosGrey4-text;
+    transform: translate(-1px, 1px);
+  }
+  &.active {
+    .dropdown.icon {
+      transform: rotate(90deg) translate(2px, 3px);
+    }
+  }
+}

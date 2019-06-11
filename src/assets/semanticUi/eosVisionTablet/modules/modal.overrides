@@ -1,0 +1,10 @@
+.ui.modal {
+  > .header {
+    display: flex;
+    height: 54px;
+    align-items: center;
+  }
+  >.close {
+    text-align: center;
+  }
+}

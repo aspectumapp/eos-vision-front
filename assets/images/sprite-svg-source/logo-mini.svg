@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 16 23.000001"
+   version="1.1"
+   id="svg58"
+   sodipodi:docname="logo-mini.svg"
+   width="16"
+   height="23"
+   inkscape:version="0.92.1 r15371">
+  <metadata
+     id="metadata62">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>logo</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffe3ff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1845"
+     inkscape:window-height="1057"
+     id="namedview60"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="10.777849"
+     inkscape:cx="33.80637"
+     inkscape:cy="8.6814036"
+     inkscape:window-x="1916"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg58" />
+  <defs
+     id="defs7">
+    <style
+       id="style2">.cls-vision-logo-1{fill:#fff;}.cls-vision-logo-2{mask:url(#mask);}.cls-vision-logo-3{fill:#476b9c;}.cls-vision-logo-4{fill:#6089cc;}.cls-vision-logo-5{fill:none;}</style>
+    <mask
+       id="mask"
+       x="107.06"
+       y="0"
+       width="33.96"
+       height="14.65"
+       maskUnits="userSpaceOnUse">
+      <g
+         id="mask-2">
+        <polygon
+           id="path-1"
+           class="cls-vision-logo-1"
+           points="141.03,14.65 107.06,14.65 107.06,0 141.03,0 "
+           style="fill:#ffffff" />
+      </g>
+    </mask>
+  </defs>
+  <title
+     id="title9">logo</title>
+  <g
+     id="Слой_2"
+     data-name="Слой 2"
+     transform="matrix(0.88287344,0,0,0.88562767,0.00233328,-12.425107)">
+    <g
+       id="Слой_1-2"
+       data-name="Слой 1">
+      <g
+         id="Group-3">
+        <g
+           class="cls-vision-logo-2"
+           mask="url(#mask)"
+           id="g12" />
+      </g>
+      <g
+         id="EOS_Vision"
+         data-name="EOS Vision">
+        <path
+           class="cls-vision-logo-5"
+           d="m 15.37,25.58 v 0 a 0.64,0.64 0 0 1 -0.1,0.13 0.78,0.78 0 0 0 0.1,-0.13 z"
+           id="path37"
+           inkscape:connector-curvature="0"
+           style="fill:none" />
+        <path
+           class="cls-vision-logo-5"
+           d="M 9.05,17.67 A 5.34,5.34 0 0 0 3.71,23 a 5.4,5.4 0 0 0 5.34,5.4 5.2,5.2 0 0 0 2,-0.4 5.45,5.45 0 0 0 3.32,-5 5.34,5.34 0 0 0 -5.32,-5.33 z m 0,8.61 a 3.36,3.36 0 1 1 3.35,-3.37 3.36,3.36 0 0 1 -3.35,3.37 z"
+           id="path39"
+           inkscape:connector-curvature="0"
+           style="fill:none" />
+        <path
+           class="cls-vision-logo-4"
+           d="m 3.71,23 a 5.4,5.4 0 0 0 5.34,5.4 v 3.71 a 9.07,9.07 0 0 1 -9,-7.91 v 0 A 8.26,8.26 0 0 1 0,23.06 a 9.05,9.05 0 0 1 9.05,-9 v 3.66 A 5.34,5.34 0 0 0 3.71,23 Z"
+           id="path41"
+           inkscape:connector-curvature="0"
+           style="fill:#6089cc" />
+        <path
+           class="cls-vision-logo-3"
+           d="m 18,21.9 v 0 A 9,9 0 0 0 9,14.03 v 3.66 a 5.34,5.34 0 0 1 5.39,5.31 5.45,5.45 0 0 1 -3.32,5 5.2,5.2 0 0 1 -2,0.4 v 3.71 A 9.06,9.06 0 0 0 18.12,23.05 7.36,7.36 0 0 0 18,21.9 Z m -2.64,3.7 a 0.64,0.64 0 0 1 -0.1,0.13 0.78,0.78 0 0 0 0.1,-0.15 z"
+           id="path43"
+           inkscape:connector-curvature="0"
+           style="fill:#476b9c" />
+        <path
+           class="cls-vision-logo-3"
+           d="M 9.05,39.94 V 40 a 77.64,77.64 0 0 0 6.76,-8.26 10.94,10.94 0 0 1 -6.76,2.33 z"
+           id="path45"
+           inkscape:connector-curvature="0"
+           style="fill:#476b9c" />
+        <path
+           class="cls-vision-logo-4"
+           d="m 2.17,31.66 c 2.89,3.79 6.88,8.28 6.88,8.28 V 34.08 A 11,11 0 0 1 2.17,31.66 Z"
+           id="path47"
+           inkscape:connector-curvature="0"
+           style="fill:#6089cc" />
+        <path
+           class="cls-vision-logo-4"
+           d="m 5.69,22.92 a 3.36,3.36 0 1 0 3.36,-3.36 3.36,3.36 0 0 0 -3.36,3.36 z m 3.36,-2 a 1.71,1.71 0 0 1 0.8,0.22 1,1 0 0 1 0.6,-0.22 1,1 0 0 1 1,1 1,1 0 0 1 -0.46,0.82 0.94,0.94 0 0 1 0,0.16 2,2 0 1 1 -2,-2 z"
+           id="path49"
+           inkscape:connector-curvature="0"
+           style="fill:#6089cc" />
+        <path
+           class="cls-vision-logo-1"
+           d="m 9.62,22 a 0.9,0.9 0 0 0 0.9,0.91 0.85,0.85 0 0 0 0.49,-0.17 v 0 a 1,1 0 0 0 0.46,-0.82 1,1 0 0 0 -1,-1 1,1 0 0 0 -0.6,0.22 l 0.22,0.1 A 0.89,0.89 0 0 0 9.62,22 Z"
+           id="path51"
+           inkscape:connector-curvature="0"
+           style="fill:#ffffff" />
+        <path
+           class="cls-vision-logo-1"
+           d="m 9.43,21.94 a 1,1 0 0 0 1,1 0.93,0.93 0 0 0 0.56,-0.2 v 0 A 0.85,0.85 0 0 1 10.5,22.91 0.9,0.9 0 0 1 9.6,22 0.89,0.89 0 0 1 10.05,21.23 l -0.22,-0.1 a 1,1 0 0 0 -0.4,0.81 z"
+           id="path53"
+           inkscape:connector-curvature="0"
+           style="fill:#ffffff" />
+      </g>
+    </g>
+  </g>
+</svg>

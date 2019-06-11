@@ -1,0 +1,291 @@
+/*******************************
+        User Overrides
+*******************************/
+
+/* Dropdown Carets */
+@font-face {
+  font-family: 'Dropdown';
+  src:
+    url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAALAIAAAwAwT1MvMggjB5AAAAC8AAAAYGNtYXAPfuIIAAABHAAAAExnYXNwAAAAEAAAAWgAAAAIZ2x5Zjo82LgAAAFwAAABVGhlYWQAQ88bAAACxAAAADZoaGVhAwcB6QAAAvwAAAAkaG10eAS4ABIAAAMgAAAAIGxvY2EBNgDeAAADQAAAABJtYXhwAAoAFgAAA1QAAAAgbmFtZVcZpu4AAAN0AAABRXBvc3QAAwAAAAAEvAAAACAAAwIAAZAABQAAAUwBZgAAAEcBTAFmAAAA9QAZAIQAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAABAAADw2gHg/+D/4AHgACAAAAABAAAAAAAAAAAAAAAgAAAAAAACAAAAAwAAABQAAwABAAAAFAAEADgAAAAKAAgAAgACAAEAIPDa//3//wAAAAAAIPDX//3//wAB/+MPLQADAAEAAAAAAAAAAAAAAAEAAf//AA8AAQAAAAAAAAAAAAIAADc5AQAAAAABAAAAAAAAAAAAAgAANzkBAAAAAAEAAAAAAAAAAAACAAA3OQEAAAAAAQAAAIABJQElABMAABM0NzY3BTYXFhUUDwEGJwYvASY1AAUGBwEACAUGBoAFCAcGgAUBEgcGBQEBAQcECQYHfwYBAQZ/BwYAAQAAAG4BJQESABMAADc0PwE2MzIfARYVFAcGIyEiJyY1AAWABgcIBYAGBgUI/wAHBgWABwaABQWABgcHBgUFBgcAAAABABIASQC3AW4AEwAANzQ/ATYXNhcWHQEUBwYnBi8BJjUSBoAFCAcFBgYFBwgFgAbbBwZ/BwEBBwQJ/wgEBwEBB38GBgAAAAABAAAASQClAW4AEwAANxE0NzYzMh8BFhUUDwEGIyInJjUABQYHCAWABgaABQgHBgVbAQAIBQYGgAUIBwWABgYFBwAAAAEAAAABAADZuaKOXw889QALAgAAAAAA0ABHWAAAAADQAEdYAAAAAAElAW4AAAAIAAIAAAAAAAAAAQAAAeD/4AAAAgAAAAAAASUAAQAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAABAAAAASUAAAElAAAAtwASALcAAAAAAAAACgAUAB4AQgBkAIgAqgAAAAEAAAAIABQAAQAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAOAK4AAQAAAAAAAQAOAAAAAQAAAAAAAgAOAEcAAQAAAAAAAwAOACQAAQAAAAAABAAOAFUAAQAAAAAABQAWAA4AAQAAAAAABgAHADIAAQAAAAAACgA0AGMAAwABBAkAAQAOAAAAAwABBAkAAgAOAEcAAwABBAkAAwAOACQAAwABBAkABAAOAFUAAwABBAkABQAWAA4AAwABBAkABgAOADkAAwABBAkACgA0AGMAaQBjAG8AbQBvAG8AbgBWAGUAcgBzAGkAbwBuACAAMQAuADAAaQBjAG8AbQBvAG8Abmljb21vb24AaQBjAG8AbQBvAG8AbgBSAGUAZwB1AGwAYQByAGkAYwBvAG0AbwBvAG4ARgBvAG4AdAAgAGcAZQBuAGUAcgBhAHQAZQBkACAAYgB5ACAASQBjAG8ATQBvAG8AbgAuAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=) format('truetype'),
+    url(data:application/font-woff;charset=utf-8;base64,d09GRk9UVE8AAAVwAAoAAAAABSgAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABDRkYgAAAA9AAAAdkAAAHZLDXE/09TLzIAAALQAAAAYAAAAGAIIweQY21hcAAAAzAAAABMAAAATA9+4ghnYXNwAAADfAAAAAgAAAAIAAAAEGhlYWQAAAOEAAAANgAAADYAQ88baGhlYQAAA7wAAAAkAAAAJAMHAelobXR4AAAD4AAAACAAAAAgBLgAEm1heHAAAAQAAAAABgAAAAYACFAAbmFtZQAABAgAAAFFAAABRVcZpu5wb3N0AAAFUAAAACAAAAAgAAMAAAEABAQAAQEBCGljb21vb24AAQIAAQA6+BwC+BsD+BgEHgoAGVP/i4seCgAZU/+LiwwHi2v4lPh0BR0AAACIDx0AAACNER0AAAAJHQAAAdASAAkBAQgPERMWGyAlKmljb21vb25pY29tb29udTB1MXUyMHVGMEQ3dUYwRDh1RjBEOXVGMERBAAACAYkABgAIAgABAAQABwAKAA0AVgCfAOgBL/yUDvyUDvyUDvuUDvtvi/emFYuQjZCOjo+Pj42Qiwj3lIsFkIuQiY6Hj4iNhouGi4aJh4eHCPsU+xQFiIiGiYaLhouHjYeOCPsU9xQFiI+Jj4uQCA77b4v3FBWLkI2Pjo8I9xT3FAWPjo+NkIuQi5CJjogI9xT7FAWPh42Hi4aLhomHh4eIiIaJhosI+5SLBYaLh42HjoiPiY+LkAgO+92d928Vi5CNkI+OCPcU9xQFjo+QjZCLkIuPiY6Hj4iNhouGCIv7lAWLhomHh4iIh4eJhouGi4aNiI8I+xT3FAWHjomPi5AIDvvdi+YVi/eUBYuQjZCOjo+Pj42Qi5CLkImOhwj3FPsUBY+IjYaLhouGiYeHiAj7FPsUBYiHhomGi4aLh42Hj4iOiY+LkAgO+JQU+JQViwwKAAAAAAMCAAGQAAUAAAFMAWYAAABHAUwBZgAAAPUAGQCEAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAA8NoB4P/g/+AB4AAgAAAAAQAAAAAAAAAAAAAAIAAAAAAAAgAAAAMAAAAUAAMAAQAAABQABAA4AAAACgAIAAIAAgABACDw2v/9//8AAAAAACDw1//9//8AAf/jDy0AAwABAAAAAAAAAAAAAAABAAH//wAPAAEAAAABAAA5emozXw889QALAgAAAAAA0ABHWAAAAADQAEdYAAAAAAElAW4AAAAIAAIAAAAAAAAAAQAAAeD/4AAAAgAAAAAAASUAAQAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAABAAAAASUAAAElAAAAtwASALcAAAAAUAAACAAAAAAADgCuAAEAAAAAAAEADgAAAAEAAAAAAAIADgBHAAEAAAAAAAMADgAkAAEAAAAAAAQADgBVAAEAAAAAAAUAFgAOAAEAAAAAAAYABwAyAAEAAAAAAAoANABjAAMAAQQJAAEADgAAAAMAAQQJAAIADgBHAAMAAQQJAAMADgAkAAMAAQQJAAQADgBVAAMAAQQJAAUAFgAOAAMAAQQJAAYADgA5AAMAAQQJAAoANABjAGkAYwBvAG0AbwBvAG4AVgBlAHIAcwBpAG8AbgAgADEALgAwAGkAYwBvAG0AbwBvAG5pY29tb29uAGkAYwBvAG0AbwBvAG4AUgBlAGcAdQBsAGEAcgBpAGMAbwBtAG8AbwBuAEYAbwBuAHQAIABnAGUAbgBlAHIAYQB0AGUAZAAgAGIAeQAgAEkAYwBvAE0AbwBvAG4ALgAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA) format('woff')
+  ;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ui.dropdown .dropdown.icon {
+  font-family: 'Dropdown';
+  line-height: 1;
+  height: 1em;
+  width: 1.23em;
+  backface-visibility: hidden;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  font-size: 12px;
+}
+
+.ui.dropdown .dropdown.icon {
+  width: auto;
+}
+.ui.dropdown .dropdown.icon:before {
+  content: '\f0d7';
+}
+
+/* Sub Menu */
+.ui.dropdown .menu .item .dropdown.icon:before {
+  content: '\f0da'/*rtl:'\f0d9'*/;
+}
+
+.ui.dropdown .item .left.dropdown.icon:before,
+.ui.dropdown .left.menu .item .dropdown.icon:before {
+  content: "\f0d9"/*rtl:"\f0da"*/;
+}
+
+/* Vertical Menu Dropdown */
+.ui.vertical.menu .dropdown.item .dropdown.icon:before {
+  content: "\f0da"/*rtl:"\f0d9"*/;
+}
+
+.ui.dropdown > .dropdown.icon {
+  color: @eosGrey6-text;
+}
+
+.ui.selection.dropdown {
+  & when (@visionMobile = false) {
+    font-size: @fontSize;
+  }
+  line-height: 1.14285714rem;
+  > .text {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  > .dropdown.icon {
+    color: @eosGrey5-text;
+  }
+  .menu {
+    .selected.item:hover {
+      background: @hoveredItemBackground;
+    }
+    .item {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    .ui.input {
+      width: auto;
+    }
+  }
+  &:not(.upward) .menu {
+    margin-top: 4px;
+    border-top-width: 1px !important;
+  }
+  &.upward .menu {
+    margin-bottom: 4px;
+    border-bottom-width: 1px !important;
+  }
+  .ui.input {
+    width: auto;
+  }
+  &.mini, .ui.form.mini & {
+    min-height: 32px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    &:not(.mini)>input.search {
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+    >.dropdown.icon {
+      padding: 8px 9px 6px;
+    }
+    &.loading {
+      >.dropdown.icon {
+        padding: 15px !important;
+      }
+    }
+    .ui.input {
+      margin: 10px;
+    }
+  }
+}
+
+.ui.disabled.dropdown {
+  background: @inputDisabledBackground;
+  color: @inputDisabledcolor;
+  border-color: @inputDisabledBorder;
+}
+
+.ui.selection.active.dropdown .menu {
+  border-color: @menuBorderColor !important;
+}
+
+.ui.dropdown {
+  > .icon + .icon {
+    display: none;
+  }
+}
+
+.ui.menu .dropdown.item .menu {
+  margin-top: -14px;
+  max-width: 221px;
+  min-width: 143px;
+}
+
+.ui.dropdown .menu>.item .dropdown.icon {
+  float: none;
+  position: absolute;
+  right: 11px;
+  left: auto;
+}
+
+.ui.dropdown:not(.loading) .icon.add {
+  font-size: 17.5px;
+  color: @eosGrey6-text;
+  & when (@visionTablet = true) {
+    padding: 11px 6px;
+  }
+  & when (@visionTablet = false) {
+    padding: 10px 5px;
+  }
+  &:before {
+    content: @eos_ic_add;
+  }
+}
+
+// Dropdown Context menu
+
+.ui.dropdown.context-menu .menu {
+  border-color: @borderColor;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+   & when (@visionTablet = true) {
+    header.ui.menu & {
+      margin-top: 3px;
+    }
+  }
+}
+
+.context-menu {
+  &.ui.simple {
+    z-index: 103;
+  }
+  .ui.divider {
+    margin: 3px 0 !important;
+  }
+  .menu {
+    .item {
+      position: relative;
+      width: 163px;
+      .item {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 163px;
+      }
+      .ui.dropdown&{
+        & when (@visionTablet = true) {
+          padding: 14px 29px 14px 15px !important;
+        }
+        & when (@visionTablet = false) {
+          padding: 10px 29px 11px 15px !important;
+        }
+      }
+      .icon {
+        color: @eosGrey5-text;
+        &.eos_ic_dropdown {
+          position: absolute;
+          left: auto;
+          right: 6px;
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 22px;
+          margin: 0;
+          width: auto;
+          &:before {
+            content: @eos_ic_arrow_right;
+          }
+        }
+        &:not(.eos_ic_dropdown) {
+          margin-left: -15px !important;
+          opacity: 1 !important;
+          vertical-align: top;
+          height: 0;
+          top: -2px;
+        }
+      }
+    }
+  }
+  .item {
+    .icon[class^="eos_"], .icon[class*=" eos_"] {
+      margin-right: 0 !important;
+      text-align: center;
+      width: 45px;
+      top: 3px;
+      & when (@visionTablet = true) {
+        font-size: 20px !important;
+      }
+      & when (@visionTablet = false) {
+        font-size: 18px !important;
+      }
+    }
+  }
+
+
+  &.button {
+    background-color: transparent !important;
+    .menu .item {
+      width: auto;
+      
+      & when (@visionTablet = true) {
+        min-width: 190px;
+      }
+      & when (@visionTablet = false) {
+        min-width: 140px;
+      }
+    }
+    &.visible {
+      &:before, &:after {
+        display: none;
+      }
+    }
+  }
+
+  &.ui.simple.dropdown .menu .item .menu.scrolling, .item .menu {
+    max-height: 37*6px;
+    overflow: hidden !important;
+    overflow-y: auto !important;
+    min-width: auto !important;
+    box-shadow: 0 2px 3px 0 #e0e1e2 !important;
+    z-index: 104;
+    &.upward {
+      top: auto !important;
+    }
+  }
+
+
+}
+
+
+.ui.multiple.dropdown>.label {
+  background-color: @eosGrey11-bg !important;
+  font-weight: @fontSemiBold;
+  color: @eosGrey5-text;
+  font-size: @fontSize;
+  cursor: default;
+  text-decoration: none;
+  .delete.icon, .close.icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+    height: 20px;
+    width: 20px;
+    color: @eosGrey6-text;
+    opacity: 1;
+    top: 0;
+    margin: -5px 0;
+    &:hover {
+      color: @eosGrey4-text;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+@backgroundColor: rgba(27, 33, 43, 0.85);
+@invertedBackgroundColor: fade(@white-bg, 95%);

@@ -1,0 +1,62 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+@checkboxSize: 16px;
+
+@labelFontSize: @fontSize;
+
+@labelColor: @eosGrey5-text;
+@labelHoverColor: @eosGrey4-text;
+@labelDistance: @checkboxSize + 6;
+
+@checkboxActiveCheckColor: #fff;
+@checkboxBorder: 1px solid @eosGrey8;
+@checkboxFocusBorderColor: @eosGrey8;
+
+@checkboxActiveBackground: @blue;
+@checkboxActiveBorderColor: @blue;
+
+@checkboxHoverBorderColor: @eosGrey6;
+
+@checkboxActiveFocusCheckColor: @checkboxActiveCheckColor;
+
+@checkboxActiveFocusBackground: @checkboxActiveBackground;
+
+@checkboxActiveFocusBorderColor: darken(@checkboxActiveBorderColor, 10%);
+
+@labelFocusColor: @labelColor;
+
+@checkboxCheckFontSize: 11px;
+
+@radioActiveBackground: transparent;
+@radioActiveFocusBackground: @radioActiveBackground;
+@radioActiveBulletColor: @blue;
+@radioActiveFocusBulletColor: @radioActiveBulletColor;
+@radioLabelDistance: 15px + 6;
+
+@bulletScale: (9 / 15);
+
+
+/* Toggle */
+@toggleLaneBackground: @eosGrey9-bg;
+
+@toggleOnFocusLaneColor: @blue;
+
+@toggleLaneWidth: 2.572rem;
+@toggleHandleSize: 1.143rem;
+@toggleLabelDistance: 46/14rem;
+
+@handleBackground: #fff;
+
+@toggleLabelOffset: 0;
+
+@toggleOffOffset: 0;
+@toggleOnOffset: 20px;
+
+@toggleHoverColor: @toggleLaneBackground;
+@toggleFocusColor: @toggleLaneBackground;
+
+@handleBoxShadow: inset 0 0 0 1px @eosGrey8, 0 2px 3px rgba(0, 0, 0, 0.09);
+@toggleOnHandleBoxShadow: inset 0 0 0 1px @eosBlue2, 0 2px 3px rgba(0, 0, 0, 0.09);
+@toggleOffHandleBoxShadow: @handleBoxShadow;
