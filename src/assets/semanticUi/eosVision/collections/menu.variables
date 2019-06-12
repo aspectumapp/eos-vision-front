@@ -103,3 +103,5 @@
 
 @dropdownItemIconFontSize: 18px;
 @dropdownItemIconColor: @eosGrey5-text;
+
+@iconOpacity: 1;

@@ -107,7 +107,7 @@
         top: 7px;
       }
       & when (@visionMobile = true) {
-        top: 9px;
+        top: 8px;
       }
     }
     &:not(.mini)>input.search {
