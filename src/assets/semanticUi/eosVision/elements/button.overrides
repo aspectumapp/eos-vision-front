@@ -255,7 +255,12 @@
 }
 .button-checkbox {
   .ui.button {
-    padding: 8px 0;
+    & when (@visionMobile = false) {
+       padding: 8px 0;
+    }
+    & when (@visionMobile = true) {
+       padding: 10px 0;
+    }
   }
   input:not(:checked) {
     + .button {
