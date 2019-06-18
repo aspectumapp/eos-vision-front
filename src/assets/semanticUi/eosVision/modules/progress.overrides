@@ -3,6 +3,8 @@
 *******************************/
 
 
-.ui.progress.success .bar {
-  background-image: none;
+.ui.progress.success, .ui.progress.error { 
+  .bar {
+    background-image: none;
+  }
 }
