@@ -8,7 +8,7 @@
 
 @styledTitleHoverBackground: @eosGrey10-bg;
 
-@styledTitlePadding: 6/13em 1em;
+@styledTitlePadding: round(6/13em, 3) 1em;
 
 @styledBoxShadow: none;
 

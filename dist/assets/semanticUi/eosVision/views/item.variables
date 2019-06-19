@@ -12,7 +12,7 @@
 @metaFontSize: inherit;
 @metaLineHeight: 1.2;
 @metaColor: @eosGrey6-text;
-@metaMargin: -1px 0 0;
+@metaMargin: 3px 0 0;
 
 @extraColor: @eosGrey6-text;
 @extraHorizontalSpacing: 8/14rem;
