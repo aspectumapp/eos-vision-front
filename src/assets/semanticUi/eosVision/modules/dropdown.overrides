@@ -63,11 +63,14 @@
     text-overflow: ellipsis;
     position: absolute;
     left: @selectionHorizontalPadding;
-    right: @selectionIconDistance;
+    right: @selectionHorizontalPadding;
     top: @selectionVerticalPadding;
   }
   > .dropdown.icon {
     color: @eosGrey5-text;
+    ~ .text {
+      right: @selectionIconDistance;
+    }
   }
   .menu {
     .selected.item:hover {
@@ -158,7 +161,7 @@
 }
 
 .ui.dropdown:not(.loading) .icon.add {
-  font-size: 17.5px;
+  font-size: 18px;
   color: @eosGrey6-text;
   & when (@visionTablet = true) {
     padding: 11px 6px;
