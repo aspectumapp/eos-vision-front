@@ -269,11 +269,13 @@
       color: @eosGrey6-text;
     }
   }
-  &:hover {
-    input:not(:checked) {
-      + .button {
-        background-color: @eosGrey9-bg;
-        color: @eosGrey5-text;
+  & when (@visionWeb = true) {
+    &:hover {
+      input:not(:checked) {
+        + .button {
+          background-color: @eosGrey9-bg;
+          color: @eosGrey5-text;
+        }
       }
     }
   }
