@@ -291,9 +291,15 @@
   &.transparent {
     background-color: transparent;
     padding: 0;
-    color: @eosGrey5-text;
     font-size: @eos-buttonTransparentFontSize;
 
+    & when (@VisionDark = false) {
+      color: @eosGrey5-text;
+    }
+    & when (@VisionDark = true) {
+      color: @eosGrey6-text;
+    }
+    
     &:active, &.active {
       color: @eosGrey3-text;
     }

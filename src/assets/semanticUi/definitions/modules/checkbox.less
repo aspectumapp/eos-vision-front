@@ -80,11 +80,17 @@
   height: @checkboxSize;
   content: '';
 
-  background: @checkboxBackground;
   border-radius: @checkboxBorderRadius;
 
   transition: @checkboxTransition;
   border: @checkboxBorder;
+  & when (@VisionDark = false) {
+    background: @checkboxBackground;
+  }
+  & when (@VisionDark = true) {
+    background: none;
+    border-color: @eosGrey6;
+  }
 }
 
 /*--------------
@@ -113,8 +119,13 @@
 /* Inside */
 .ui.checkbox label,
 .ui.checkbox + label {
-  color: @labelColor;
   transition: @labelTransition;
+  & when (@VisionDark = false) {
+    color: @labelColor;
+  }
+  & when (@VisionDark = true) {
+    color: @eosGrey7-text;
+  }
 }
 
 /* Outside */
@@ -134,8 +145,14 @@
 
 .ui.checkbox .box:hover::before,
 .ui.checkbox label:hover::before {
-  background: @checkboxHoverBackground;
-  border-color: @checkboxHoverBorderColor;
+  & when (@VisionDark = false) {
+    background: @checkboxHoverBackground;
+    border-color: @checkboxHoverBorderColor;
+  }
+  & when (@VisionDark = true) {
+    background: none;
+    border-color: @eosGrey9;
+  }
 }
 .ui.checkbox label:hover,
 .ui.checkbox + label:hover {
@@ -148,8 +165,14 @@
 
 .ui.checkbox .box:active::before,
 .ui.checkbox label:active::before {
-  background: @checkboxPressedBackground;
-  border-color: @checkboxPressedBorderColor;
+  & when (@VisionDark = false) {
+    background: @checkboxHoverBackground;
+    border-color: @checkboxHoverBorderColor;
+  }
+  & when (@VisionDark = true) {
+    background: none;
+    border-color: @eosGrey9;
+  }
 }
 .ui.checkbox .box:active::after,
 .ui.checkbox label:active::after {
@@ -165,15 +188,26 @@
 
 .ui.checkbox input:focus ~ .box:before,
 .ui.checkbox input:focus ~ label:before {
-  background: @checkboxFocusBackground;
-  border-color: @checkboxFocusBorderColor;
+  & when (@VisionDark = false) {
+    background: @checkboxFocusBackground;
+    border-color: @checkboxFocusBorderColor;
+  }
+  & when (@VisionDark = true) {
+    background: none;
+    border-color: @eosGrey6;
+  }
 }
 .ui.checkbox input:focus ~ .box:after,
 .ui.checkbox input:focus ~ label:after {
   color: @checkboxFocusCheckColor;
 }
 .ui.checkbox input:focus ~ label {
-  color: @labelFocusColor;
+  & when (@VisionDark = false) {
+    color: @labelFocusColor;
+  }
+  & when (@VisionDark = true) {
+    color: @eosGrey7-text;
+  }
 }
 
 /*--------------
@@ -529,7 +563,12 @@
 .ui.toggle.checkbox input ~ .box:after,
 .ui.toggle.checkbox input ~ label:after {
   left: @toggleOffOffset;
-  box-shadow: @toggleOffHandleBoxShadow;
+  & when (@VisionDark = false) {
+    box-shadow: @toggleOffHandleBoxShadow;
+  }
+  & when (@VisionDark = true) {
+    box-shadow: none;
+  }
 }
 
 /* Focus */
@@ -558,7 +597,12 @@
 .ui.toggle.checkbox input:checked ~ .box:after,
 .ui.toggle.checkbox input:checked ~ label:after {
   left: @toggleOnOffset;
-  box-shadow: @toggleOnHandleBoxShadow;
+  & when (@VisionDark = false) {
+    box-shadow: @toggleOnHandleBoxShadow;
+  }
+  & when (@VisionDark = true) {
+    box-shadow: none;
+  }
 }
 
 

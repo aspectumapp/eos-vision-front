@@ -50,7 +50,6 @@
       border-bottom-color: transparent;
       border-bottom-width: 2px;
       margin-bottom: -2px;
-      color: @eosGrey5-text;
       font-size: @fontSize;
       padding: @secondaryPointingTabsMenuItemVerticalPadding @secondaryPointingTabsMenuItemHorizontalPadding;
       &:hover {
@@ -65,6 +64,12 @@
         .icon {
           color: @eosGrey4-text;
         }
+      }
+      & when (@VisionDark = false) {
+        color: @eosGrey5-text;
+      }
+      & when (@VisionDark = true) {
+        color: @eosGrey7-text;
       }
     }
     .icon {
