@@ -17,6 +17,7 @@
   input[type="url"] {
     &:hover:not(:focus) {
       border-color: @inputHoverBorderColor;
+      background: @inputHoverBackgroundColor;
     }
   }
   &.hide {
