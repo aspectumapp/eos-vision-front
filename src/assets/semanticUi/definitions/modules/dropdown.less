@@ -50,6 +50,7 @@
   min-width: max-content;
   transition: @menuTransition;
   margin: @menuMargin;
+  background: @menuBackground;
   font-size: @relativeMedium;
   text-shadow: none;
   text-align: @menuTextAlign;
@@ -59,12 +60,6 @@
   transition: @menuTransition;
   z-index: @menuZIndex;
   will-change: transform, opacity;
-  & when (@VisionDark = false) {
-    background: @menuBackground;
-  }
-  & when (@VisionDark = true) {
-    background: @eosGrey3;
-  }
 }
 
 .ui.dropdown:not(.selection):not(.multiple) .menu {
@@ -184,9 +179,6 @@
   border-top: @menuDividerBorder;
   height: 0em;
   margin: @menuDividerMargin;
-  & when (@VisionDark = true) {
-    border-color: @eosGrey4;
-  }
 }
 
 .ui.dropdown.dropdown .menu > .input {
@@ -372,6 +364,7 @@
   min-width: @selectionMinWidth;
   min-height: @selectionMinHeight;
 
+  background: @selectionBackground;
   display: @selectionDisplay;
   padding: @selectionPadding;
   color: @selectionTextColor;
@@ -379,13 +372,6 @@
   border: @selectionBorder;
   border-radius: @selectionBorderRadius;
   transition: @selectionTransition;
-  & when (@VisionDark = false) {
-    background: @selectionBackground;
-  }
-  & when (@VisionDark = true) {
-    background: @eosGrey2;
-    border-color: @eosGrey2;
-  }
 }
 .ui.selection.dropdown.visible,
 .ui.selection.dropdown.active {
@@ -486,14 +472,8 @@ select.ui.dropdown {
 
 /* Hover */
 .ui.selection.dropdown:hover {
+  border-color: @selectionHoverBorderColor;
   box-shadow: @selectionHoverBoxShadow;
-  & when (@VisionDark = false) {
-    border-color: @selectionHoverBorderColor;
-  }
-  & when (@VisionDark = true) {
-    border-color: @eosGrey3;
-    background-color: @eosGrey3;
-  }
 }
 
 /* Active */
@@ -780,14 +760,9 @@ select.ui.dropdown {
 
 /* Menu Item Hover */
 .ui.dropdown .menu > .item:hover {
+  background: @hoveredItemBackground;
   color: @hoveredItemColor;
   z-index: @hoveredZIndex;
-  & when (@VisionDark = false) {
-    background: @hoveredItemBackground;
-  }
-  & when (@VisionDark = true) {
-    background: @eosGrey4 !important;
-  }
 }
 
 /*--------------------

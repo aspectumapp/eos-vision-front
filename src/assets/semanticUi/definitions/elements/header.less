@@ -32,12 +32,7 @@
   font-weight: @fontWeight;
   line-height: @lineHeight;
   text-transform: @textTransform;
-  & when (@VisionDark = false) {
-    color: @textColor;
-  }
-  & when (@VisionDark = true) {
-    color: @eosGrey4-text;
-  }
+  color: @textColor;
 }
 
 .ui.header:first-child {

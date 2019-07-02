@@ -25,7 +25,6 @@
 @itemColor: @textColor;
 @menuBorderColor: @borderColor;
 
-@selectionBackground: @white-bg;
 
 @selectionIconPadding: 11px;
 
@@ -60,6 +59,7 @@
 
 
 /* Hover */
+@selectionHoverBackgroundColor: @inputHoverBackgroundColor;
 @selectionHoverBorderColor: @inputHoverBorderColor;
 @selectionVisibleBorderColor: @focusedFormBorderColor;
 @selectionActiveHoverBorderColor: @selectionVisibleBorderColor;

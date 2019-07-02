@@ -65,15 +65,10 @@
 .ui.form .field > label {
   display: block;
   margin: @labelMargin;
+  color: @labelColor;
   font-size: @labelFontSize;
   font-weight: @labelFontWeight;
   text-transform: @labelTextTransform;
-  & when (@VisionDark = false) {
-    color: @labelColor;
-  }
-  & when (@VisionDark = true) {
-    color: @eosGrey7-text;
-  }
 }
 
 /*--------------------
@@ -126,18 +121,12 @@
   padding: @inputPadding;
   font-size: @inputFontSize;
 
+  background: @inputBackground;
   border: @inputBorder;
   color: @inputColor;
   border-radius: @inputBorderRadius;
   box-shadow: @inputBoxShadow;
   transition: @inputTransition;
-  & when (@VisionDark = false) {
-    background: @inputBackground;
-  }
-  & when (@VisionDark = true) {
-    background: @eosGrey2;
-    border-color: @eosGrey2;
-  }
 }
 
 /* Text Area */
@@ -391,13 +380,8 @@
   color: @inputFocusColor;
   border-color: @inputFocusBorderColor;
   border-radius: @inputFocusBorderRadius;
+  background: @inputFocusBackground;
   box-shadow: @inputFocusBoxShadow;
-  & when (@VisionDark = false) {
-    background: @inputFocusBackground;
-  }
-  & when (@VisionDark = true) {
-    background: @eosGrey3;
-  }
 }
 .ui.form textarea:focus {
   color: @textAreaFocusColor;

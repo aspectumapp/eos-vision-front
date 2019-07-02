@@ -56,6 +56,9 @@
     font-size: @fontSize;
   }
   line-height: 1.14285714rem;
+  &:hover, &.active {
+    background: @selectionHoverBackgroundColor;
+  }
   > .text {
     display: block;
     white-space: nowrap;

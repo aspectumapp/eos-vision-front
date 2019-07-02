@@ -1,0 +1,11 @@
+@checkboxBackground: none;
+@solidBorderColor: @eosGrey7-bg;
+@checkboxHoverBorderColor: @eosGrey4-bg;
+@checkboxPressedBackground: none;
+@checkboxPressedBorderColor: @eosGrey4-bg;
+@checkboxFocusBackground: none;
+@checkboxFocusBorderColor: @eosGrey7-bg;
+
+@labelColor: @eosGrey7-text;
+
+@toggleOffHandleBoxShadow: none;

@@ -15,14 +15,9 @@
   input[type="text"],
   input[type="file"],
   input[type="url"] {
-    &:hover:not(:focus) {     
-      & when (@VisionDark = false) {
-        border-color: @inputHoverBorderColor;
-      }
-      & when (@VisionDark = true) {
-        background: @eosGrey3;
-        border-color: @eosGrey3;
-      }
+    &:hover:not(:focus) {
+      border-color: @inputHoverBorderColor;
+      background: @inputHoverBackgroundColor;
     }
   }
   &.hide {

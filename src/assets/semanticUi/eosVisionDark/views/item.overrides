@@ -1,5 +1,0 @@
-@linkHoverColor: @eosBlue4;
-
-.ui.items + .ui.items {
-  border-top: 1px solid @eosGrey2;
-}

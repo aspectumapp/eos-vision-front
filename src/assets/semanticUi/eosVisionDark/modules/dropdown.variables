@@ -1,0 +1,3 @@
+@menuBackground: @eosGrey10-bg;
+@menuDividerColor: @eosGrey9-bg;
+@hoveredItemBackground: @eosGrey9-bg;

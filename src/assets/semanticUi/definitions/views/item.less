@@ -34,15 +34,10 @@
   padding: @padding;
 
   border: @border;
-  border-radius: @borderRadius; 
+  border-radius: @borderRadius;
+  box-shadow: @boxShadow;
   transition: @transition;
   z-index: @zIndex;
-  & when (@VisionDark = false) {
-    box-shadow: @boxShadow;
-  }
-  & when (@VisionDark = true) {
-    box-shadow: none;
-  }
 }
 .ui.items > .item a {
   cursor: pointer;

@@ -46,19 +46,13 @@
   font-family: @inputFont;
   padding: @padding;
 
+  background: @background;
   border: @border;
   color: @inputColor;
   border-radius: @borderRadius;
   transition: @transition;
 
   box-shadow: @boxShadow;
-  & when (@VisionDark = false) {
-    background: @background;
-  }
-  & when (@VisionDark = true) {
-    background: @eosGrey4;
-    border-color: @eosGrey4;
-  }
 }
 
 
