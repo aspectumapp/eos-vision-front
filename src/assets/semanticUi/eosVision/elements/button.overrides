@@ -159,13 +159,10 @@
 .ui.buttons .button,
 .ui.buttons .or,
 .ui.button {
-  font-size: @fontSize;
   &.large {
-    font-size: 14px;
     letter-spacing: 0.5px;
   }
   &.small {
-    font-size: @fontSize;
     padding: 9/13em 14/13em;
     &.basic {
       text-transform: none;
