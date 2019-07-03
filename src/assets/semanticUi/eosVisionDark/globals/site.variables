@@ -1,6 +1,6 @@
 
 @white-bg: #25313d;
-@borderColor               : @eosGrey3;
+@borderColor: @eosGrey3;
 @textColor: @eosGrey11;
 
 @eosGrey1-text: #fff;
@@ -31,8 +31,11 @@
 @eosGrey10-bg: @eosGrey3;
 @eosGrey11-bg: @eosGrey2;
 
-
 @selectedBackgroudColor: @inputBorderColor;
-@inputBorderColor: @eosGrey2;
-@inputHoverBorderColor: @eosGrey3;
-@inputHoverBackgroundColor: @eosGrey3;
+@inputBorderColor: @eosGrey3;
+@inputBackground: @eosGrey3;
+@inputHoverBorderColor: @eosGrey4;
+@inputHoverBackgroundColor: @eosGrey4;
+@inputFocusBackground: @eosGrey3;
+@inputTransition: all 0.3s;
+@labelColor: @eosGrey7-text;

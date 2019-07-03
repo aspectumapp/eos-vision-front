@@ -1,3 +1,1 @@
- @labelColor: @eosGrey7-text;
- @inputBackground: @eosGrey2;
- @inputFocusBackground: @eosGrey3;
+@inputBackground: @eosGrey3;
