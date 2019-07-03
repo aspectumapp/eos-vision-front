@@ -35,7 +35,7 @@
 @inputBorderColor: @eosGrey3;
 @inputBackground: @eosGrey3;
 @inputHoverBorderColor: @eosGrey4;
-@inputHoverBackgroundColor: @eosGrey4;
+@inputHoverBackgroundColor: @eosGrey3;
 @inputFocusBackground: @eosGrey3;
 @inputTransition: all 0.3s;
 @labelColor: @eosGrey7-text;

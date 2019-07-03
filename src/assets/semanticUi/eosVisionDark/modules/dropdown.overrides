@@ -1,0 +1,4 @@
+.ui.dropdown .menu input {
+  border-color: @eosGrey2;
+  background: @eosGrey2;
+}
