@@ -1,1 +1,4 @@
 @inputBackground: @eosGrey3;
+@inputDisabledBackground: @eosGrey2;
+@inputDisabledcolor: @eosGrey4;
+@inputDisabledBorder: @eosGrey2;
