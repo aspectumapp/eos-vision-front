@@ -5,3 +5,4 @@
 @inputDisabledcolor: @eosGrey4;
 @inputDisabledBorder: @eosGrey2;
 @disabledOpacity: 1;
+@defaultTextColor: @eosGrey7;
