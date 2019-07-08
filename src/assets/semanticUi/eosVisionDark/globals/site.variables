@@ -1,5 +1,5 @@
 
-@white-bg: #25313d;
+@white-bg: #212f3c;
 @borderColor: @eosGrey3;
 @textColor: @eosGrey11;
 
