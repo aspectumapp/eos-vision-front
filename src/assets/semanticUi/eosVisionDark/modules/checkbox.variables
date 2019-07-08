@@ -11,4 +11,5 @@
 @toggleOffHandleBoxShadow: none;
 @disabledCheckboxLabelColor: @eosGrey7-bg;
 @disabledCheckboxOpacity: .4;
-@toggleLaneBackground: @eosGrey2;
+@toggleLaneBackground: @eosGrey4;
+@toggleOnHandleBoxShadow: none;

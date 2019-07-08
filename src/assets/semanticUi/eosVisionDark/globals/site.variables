@@ -31,6 +31,8 @@
 @eosGrey10-bg: @eosGrey3;
 @eosGrey11-bg: @eosGrey2;
 
+@eosGrey2-2: #2d3849;
+
 @selectedBackgroudColor: @inputBorderColor;
 @inputBorderColor: @eosGrey3;
 @inputBackground: @eosGrey3;
