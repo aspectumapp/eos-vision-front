@@ -41,3 +41,5 @@
 @inputFocusBackground: @eosGrey3;
 @inputTransition: all 0.3s;
 @labelColor: @eosGrey7-text;
+
+@linkHoverColor: @eosBlue5;
