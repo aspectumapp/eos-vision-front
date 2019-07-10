@@ -7,7 +7,7 @@
 .upload-files-panel ::-webkit-scrollbar-track,
 .ui.modal ::-webkit-scrollbar-track,
 .ui.sidebar ::-webkit-scrollbar-track {
-  background: @eosGrey3;
+  background: @eosGrey3 !important;
 }
 
 .ui.message ::-webkit-scrollbar-thumb,
@@ -19,7 +19,7 @@
 .upload-files-panel ::-webkit-scrollbar-thumb,
 .ui.modal ::-webkit-scrollbar-thumb,
 .ui.sidebar ::-webkit-scrollbar-thumb {
-  background: @eosGrey5;
+  background: @eosGrey5 !important;
 }
 
 .ui.message ::-webkit-scrollbar-thumb:hover,
@@ -31,7 +31,7 @@
 .upload-files-panel ::-webkit-scrollbar-thumb:hover,
 .ui.modal ::-webkit-scrollbar-thumb:hover,
 .ui.sidebar ::-webkit-scrollbar-thumb:hover {
-  background: @eosGrey8;
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
+  background: @eosGrey8 !important;
+  transition: all 0.3s !important;
+  -webkit-transition: all 0.3s !important;
 }

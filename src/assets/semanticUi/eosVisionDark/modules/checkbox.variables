@@ -9,3 +9,7 @@
 @labelColor: @eosGrey7-text;
 
 @toggleOffHandleBoxShadow: none;
+@disabledCheckboxLabelColor: @eosGrey7-bg;
+@disabledCheckboxOpacity: .4;
+@toggleLaneBackground: @eosGrey4;
+@toggleOnHandleBoxShadow: none;

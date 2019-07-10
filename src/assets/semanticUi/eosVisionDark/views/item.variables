@@ -1,2 +1,3 @@
 @linkHoverColor: @eosBlue4;
 @boxShadow: none;
+@background: @eosGrey2-2;

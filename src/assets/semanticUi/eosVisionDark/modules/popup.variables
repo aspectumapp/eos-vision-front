@@ -1,4 +1,3 @@
 @tooltipInvertedColor: #000;
-
-
 @tooltipInvertedBackground: #fff;
+@background: @eosGrey3;
