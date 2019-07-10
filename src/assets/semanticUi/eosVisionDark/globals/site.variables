@@ -1,5 +1,5 @@
 
-@white-bg: #212f3c;
+@white-bg: #1f2d3a;
 @borderColor: @eosGrey3;
 @textColor: @eosGrey11;
 
@@ -30,8 +30,9 @@
 @eosGrey9-2-bg: @eosGrey9-2;
 @eosGrey10-bg: @eosGrey3;
 @eosGrey11-bg: @eosGrey2;
+@eosGrey12-bg: @eosGrey1;
 
-@eosGrey2-2: #2d3849;
+@eosGrey13-bg: #2d3849;
 
 @selectedBackgroudColor: @inputBorderColor;
 @inputBorderColor: @eosGrey3;
