@@ -1,3 +1,3 @@
-@tooltipInvertedColor: #000;
-@tooltipInvertedBackground: #fff;
-@background: @eosGrey3;
+@tooltipInvertedColor: @eosGrey12-bg;
+@tooltipInvertedBackground: @eosGrey1-bg;
+@background: @eosGrey10-bg;

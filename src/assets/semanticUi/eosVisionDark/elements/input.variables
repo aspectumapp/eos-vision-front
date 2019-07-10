@@ -1,2 +1,2 @@
-@background: @eosGrey4;
-@borderColor: @eosGrey4;
+@background: @eosGrey9-bg;
+@borderColor: @eosGrey9-bg;
