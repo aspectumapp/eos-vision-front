@@ -44,3 +44,7 @@
 @labelColor: @eosGrey7-text;
 
 @linkHoverColor: @eosBlue5;
+
+@thumbBackground: @eosGrey9-bg;
+@thumbHoverBackground: @eosGrey8-bg;
+@trackBackground: none;
