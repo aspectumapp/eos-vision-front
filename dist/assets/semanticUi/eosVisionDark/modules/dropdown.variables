@@ -1,0 +1,8 @@
+@menuBackground: @eosGrey10-bg;
+@menuDividerColor: @eosGrey9-bg;
+@hoveredItemBackground: @eosGrey9-bg;
+@inputDisabledBackground: @eosGrey2;
+@inputDisabledcolor: @eosGrey4;
+@inputDisabledBorder: @eosGrey2;
+@disabledOpacity: 1;
+@defaultTextColor: @eosGrey7;

@@ -73,6 +73,7 @@
 @inputPlaceholderFocusColor: @inputPlaceholderColor;
 @inputBorderColor: @eosGrey8-bg;
 @inputHoverBorderColor: @eosGrey7-bg;
+@inputHoverBackgroundColor: @inputBackground;
 
 @selectedTextColor           : @textColor;
 

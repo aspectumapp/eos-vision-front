@@ -1,0 +1,3 @@
+.ui.form .field.horizontal>label {
+  color: @eosGrey7;
+}
