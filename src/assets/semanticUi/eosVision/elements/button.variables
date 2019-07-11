@@ -2,6 +2,10 @@
     User Variable Overrides
 *******************************/
 
+@medium: round(13/14rem, 4);
+@small: round(13/14rem, 4);
+@large: 1rem;
+
 @backgroundColor: @eosGrey9;
 
 /* Text */

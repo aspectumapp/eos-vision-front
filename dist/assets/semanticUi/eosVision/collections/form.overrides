@@ -46,11 +46,15 @@
       .sub-label {
         display: block;
         color: @eosGrey6-text;
-        & when (@visionTablet = false) {
+        & when (@visionWeb = true) {
           font-size: 12/13em;
           line-height: 15/13em;
         }
         & when (@visionTablet = true) {
+          font-size: 14/16em;
+          line-height: 18/16em;
+        }
+        & when (@visionMobile = true) {
           font-size: 14/16em;
           line-height: 18/16em;
         }
@@ -136,8 +140,14 @@
   input[type="text"],
   input[type="file"],
   input[type="url"] {
-    padding-top: 7px;
-    padding-bottom: 7px;
+    & when (@visionMobile = false) {
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+    & when (@visionMobile = true) {
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
   }
 }
 
@@ -157,14 +167,24 @@
     }
   }
   .field, .group {
-    margin-bottom: 15px;
+    & when (@visionMobile = false) {
+      margin-bottom: 15px;
+    }
+    & when (@visionMobile = true) {
+      margin-bottom: 20px;
+    }
     &:last-child {
       margin-bottom: 0;
     }
   }
 
   .field.horizontal {
-    min-height: 32px;
+    & when (@visionMobile = false) {
+      min-height: 32px;
+    }
+    & when (@visionMobile = true) {
+      min-height: 34px;
+    }
     &.align-top {
       align-items: flex-start;
     }
@@ -185,7 +205,7 @@
 
   .group-label {
     position: relative;
-    font-size: 12/13em;
+    font-size: @fontSize;
     top: -20px;
     left: -2px;
   }

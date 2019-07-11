@@ -1,0 +1,3 @@
+@styledActiveTitleBackground: @eosGrey2-2;
+@styledTitleHoverBackground: @eosGrey3;
+@eosGrey11-bg: @eosGrey3;

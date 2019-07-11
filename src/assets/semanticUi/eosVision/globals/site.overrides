@@ -7,18 +7,7 @@ body {
   font-weight: @fontNormal;
 }
 
-.eos-AddScrollbars() {
-  .ui.message,
-  .analysis-info-panel,
-  .legends-info-block,
-  .analysis-result-popup,
-  .popup-show-info,
-  .ui.dropdown,
-  .upload-files-panel,
-  .ui.modal,
-  .ui.sidebar {
-    -webkit-overflow-scrolling: touch;
-  }
+& when (@visionWeb = true) {
   .ui.message ::-webkit-scrollbar,
   .analysis-info-panel ::-webkit-scrollbar,
   .legends-info-block ::-webkit-scrollbar,
@@ -58,7 +47,6 @@ body {
     cursor: pointer;
     border-radius: 6px;
     background: #aab0b8;
-    transition: @thumbTransition;
   }
 
 
@@ -87,8 +75,6 @@ body {
     background: #aab0b8;
   }
 }
-.eos-AddScrollbars();
-
 
 .text-overflow {
   white-space: nowrap;

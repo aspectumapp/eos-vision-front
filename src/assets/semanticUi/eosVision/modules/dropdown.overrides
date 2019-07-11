@@ -56,14 +56,24 @@
     font-size: @fontSize;
   }
   line-height: 1.14285714rem;
+  &:hover, &.active {
+    background: @selectionHoverBackgroundColor;
+  }
   > .text {
     display: block;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    position: absolute;
+    left: @selectionHorizontalPadding;
+    right: @selectionHorizontalPadding;
+    top: @selectionVerticalPadding;
   }
   > .dropdown.icon {
     color: @eosGrey5-text;
+    ~ .text {
+      right: @selectionIconDistance;
+    }
   }
   .menu {
     .selected.item:hover {
@@ -90,9 +100,22 @@
     width: auto;
   }
   &.mini, .ui.form.mini & {
-    min-height: 32px;
+    & when (@visionMobile = false) {
+      min-height: 32px;
+    }
+    & when (@visionMobile = true) {
+      min-height: 34px;
+    }
     padding-top: 7px;
     padding-bottom: 7px;
+    > .text {
+      & when (@visionMobile = false) {
+        top: 7px;
+      }
+      & when (@visionMobile = true) {
+        top: 8px;
+      }
+    }
     &:not(.mini)>input.search {
       padding-top: 7px;
       padding-bottom: 7px;
@@ -141,7 +164,7 @@
 }
 
 .ui.dropdown:not(.loading) .icon.add {
-  font-size: 17.5px;
+  font-size: 18px;
   color: @eosGrey6-text;
   & when (@visionTablet = true) {
     padding: 11px 6px;
@@ -158,11 +181,16 @@
 
 .ui.dropdown.context-menu .menu {
   border-color: @borderColor;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-   & when (@visionTablet = true) {
+  & when (@visionTablet = true) {
     header.ui.menu & {
       margin-top: 3px;
     }
+  }
+  & when (@VisionDark = false) {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  & when (@VisionDark = true) {
+    box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.4);
   }
 }
 
@@ -257,6 +285,7 @@
     min-width: auto !important;
     box-shadow: 0 2px 3px 0 #e0e1e2 !important;
     z-index: 104;
+    top: -6px !important;
     &.upward {
       top: auto !important;
     }

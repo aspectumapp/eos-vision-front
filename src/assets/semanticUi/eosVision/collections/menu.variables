@@ -103,3 +103,11 @@
 
 @dropdownItemIconFontSize: 18px;
 @dropdownItemIconColor: @eosGrey5-text;
+
+@iconOpacity: 1;
+
+@secondaryPointingItemVerticalPadding: 1rem;
+@secondaryPointingItemHorizontalPadding: 11/14rem;
+
+@secondaryPointingTabsMenuItemVerticalPadding: round(16/13em, 2);
+@secondaryPointingTabsMenuItemHorizontalPadding: round(11/13em, 2);

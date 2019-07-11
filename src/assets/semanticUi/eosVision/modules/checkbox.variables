@@ -11,8 +11,11 @@
 @labelDistance: @checkboxSize + 6;
 
 @checkboxActiveCheckColor: #fff;
-@checkboxBorder: 1px solid @eosGrey8;
+@solidBorderColor: @eosGrey8;
 @checkboxFocusBorderColor: @eosGrey8;
+
+@checkboxPressedBackground: @checkboxHoverBackground;
+@checkboxPressedBorderColor: @checkboxHoverBorderColor;
 
 @checkboxActiveBackground: @blue;
 @checkboxActiveBorderColor: @blue;

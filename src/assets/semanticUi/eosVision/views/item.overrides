@@ -4,14 +4,14 @@
 
 
 .ui.items + .ui.items {
-  border-top: 1px solid #D7E0EC;
+  & when (@VisionDark = false) {
+    border-top: 1px solid @eosGrey8;
+  }
+  & when (@VisionDark = true) {
+    border-top: 1px solid @eosGrey2;
+  }
   padding-top: @groupMarginVerticalBottom;
   margin-top: 0;
-}
-
-
-.ui.items > .item {
-  font-size: @fontSize;
 }
 
 .ui.items>.item .meta.link {
@@ -22,4 +22,7 @@
     color: @linkHoverColor;
     text-decoration: @linkHoverUnderline;
   }
+}
+.ui.items > .item > .content > .header {
+  display: block;
 }
