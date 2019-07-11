@@ -97,4 +97,5 @@
 @scrollingWidescreenMaxMenuHeight: (@scrollingItemHeight * @selectionWidescreenMaxItems) + 2;
 
 
-
+@menuBoxShadow: @eosBoxShadow-3 !important;
+@menuBorder: none !important;

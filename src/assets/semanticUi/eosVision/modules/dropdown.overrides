@@ -181,16 +181,11 @@
 
 .ui.dropdown.context-menu .menu {
   border-color: @borderColor;
+  box-shadow: @eosBoxShadow-3;
   & when (@visionTablet = true) {
     header.ui.menu & {
       margin-top: 3px;
     }
-  }
-  & when (@VisionDark = false) {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
-  & when (@VisionDark = true) {
-    box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.4);
   }
 }
 
@@ -283,7 +278,7 @@
     overflow: hidden !important;
     overflow-y: auto !important;
     min-width: auto !important;
-    box-shadow: 0 2px 3px 0 #e0e1e2 !important;
+    box-shadow: @eosBoxShadow-3 !important;
     z-index: 104;
     top: -6px !important;
     &.upward {
