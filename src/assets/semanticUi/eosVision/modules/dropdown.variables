@@ -3,7 +3,7 @@
 *******************************/
 
 @menuPadding: 5px 0em;
-
+@menuBoxShadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
 @selectionVisibleTextColor: inherit;
 @selectionVerticalPadding: 10/13em;

@@ -180,17 +180,10 @@
 // Dropdown Context menu
 
 .ui.dropdown.context-menu .menu {
-  border-color: @borderColor;
   & when (@visionTablet = true) {
     header.ui.menu & {
       margin-top: 3px;
     }
-  }
-  & when (@VisionDark = false) {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
-  & when (@VisionDark = true) {
-    box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.4);
   }
 }
 
