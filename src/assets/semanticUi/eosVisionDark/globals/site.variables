@@ -35,11 +35,11 @@
 @eosGrey13-bg: #2d3849;
 
 @selectedBackgroudColor: @inputBorderColor;
-@inputBorderColor: @eosGrey3;
-@inputBackground: @eosGrey3;
-@inputHoverBorderColor: @eosGrey4;
-@inputHoverBackgroundColor: @eosGrey3;
-@inputFocusBackground: @eosGrey3;
+@inputBorderColor: @eosGrey10-bg;
+@inputBackground: @eosGrey10-bg;
+@inputHoverBorderColor: @eosGrey9-bg;
+@inputHoverBackgroundColor: @eosGrey10-bg;
+@inputFocusBackground: @eosGrey10-bg;
 @inputTransition: all 0.3s;
 @labelColor: @eosGrey7-text;
 
