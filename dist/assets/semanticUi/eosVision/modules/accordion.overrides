@@ -29,7 +29,12 @@
       }
     }
     .checkbox-wrap {
-      padding: 7px 0 2px 10px;
+      & when (@visionMobile = true) {
+        padding: 9px 0 2px 10px;
+      }
+      & when (@visionMobile = false) {
+        padding: 7px 0 2px 10px;
+      }
     }
 
     > .content, div > div > .content {
@@ -39,12 +44,17 @@
       &:after {
         content: '';
         position: absolute;
-        top: 30px;
         left: 0;
         right: 0;
         bottom: 0;
         background-color: fade(@white-bg, 70%);
         z-index: 4;
+        & when (@visionMobile = true) {
+          top: 34px;
+        }
+        & when (@visionMobile = false) {
+          top: 30px;
+        }
       }
       > .content {
         pointer-events: none;
