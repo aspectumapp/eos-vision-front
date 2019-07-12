@@ -4,3 +4,5 @@
 @secondaryActiveHoverItemBackground: @secondaryActiveItemBackground;
 @secondaryActiveHoverItemColor: @secondaryHoverItemColor;
 @disabledTextColor: @itemTextColor;
+@dropdownBackground: @eosGrey10-bg;
+@dropdownHoveredItemBackground: @eosGrey9-bg;
