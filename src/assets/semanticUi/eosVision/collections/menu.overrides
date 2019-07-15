@@ -52,12 +52,7 @@
       margin-bottom: -2px;
       font-size: @fontSize;
       padding: @secondaryPointingTabsMenuItemVerticalPadding @secondaryPointingTabsMenuItemHorizontalPadding;
-      & when (@VisionDark = false) {
-        color: @eosGrey5-text;
-      }
-      & when (@VisionDark = true) {
-        color: @eosGrey7-text;
-      }
+      color: @eosGrey5-text;
       &:hover {
         color: @darkTextColor;
       }

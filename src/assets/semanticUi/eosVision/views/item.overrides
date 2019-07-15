@@ -3,13 +3,8 @@
 *******************************/
 
 
-.ui.items + .ui.items {
-  & when (@VisionDark = false) {
-    border-top: 1px solid @eosGrey8;
-  }
-  & when (@VisionDark = true) {
-    border-top: 1px solid @eosGrey2;
-  }
+.ui.items + .ui.items {  
+  border-top: 1px solid @eosGrey8;
   padding-top: @groupMarginVerticalBottom;
   margin-top: 0;
 }
