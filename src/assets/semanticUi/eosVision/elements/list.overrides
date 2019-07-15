@@ -4,10 +4,15 @@
 
 .ui.list.list-view {
   border: @dividedBorder;
-  background-color: @white-bg;
   >.item {
     display: flex;
     align-items: center;
     padding: 0;
+    & when (@VisionDark = false) { 
+    background-color: @white-bg; 
+    } 
+    & when (@VisionDark = true) { 
+      background: @eosGrey13-bg; 
+    }
   }
 }
