@@ -6,3 +6,4 @@
 @itemHeaderFontWeight: @fontSemiBold;
 @margin: 0;
 @relativeMedium: @fontSize;
+@disabledColor: inherit !important;
