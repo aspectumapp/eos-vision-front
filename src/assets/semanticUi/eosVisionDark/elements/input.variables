@@ -1,2 +1,3 @@
 @background: @eosGrey9-bg;
 @borderColor: @eosGrey9-bg;
+@border: 1px solid @eosGrey9-bg;
