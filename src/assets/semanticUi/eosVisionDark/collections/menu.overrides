@@ -1,5 +1,0 @@
-.ui.secondary.pointing.menu {
-  &.tabs-menu .item {
-    color: @eosGrey7-text;
-  } 
-}

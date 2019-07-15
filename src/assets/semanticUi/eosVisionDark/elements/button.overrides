@@ -1,9 +1,3 @@
 .ui.buttons.white, .ui.button.white {
   box-shadow: none !important;
 }
-
-ui.button.icon {
-  &.transparent {
-    color: @eosGrey6-text;
-  }
-}

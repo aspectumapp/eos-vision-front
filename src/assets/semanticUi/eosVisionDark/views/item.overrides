@@ -1,3 +1,0 @@
-.ui.items + .ui.items {
-  border-top: 1px solid @eosGrey2;
-}
