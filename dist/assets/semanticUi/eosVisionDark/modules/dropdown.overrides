@@ -1,0 +1,10 @@
+.ui.dropdown .menu input {
+  border-color: @eosGrey2;
+  background: @eosGrey2;
+}
+.ui.disabled.dropdown .icon {
+  opacity: .4 !important;
+}
+.ui.disabled.dropdown .text {
+  opacity: .4;
+}

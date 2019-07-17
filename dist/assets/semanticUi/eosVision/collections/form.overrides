@@ -17,6 +17,7 @@
   input[type="url"] {
     &:hover:not(:focus) {
       border-color: @inputHoverBorderColor;
+      background: @inputHoverBackgroundColor;
     }
   }
   &.hide {
@@ -36,8 +37,6 @@
     opacity: 1;
   }
 }
-
-
 
 .ui.form {
   .field {
@@ -72,6 +71,49 @@
         }
       }
     }
+    &.horizontal {
+      display: flex;
+      align-items: center;
+      > label {
+        display: flex !important;
+        align-items: center;
+        margin-bottom: 0 !important;
+        flex-basis: 30%;
+        word-break: break-word;
+        font-weight: @fontNormal;
+        .ui.button.icon {
+          .icon {
+            font-size: 15px;
+            top:-1px;
+          }
+        }
+        + * {
+          flex-basis: 67.406%;
+          margin-left: auto !important;
+        }
+      }
+      > .ui.label, > .ui.label.pointing, > .ui.label.pointing.error {
+        left: 100% - 67.406;
+        max-width: 213px;
+      }
+      .ui.input > input {
+        width: 0 !important;
+        flex: 1 1 auto;
+      }
+      .ui.input .dropdown .text {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .label-sub-text {
+        position: absolute;
+        right: 100%;
+        color: #94A5B5;
+        margin-right: 10px;
+        top: 7px;
+        font-size: 11px;
+      }
+    }
     &.error {
       > label {
         color: @red !important;
@@ -95,6 +137,14 @@
         }
       }
     }
+  }
+
+  .disabled.fields .field input,
+  .disabled.field input,
+  .field :disabled {
+    background: @inputDisabledBackground;
+    color: @inputDisabledcolor;
+    border-color: @inputDisabledBorder;
   }
 
   .fields>.field.inline {
@@ -124,8 +174,10 @@
       height: 0;
     }
   }
+  + .ui.accordion {
+    margin-top: 22px;
+  }
 }
-
 
 .ui.form.mini, .ui.form.small, .ui.form.mini-2 {
   input:not([type]),
@@ -150,8 +202,6 @@
     }
   }
 }
-
-
 .ui.form.mini {
   + .ui.form.mini {
     margin-top: 25px;
@@ -177,7 +227,6 @@
       margin-bottom: 0;
     }
   }
-
   .field.horizontal {
     & when (@visionMobile = false) {
       min-height: 32px;
@@ -190,6 +239,7 @@
     }
     .ui.dropdown.selection {
       display: block;
+      min-width: 0em;
     }
     &:not(.checkbox) {
       .ui.checkbox {
@@ -202,7 +252,6 @@
       margin-bottom: 8px;
     }
   }
-
   .group-label {
     position: relative;
     font-size: @fontSize;
@@ -212,9 +261,7 @@
   .ui.input .ui.label {
     padding-top: 8px;
     padding-bottom: 8px;
-
   }
-
   .ui.input .ui.label:first-child {
     min-width: 40px;
     height: 32px;
@@ -236,7 +283,6 @@
   }
 }
 
-
 .field {
   > .ui.label, > .ui.label.pointing, > .ui.label.pointing.error {
     position: absolute;
@@ -254,64 +300,6 @@
   .ui.form.mini + .ui.form.mini {
     margin-top: 0;
   }
-}
-
-.field.horizontal {
-  display: flex;
-  align-items: center;
-  > label {
-    display: flex !important;
-    align-items: center;
-    margin-bottom: 0 !important;
-    flex-basis: 30%;
-    word-break: break-word;
-    .ui.form & {
-      color: @eosGrey5-text;
-    }
-
-    .ui.button.icon {
-      .icon {
-        font-size: 15px;
-        top:-1px;
-      }
-    }
-    + * {
-      flex-basis: 67.406%;
-      margin-left: auto !important;
-    }
-  }
-  > .ui.label, > .ui.label.pointing, > .ui.label.pointing.error {
-    left: 100% - 67.406;
-    max-width: 213px;
-  }
-  .ui.input > input {
-    width: 0 !important;
-    flex: 1 1 auto;
-  }
-  .ui.input .dropdown .text {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  }
-  .label-sub-text {
-    position: absolute;
-    right: 100%;
-    color: #94A5B5;
-    margin-right: 10px;
-    top: 7px;
-    font-size: 11px;
-  }
-}
-
-
-
-.ui.form .disabled.fields .field input,
-.ui.form .disabled.field input,
-.ui.form .field :disabled
- {
-  background: @inputDisabledBackground;
-  color: @inputDisabledcolor;
-  border-color: @inputDisabledBorder;
 }
 
 .fake-input {

@@ -159,13 +159,10 @@
 .ui.buttons .button,
 .ui.buttons .or,
 .ui.button {
-  font-size: @fontSize;
   &.large {
-    font-size: 14px;
     letter-spacing: 0.5px;
   }
   &.small {
-    font-size: @fontSize;
     padding: 9/13em 14/13em;
     &.basic {
       text-transform: none;
@@ -269,11 +266,13 @@
       color: @eosGrey6-text;
     }
   }
-  &:hover {
-    input:not(:checked) {
-      + .button {
-        background-color: @eosGrey9-bg;
-        color: @eosGrey5-text;
+  & when (@visionWeb = true) {
+    &:hover {
+      input:not(:checked) {
+        + .button {
+          background-color: @eosGrey9-bg;
+          color: @eosGrey5-text;
+        }
       }
     }
   }
@@ -289,9 +288,15 @@
   &.transparent {
     background-color: transparent;
     padding: 0;
-    color: @eosGrey5-text;
     font-size: @eos-buttonTransparentFontSize;
 
+    & when (@VisionDark = false) {
+      color: @eosGrey5-text;
+    }
+    & when (@VisionDark = true) {
+      color: @eosGrey6-text;
+    }
+    
     &:active, &.active {
       color: @eosGrey3-text;
     }

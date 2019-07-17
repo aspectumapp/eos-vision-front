@@ -81,16 +81,18 @@
   vertical-align: middle;
   line-height: 1;
   text-decoration: none;
-  -webkit-tap-highlight-color: transparent;
   flex: 0 0 auto;
   user-select: none;
-
+  cursor: pointer;
   background: @itemBackground;
   padding: @itemVerticalPadding @itemHorizontalPadding;
   text-transform: @itemTextTransform;
   color: @itemTextColor;
   font-weight: @itemFontWeight;
   transition: @itemTransition;
+  &.active {
+    -webkit-tap-highlight-color: transparent;
+  }
 }
 
 .ui.menu > .item:first-child {

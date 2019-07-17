@@ -3,7 +3,6 @@
 *******************************/
 
 .ui.menu {
-  font-size: @fontSize;
   position: relative;
   .pointing {
     height: 100%;
@@ -42,7 +41,6 @@
 .ui.secondary.pointing.menu {
   .item {
     align-self: stretch;
-    padding: 14/14rem 11/14rem 11/14rem;
   }
   &.tabs-menu {
     border-bottom-color: @borderColor;
@@ -51,9 +49,14 @@
       border-bottom-color: transparent;
       border-bottom-width: 2px;
       margin-bottom: -2px;
-      color: @eosGrey5-text;
-      font-size: 1rem;
-      padding: 16/13em round(11/13em, 3);
+      font-size: @fontSize;
+      padding: @secondaryPointingTabsMenuItemVerticalPadding @secondaryPointingTabsMenuItemHorizontalPadding;
+      & when (@VisionDark = false) {
+        color: @eosGrey5-text;
+      }
+      & when (@VisionDark = true) {
+        color: @eosGrey7-text;
+      }
       &:hover {
         color: @darkTextColor;
       }
@@ -72,7 +75,7 @@
       font-size: 16px;
     }
     &.small .item {
-      font-size: 13/14rem;
+      font-size: @fontSize;
       .icon {
         height: 14px;
       }
