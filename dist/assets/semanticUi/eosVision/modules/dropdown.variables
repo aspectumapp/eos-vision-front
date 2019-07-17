@@ -92,6 +92,11 @@
 
 @labelPadding: 5/13em 0 6/13em 8/13em;
 
+
+@selectionMobileMaxMenuHeight: (@selectionItemHeight * @selectionMobileMaxItems) + 2;
+@selectionTabletMaxMenuHeight: (@selectionItemHeight * @selectionTabletMaxItems) + 2;
+@selectionComputerMaxMenuHeight: (@selectionItemHeight * @selectionComputerMaxItems) + 2;
+@selectionWidescreenMaxMenuHeight: (@selectionItemHeight * @selectionWidescreenMaxItems) + 2;
 @scrollingTabletMaxMenuHeight: (@scrollingItemHeight * @scrollingTabletMaxItems)+ 2;
 @scrollingComputerMaxMenuHeight: (@scrollingItemHeight * @scrollingComputerMaxItems) + 2;
 @scrollingWidescreenMaxMenuHeight: (@scrollingItemHeight * @selectionWidescreenMaxItems) + 2;
