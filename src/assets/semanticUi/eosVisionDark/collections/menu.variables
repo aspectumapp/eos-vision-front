@@ -1,0 +1,2 @@
+@eosGrey11-bg: @white-bg;
+@verticalBackground: @eosGrey2-2 !important;

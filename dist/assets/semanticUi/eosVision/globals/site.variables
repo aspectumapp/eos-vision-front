@@ -44,6 +44,7 @@
 --------------------*/
 
 @fontSize : unit((13 / 14), rem);
+@lineHeight          : 1.4;
 
 /*--------------
   Page Heading
@@ -72,6 +73,7 @@
 @inputPlaceholderFocusColor: @inputPlaceholderColor;
 @inputBorderColor: @eosGrey8-bg;
 @inputHoverBorderColor: @eosGrey7-bg;
+@inputHoverBackgroundColor: @inputBackground;
 
 @selectedTextColor           : @textColor;
 

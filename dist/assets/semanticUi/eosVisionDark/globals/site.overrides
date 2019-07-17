@@ -1,0 +1,37 @@
+.ui.message ::-webkit-scrollbar-track,
+.analysis-info-panel ::-webkit-scrollbar-track,
+.legends-info-block ::-webkit-scrollbar-track,
+.analysis-result-popup ::-webkit-scrollbar-track,
+.popup-show-info ::-webkit-scrollbar-track,
+.ui.dropdown ::-webkit-scrollbar-track,
+.upload-files-panel ::-webkit-scrollbar-track,
+.ui.modal ::-webkit-scrollbar-track,
+.ui.sidebar ::-webkit-scrollbar-track {
+  background: @eosGrey3 !important;
+}
+
+.ui.message ::-webkit-scrollbar-thumb,
+.analysis-info-panel ::-webkit-scrollbar-thumb,
+.legends-info-block ::-webkit-scrollbar-thumb,
+.analysis-result-popup ::-webkit-scrollbar-thumb,
+.popup-show-info ::-webkit-scrollbar-thumb,
+.ui.dropdown ::-webkit-scrollbar-thumb,
+.upload-files-panel ::-webkit-scrollbar-thumb,
+.ui.modal ::-webkit-scrollbar-thumb,
+.ui.sidebar ::-webkit-scrollbar-thumb {
+  background: @eosGrey5 !important;
+}
+
+.ui.message ::-webkit-scrollbar-thumb:hover,
+.analysis-info-panel ::-webkit-scrollbar-thumb:hover,
+.legends-info-block ::-webkit-scrollbar-thumb:hover,
+.analysis-result-popup ::-webkit-scrollbar-thumb:hover,
+.popup-show-info ::-webkit-scrollbar-thumb:hover,
+.ui.dropdown ::-webkit-scrollbar-thumb:hover,
+.upload-files-panel ::-webkit-scrollbar-thumb:hover,
+.ui.modal ::-webkit-scrollbar-thumb:hover,
+.ui.sidebar ::-webkit-scrollbar-thumb:hover {
+  background: @eosGrey8 !important;
+  transition: all 0.3s !important;
+  -webkit-transition: all 0.3s !important;
+}

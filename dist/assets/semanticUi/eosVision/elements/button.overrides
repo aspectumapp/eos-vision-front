@@ -159,13 +159,10 @@
 .ui.buttons .button,
 .ui.buttons .or,
 .ui.button {
-  font-size: @fontSize;
   &.large {
-    font-size: 14px;
     letter-spacing: 0.5px;
   }
   &.small {
-    font-size: @fontSize;
     padding: 9/13em 14/13em;
     &.basic {
       text-transform: none;
@@ -211,6 +208,8 @@
   & when (@visionTablet = false) {
     font-size: 14px;
     height: 10px;
+  }
+  & when (@visionWeb = true) {
     top: -0.5px;
   }
   & when (@visionTablet = true) {
@@ -253,7 +252,12 @@
 }
 .button-checkbox {
   .ui.button {
-    padding: 8px 0;
+    & when (@visionMobile = false) {
+       padding: 8px 0;
+    }
+    & when (@visionMobile = true) {
+       padding: 10px 0;
+    }
   }
   input:not(:checked) {
     + .button {
@@ -262,11 +266,13 @@
       color: @eosGrey6-text;
     }
   }
-  &:hover {
-    input:not(:checked) {
-      + .button {
-        background-color: @eosGrey9-bg;
-        color: @eosGrey5-text;
+  & when (@visionWeb = true) {
+    &:hover {
+      input:not(:checked) {
+        + .button {
+          background-color: @eosGrey9-bg;
+          color: @eosGrey5-text;
+        }
       }
     }
   }
@@ -282,11 +288,15 @@
   &.transparent {
     background-color: transparent;
     padding: 0;
-    color: @eosGrey5-text;
-    > .icon {
-      font-size: @eos-buttonTransparentFontSize;
-    }
+    font-size: @eos-buttonTransparentFontSize;
 
+    & when (@VisionDark = false) {
+      color: @eosGrey5-text;
+    }
+    & when (@VisionDark = true) {
+      color: @eosGrey6-text;
+    }
+    
     &:active, &.active {
       color: @eosGrey3-text;
     }
@@ -353,10 +363,6 @@
     >.eos_ic_expand_more, >.eos_ic_expand_less {
       font-size: 12px;
       margin: 6px !important;
-    }
-    >.eos_ic_create_new_folder {
-      font-size: 19px;
-      top: -1px;
     }
     &.small {
       >.eos_ic_create {

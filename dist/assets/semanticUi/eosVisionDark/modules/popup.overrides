@@ -1,0 +1,3 @@
+.ui.popup input {
+  background: #2B3545 !important;
+}

@@ -3,7 +3,7 @@
 *******************************/
 
 @menuPadding: 5px 0em;
-
+@menuBoxShadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
 @selectionVisibleTextColor: inherit;
 @selectionVerticalPadding: 10/13em;
@@ -25,7 +25,6 @@
 @itemColor: @textColor;
 @menuBorderColor: @borderColor;
 
-@selectionBackground: @white-bg;
 
 @selectionIconPadding: 11px;
 
@@ -60,6 +59,7 @@
 
 
 /* Hover */
+@selectionHoverBackgroundColor: @inputHoverBackgroundColor;
 @selectionHoverBorderColor: @inputHoverBorderColor;
 @selectionVisibleBorderColor: @focusedFormBorderColor;
 @selectionActiveHoverBorderColor: @selectionVisibleBorderColor;
@@ -72,9 +72,15 @@
 @selectionMinHeight: 38px;
 @selectionItemHeight: 34px;
 
+@scrollingItemHeight: 34px;
+
 @selectionTabletMaxItems: 4;
 @selectionComputerMaxItems: 5;
 @selectionWidescreenMaxItems: 5;
+
+@scrollingTabletMaxItems: 4;
+@scrollingComputerMaxItems: 5;
+@scrollingWidescreenMaxItems: 5;
 
 @activeItemFontWeight: @fontSemiBold;
 
@@ -86,8 +92,17 @@
 
 @labelPadding: 5/13em 0 6/13em 8/13em;
 
+<<<<<<< HEAD
 
 @selectionMobileMaxMenuHeight: (@selectionItemHeight * @selectionMobileMaxItems) + 2;
 @selectionTabletMaxMenuHeight: (@selectionItemHeight * @selectionTabletMaxItems) + 2;
 @selectionComputerMaxMenuHeight: (@selectionItemHeight * @selectionComputerMaxItems) + 2;
 @selectionWidescreenMaxMenuHeight: (@selectionItemHeight * @selectionWidescreenMaxItems) + 2;
+=======
+@scrollingTabletMaxMenuHeight: (@scrollingItemHeight * @scrollingTabletMaxItems)+ 2;
+@scrollingComputerMaxMenuHeight: (@scrollingItemHeight * @scrollingComputerMaxItems) + 2;
+@scrollingWidescreenMaxMenuHeight: (@scrollingItemHeight * @selectionWidescreenMaxItems) + 2;
+
+
+
+>>>>>>> origin/master
