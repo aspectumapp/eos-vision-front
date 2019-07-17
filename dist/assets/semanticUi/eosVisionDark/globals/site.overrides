@@ -35,3 +35,7 @@
   transition: all 0.3s !important;
   -webkit-transition: all 0.3s !important;
 }
+
+input::selection {
+  background: fade(@eosBlue4, 60%) !important;
+}

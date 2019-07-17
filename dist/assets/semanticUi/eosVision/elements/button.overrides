@@ -58,7 +58,7 @@
   background-color: @white-bg;
   color: @eosGrey5-text;
   
-  box-shadow: 0 1px 4px rgba(27, 33, 43, 0.3) !important;
+  box-shadow: @eosBoxShadow-1 !important;
 }
 .ui.buttons.white:not(.icon), .ui.button.white:not(.icon) {
   border-radius: 3px;

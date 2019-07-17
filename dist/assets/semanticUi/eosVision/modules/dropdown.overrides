@@ -180,6 +180,8 @@
 // Dropdown Context menu
 
 .ui.dropdown.context-menu .menu {
+  border-color: @borderColor;
+  box-shadow: @eosBoxShadow-3;
   & when (@visionTablet = true) {
     header.ui.menu & {
       margin-top: 3px;
@@ -276,7 +278,7 @@
     overflow: hidden !important;
     overflow-y: auto !important;
     min-width: auto !important;
-    box-shadow: 0 2px 3px 0 #e0e1e2 !important;
+    box-shadow: @eosBoxShadow-3 !important;
     z-index: 104;
     margin-top: -6px !important;
     &.upward {
