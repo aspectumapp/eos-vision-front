@@ -1,2 +1,8 @@
 @eosGrey11-bg: @white-bg;
-@verticalBackground: @eosGrey2-2 !important;
+@verticalBackground: @eosGrey13-bg !important;
+@boxShadow: 0 1px 0 0 @eosGrey12-bg;
+@secondaryActiveHoverItemBackground: @secondaryActiveItemBackground;
+@secondaryActiveHoverItemColor: @secondaryHoverItemColor;
+@disabledTextColor: @itemTextColor;
+@dropdownBackground: @eosGrey10-bg;
+@dropdownHoveredItemBackground: @eosGrey9-bg;

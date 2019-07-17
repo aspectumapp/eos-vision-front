@@ -100,3 +100,6 @@
 @selectionTabletMaxMenuHeight: (@selectionItemHeight * @selectionTabletMaxItems) + 2;
 @selectionComputerMaxMenuHeight: (@selectionItemHeight * @selectionComputerMaxItems) + 2;
 @selectionWidescreenMaxMenuHeight: (@selectionItemHeight * @selectionWidescreenMaxItems) + 2;
+
+@menuBoxShadow: @eosBoxShadow-3 !important;
+@menuBorder: none !important;

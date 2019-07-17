@@ -1,5 +1,5 @@
 
-@white-bg: #212f3c;
+@white-bg: #1f2d3a;
 @borderColor: @eosGrey3;
 @textColor: @eosGrey11;
 
@@ -30,16 +30,21 @@
 @eosGrey9-2-bg: @eosGrey9-2;
 @eosGrey10-bg: @eosGrey3;
 @eosGrey11-bg: @eosGrey2;
+@eosGrey12-bg: @eosGrey1;
 
-@eosGrey2-2: #2d3849;
+@eosGrey13-bg: #2d3849;
 
 @selectedBackgroudColor: @inputBorderColor;
-@inputBorderColor: @eosGrey3;
-@inputBackground: @eosGrey3;
-@inputHoverBorderColor: @eosGrey4;
-@inputHoverBackgroundColor: @eosGrey3;
-@inputFocusBackground: @eosGrey3;
+@inputBorderColor: @eosGrey10-bg;
+@inputBackground: @eosGrey10-bg;
+@inputHoverBorderColor: @eosGrey9-bg;
+@inputHoverBackgroundColor: @eosGrey10-bg;
+@inputFocusBackground: @eosGrey10-bg;
 @inputTransition: all 0.3s;
 @labelColor: @eosGrey7-text;
 
 @linkHoverColor: @eosBlue5;
+
+@thumbBackground: @eosGrey9-bg;
+@thumbHoverBackground: @eosGrey8-bg;
+@trackBackground: none;

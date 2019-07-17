@@ -1,1 +1,3 @@
 @basicBackground: none;
+@basicBorder: 1px solid @eosGrey10-bg;
+@basicColor: @eosGrey5-text;
