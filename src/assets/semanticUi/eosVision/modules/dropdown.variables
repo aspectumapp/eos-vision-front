@@ -96,5 +96,7 @@
 @scrollingComputerMaxMenuHeight: (@scrollingItemHeight * @scrollingComputerMaxItems) + 2;
 @scrollingWidescreenMaxMenuHeight: (@scrollingItemHeight * @selectionWidescreenMaxItems) + 2;
 
-
-
+@selectionMobileMaxMenuHeight: (@selectionItemHeight * @selectionMobileMaxItems) + 2;
+@selectionTabletMaxMenuHeight: (@selectionItemHeight * @selectionTabletMaxItems) + 2;
+@selectionComputerMaxMenuHeight: (@selectionItemHeight * @selectionComputerMaxItems) + 2;
+@selectionWidescreenMaxMenuHeight: (@selectionItemHeight * @selectionWidescreenMaxItems) + 2;
