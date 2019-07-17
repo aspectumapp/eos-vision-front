@@ -3,7 +3,7 @@
 
 @dropdownBackground: @white-bg;
 
-
+@medium: @fontSize;
 
 /*******************************
     User Variable Overrides
