@@ -278,7 +278,7 @@
     min-width: auto !important;
     box-shadow: 0 2px 3px 0 #e0e1e2 !important;
     z-index: 104;
-    top: -6px !important;
+    margin-top: -6px !important;
     &.upward {
       top: auto !important;
     }

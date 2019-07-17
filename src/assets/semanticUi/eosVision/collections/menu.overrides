@@ -3,7 +3,6 @@
 *******************************/
 
 .ui.menu {
-  font-size: @fontSize;
   position: relative;
   .pointing {
     height: 100%;
