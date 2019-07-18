@@ -285,6 +285,7 @@
 }
 
 .ui.button.icon {
+  
   &.transparent {
     background-color: transparent;
     padding: 0;
@@ -401,11 +402,16 @@
     }
     &.btn-favorite, &.btn-public {
       color: @eosGrey8-text;
-      &:hover {
-        color: @eosGrey4-text;
+      &:not(button):not(a) {
+        -webkit-tap-highlight-color: transparent;
       }
-      &:active {
-        color: darken(@eosGrey4-text, 6%);
+      & when (@visionMobile = false) and (@visionTablet = false)  {
+        &:hover {
+          color: @eosGrey4-text;
+        }
+        &:active {
+          color: darken(@eosGrey4-text, 6%);
+        }
       }
     }
     &.btn-favorite {
