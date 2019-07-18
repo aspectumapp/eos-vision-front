@@ -58,7 +58,7 @@
   background-color: @white-bg;
   color: @eosGrey5-text;
   
-  box-shadow: 0 1px 4px rgba(27, 33, 43, 0.3) !important;
+  box-shadow: @eosBoxShadow-1 !important;
 }
 .ui.buttons.white:not(.icon), .ui.button.white:not(.icon) {
   border-radius: 3px;
@@ -285,6 +285,7 @@
 }
 
 .ui.button.icon {
+  
   &.transparent {
     background-color: transparent;
     padding: 0;
@@ -401,11 +402,16 @@
     }
     &.btn-favorite, &.btn-public {
       color: @eosGrey8-text;
-      &:hover {
-        color: @eosGrey4-text;
+      &:not(button):not(a) {
+        -webkit-tap-highlight-color: transparent;
       }
-      &:active {
-        color: darken(@eosGrey4-text, 6%);
+      & when (@visionMobile = false) and (@visionTablet = false)  {
+        &:hover {
+          color: @eosGrey4-text;
+        }
+        &:active {
+          color: darken(@eosGrey4-text, 6%);
+        }
       }
     }
     &.btn-favorite {

@@ -3,7 +3,6 @@
 *******************************/
 
 .ui.menu {
-  font-size: @fontSize;
   position: relative;
   .pointing {
     height: 100%;
@@ -45,11 +44,8 @@
   }
   &.tabs-menu {
     border-bottom-color: @borderColor;
-    border-bottom-width: 2px;
     .item {
       border-bottom-color: transparent;
-      border-bottom-width: 2px;
-      margin-bottom: -2px;
       font-size: @fontSize;
       padding: @secondaryPointingTabsMenuItemVerticalPadding @secondaryPointingTabsMenuItemHorizontalPadding;
       & when (@VisionDark = false) {

@@ -1,0 +1,4 @@
+@background: @eosGrey13-bg;
+@boxShadow: none;
+@metaColor: @eosGrey8-text;
+@selectedBackgroudColor: @eosGrey10-bg;

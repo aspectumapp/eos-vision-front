@@ -1,9 +1,9 @@
 @menuBackground: @eosGrey10-bg;
 @menuDividerColor: @eosGrey9-bg;
 @hoveredItemBackground: @eosGrey9-bg;
-@inputDisabledBackground: @eosGrey2;
-@inputDisabledcolor: @eosGrey4;
-@inputDisabledBorder: @eosGrey2;
+@inputDisabledBackground: @eosGrey11-bg;
+@inputDisabledcolor: @eosGrey9-text;
+@inputDisabledBorder: @eosGrey11-bg;
 @disabledOpacity: 1;
-@defaultTextColor: @eosGrey7;
-@menuBoxShadow: 0 2px 10px 0px rgba(0, 0, 0, 0.4);
+@defaultTextColor: @eosGrey6-bg;
+@errorItemActiveBackground: @eosRed1;

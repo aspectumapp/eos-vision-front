@@ -27,7 +27,7 @@
 
 @inlineLabelDistance: 9/12em;
 @labelColor: @eosGrey5-text;
-@labelFontWeight: @fontNormal;
+@labelFontWeight: @fontSemiBold;
 
 @disabledOpacity: 1;
 

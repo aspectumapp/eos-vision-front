@@ -1,6 +1,6 @@
 .ui.dropdown .menu input {
-  border-color: @eosGrey2;
-  background: @eosGrey2;
+  border-color: @eosGrey11-bg;
+  background: @eosGrey11-bg;
 }
 .ui.disabled.dropdown .icon {
   opacity: .4 !important;

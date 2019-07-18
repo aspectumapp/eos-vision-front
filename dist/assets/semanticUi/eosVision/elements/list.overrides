@@ -4,10 +4,10 @@
 
 .ui.list.list-view {
   border: @dividedBorder;
-  background-color: @white-bg;
   >.item {
     display: flex;
     align-items: center;
     padding: 0;
+    background-color: @white-bg; 
   }
 }
