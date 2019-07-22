@@ -1,4 +1,6 @@
 
+@pageBackground: @eosGrey12-bg;
+
 @white-bg: #1f2d3a;
 @borderColor: @eosGrey3;
 @textColor: @eosGrey11;

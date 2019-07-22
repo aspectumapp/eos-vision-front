@@ -61,6 +61,17 @@
   color: @darkTextColor;
 }
 
+.ui.checkbox.item:hover label,
+.ui.checkbox.item:hover + label {
+  color: @labelHoverColor;
+}
+
+.ui.checkbox:hover input:not(:checked) ~ .box:before,
+.ui.checkbox:hover input:not(:checked) ~ label:before {
+  background: @checkboxHoverBackground;
+  border-color: @checkboxHoverBorderColor;
+}
+
 /* Checked */
 .ui.checkbox:not(.small) input ~ .box,
 .ui.checkbox:not(.small) input ~ label {
