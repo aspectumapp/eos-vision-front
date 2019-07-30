@@ -284,32 +284,34 @@
   }
 }
 
-
+@keyframes rippleButton {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.5);
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
 
 .ui.button.icon {
   &.transparent {
     padding: 0;
     font-size: @eos-buttonTransparentFontSize;
-    background: @white-bg;
+    background: transparent;
     & when (@VisionDark = false) {
       color: @eosGrey5-text;
     }
     & when (@VisionDark = true) {
       color: @eosGrey6-text;
     }
-    & when (@visionMobile = true) or (@visionTablet = true) {
-      background-position: center;
-      transition: background 0.6s;
-      border-radius: 50%;
-      &:hover {
-        background: @white-bg radial-gradient(circle, transparent 1%, @white-bg 1%) center/12000%;
-      }
-      &:active {
-        background-color: @eosGrey6-bg;
-        background-size: 100%;
-        transition: background 0s;
-      }
-    }
+    
+    
     & when (@visionMobile = false) and (@visionTablet = false) {
       &:hover {
         color: @eosGrey4-text;
@@ -320,6 +322,19 @@
     }
     >.icon, >.eos_ic {
       margin: @eos-buttonTransparentPadding !important;
+    }
+    & when (@visionMobile = true) {
+      background-position: center;
+      transition: background 0.8s;
+      border-radius: 50%;
+      &:hover {
+        background: @white-bg radial-gradient(circle, transparent 1%, @white-bg 1%) center/15000%;
+      }
+      &:active {
+        background-color: @eosGrey5-bg;
+        background-size: 100%;
+        transition: background 0s;
+      }
     }
     &.dark, &.blue, &.red {
       background-color: transparent !important;
