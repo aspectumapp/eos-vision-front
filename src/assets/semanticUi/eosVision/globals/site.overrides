@@ -7,6 +7,10 @@ body {
   font-weight: @fontNormal;
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 & when (@visionWeb = true) {
   .ui.message ::-webkit-scrollbar,
   .analysis-info-panel ::-webkit-scrollbar,
