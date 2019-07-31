@@ -66,8 +66,8 @@
   color: @labelHoverColor;
 }
 
-.ui.checkbox:hover input:not(:checked) ~ .box:before,
-.ui.checkbox:hover input:not(:checked) ~ label:before {
+.ui.checkbox:not(.toggle):hover input:not(:checked) ~ .box:before,
+.ui.checkbox:not(.toggle):hover input:not(:checked) ~ label:before {
   background: @checkboxHoverBackground;
   border-color: @checkboxHoverBorderColor;
 }
