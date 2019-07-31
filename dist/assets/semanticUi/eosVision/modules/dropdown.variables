@@ -6,9 +6,9 @@
 @menuBoxShadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
 @selectionVisibleTextColor: inherit;
-@selectionVerticalPadding: 10/13em;
+@selectionVerticalPadding: 10.5/13em;
 
-@searchSelectionVerticalPadding: 11/13em;
+@searchSelectionVerticalPadding: 10.5/13em;
 
 @searchInputTop: -2px;
 
@@ -45,9 +45,9 @@
 @selectionVisibleConnectingBorder: @selectionBorderRadius;
 @upwardMenuBorderRadius: @selectionVisibleConnectingBorder;
 
-@selectionItemDivider: 1px solid transparent;
+@selectionItemDivider: none;
 
-@itemVerticalPadding: 10/13em;
+@itemVerticalPadding: round(10.5/13em, 3);
 
 @selectionIconDistance: 35/13em;
 
