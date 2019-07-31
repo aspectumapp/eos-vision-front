@@ -255,7 +255,6 @@
 
 
   &.button {
-    background-color: transparent !important;
     .menu .item {
       width: auto;
       
