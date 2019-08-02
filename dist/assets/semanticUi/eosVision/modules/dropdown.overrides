@@ -327,7 +327,6 @@
       text-overflow: ellipsis;
     }
     b {
-      margin-right: 5px;
       color: @textColor;
     }
   }
