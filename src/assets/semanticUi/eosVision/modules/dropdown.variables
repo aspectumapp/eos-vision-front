@@ -65,6 +65,7 @@
 @selectionActiveHoverBorderColor: @selectionVisibleBorderColor;
 
 @hoveredItemBackground: @eosGrey10-bg;
+@activeItemBackground: @eosGrey10-bg;
 
 
 @menuInputMargin: round(10/14rem, 3) round(12/14rem, 3);
