@@ -47,7 +47,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: fade(@white-bg, 70%);
+        background-color: @accordionNotActiveItem;
         z-index: 4;
         & when (@visionMobile = true) {
           top: 34px;

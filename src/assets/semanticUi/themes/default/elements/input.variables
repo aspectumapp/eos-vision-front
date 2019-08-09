@@ -85,8 +85,6 @@
 @errorBorder: @negativeBorderColor;
 @errorBoxShadow: none;
 
-@placeholderErrorColor: lighten(@errorColor, 40);
-@placeholderErrorFocusColor: lighten(@errorColor, 30);
 
 /* Loader */
 @invertedLoaderFillColor: rgba(0, 0, 0, 0.15);

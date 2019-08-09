@@ -35,7 +35,7 @@ body {
   .upload-files-panel ::-webkit-scrollbar-track,
   .ui.modal ::-webkit-scrollbar-track,
   .ui.sidebar ::-webkit-scrollbar-track {
-    background: #f1f3f4;
+    background: @trackBackground-2;
     border-radius: 0;
   }
 
@@ -50,7 +50,7 @@ body {
   .ui.sidebar ::-webkit-scrollbar-thumb {
     cursor: pointer;
     border-radius: 6px;
-    background: #aab0b8;
+    background: @thumbBackground-2;
   }
 
 
@@ -63,7 +63,9 @@ body {
   .upload-files-panel ::-webkit-scrollbar-thumb:hover,
   .ui.modal ::-webkit-scrollbar-thumb:hover,
   .ui.sidebar ::-webkit-scrollbar-thumb:hover {
-    background: @thumbHoverBackground;
+    background: @thumbHoverBackground-2;
+    transition: all 0.3s !important;
+  -webkit-transition: all 0.3s !important;
   }
 
 
@@ -76,7 +78,7 @@ body {
   .upload-files-panel ::-webkit-scrollbar-thumb:window-inactive,
   .ui.modal ::-webkit-scrollbar-thumb:window-inactive,
   .ui.sidebar ::-webkit-scrollbar-thumb:window-inactive {
-    background: #aab0b8;
+    background: @thumbBackground-2;
   }
 }
 

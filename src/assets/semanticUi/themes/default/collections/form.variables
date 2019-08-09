@@ -130,9 +130,6 @@
 @inputErrorFocusBorder: @negativeBorderColor;
 @inputErrorFocusBoxShadow: none;
 
-/* Placeholder Error */
-@inputErrorPlaceholderColor: lighten(@formErrorColor, 40);
-@inputErrorPlaceholderFocusColor: lighten(@formErrorColor, 30);
 
 /* Loading Dimmer */
 @loaderDimmerColor: rgba(255, 255, 255, 0.8);

@@ -28,7 +28,7 @@
       right: 0;
       top: 0;
       bottom: 0;
-      background-color: fade(@white-bg, 60%);
+      background-color: @inputHidebackground;
       z-index: 1;
       border-radius: 4px;
     }

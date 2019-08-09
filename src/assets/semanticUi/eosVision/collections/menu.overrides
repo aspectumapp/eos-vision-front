@@ -48,12 +48,7 @@
       border-bottom-color: transparent;
       font-size: @fontSize;
       padding: @secondaryPointingTabsMenuItemVerticalPadding @secondaryPointingTabsMenuItemHorizontalPadding;
-      & when (@VisionDark = false) {
-        color: @eosGrey5-text;
-      }
-      & when (@VisionDark = true) {
-        color: @eosGrey7-text;
-      }
+      color: var(--eosGrey7-text, @eosGrey5);
       &:hover {
         color: @darkTextColor;
       }
@@ -127,7 +122,7 @@
     }
 
     &:hover {
-      background-color: fade(@eosGrey11-bg, 50%);
+      background-color: @eosGrey12-bg;
       color: @eosGrey4-text;
     }
 

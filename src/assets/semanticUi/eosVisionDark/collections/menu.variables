@@ -1,8 +1,7 @@
-@eosGrey11-bg: @white-bg;
-@verticalBackground: @eosGrey13-bg !important;
-@boxShadow: 0 1px 0 0 @eosGrey12-bg;
-@secondaryActiveHoverItemBackground: @secondaryActiveItemBackground;
-@secondaryActiveHoverItemColor: @secondaryHoverItemColor;
-@disabledTextColor: @itemTextColor;
-@dropdownBackground: @eosGrey10-bg;
-@dropdownHoveredItemBackground: @eosGrey9-bg;
+// @eosGrey11-bg: @white-bg;
+--menu-boxShadow: 0 1px 0 0 @eosGrey1;
+// @secondaryActiveHoverItemBackground: @secondaryActiveItemBackground;
+// @secondaryActiveHoverItemColor: @secondaryHoverItemColor;
+// @disabledTextColor: @itemTextColor;
+--menu-dropdownBackground: @eosGrey10-bg;
+--dropdown-dropdownHoveredItemBackground: @eosGrey9-bg;

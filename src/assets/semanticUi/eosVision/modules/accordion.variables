@@ -19,3 +19,5 @@
 @titleFontSize: @fontSize;
 
 @iconFontSize: 12px;
+
+@accordionNotActiveItem: var(--accordion-accordionNotActiveItem, fade(@white, 95%));
