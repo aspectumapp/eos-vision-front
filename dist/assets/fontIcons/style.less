@@ -2,16 +2,16 @@
 
 @font-face {
   font-family: '@{icomoon-font-family}';
-  src:  url('@{icomoon-font-path}/@{icomoon-font-family}.eot?o2k8bo');
-  src:  url('@{icomoon-font-path}/@{icomoon-font-family}.eot?o2k8bo#iefix') format('embedded-opentype'),
-    url('@{icomoon-font-path}/@{icomoon-font-family}.ttf?o2k8bo') format('truetype'),
-    url('@{icomoon-font-path}/@{icomoon-font-family}.woff?o2k8bo') format('woff'),
-    url('@{icomoon-font-path}/@{icomoon-font-family}.svg?o2k8bo#@{icomoon-font-family}') format('svg');
+  src:  url('@{icomoon-font-path}/@{icomoon-font-family}.eot?llo4ho');
+  src:  url('@{icomoon-font-path}/@{icomoon-font-family}.eot?llo4ho#iefix') format('embedded-opentype'),
+    url('@{icomoon-font-path}/@{icomoon-font-family}.ttf?llo4ho') format('truetype'),
+    url('@{icomoon-font-path}/@{icomoon-font-family}.woff?llo4ho') format('woff'),
+    url('@{icomoon-font-path}/@{icomoon-font-family}.svg?llo4ho#@{icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-[class^="eos_"], [class*=" eos_"], .ui.label> .icon, .dropdown.icon.add, .close.icon, .chevron.icon, .ui.message>.close.icon {
+[class^="eos_"], [class*=" eos_"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: '@{icomoon-font-family}' !important;
   speak: none;
@@ -20,13 +20,22 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  position: relative;
-  display: inline-block;
+
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.eos_ic_grapf {
+  &:before {
+    content: @eos_ic_grapf; 
+  }
+}
+.eos_ic_aoi_geometry_collection {
+  &:before {
+    content: @eos_ic_aoi_geometry_collection; 
+  }
+}
 .eos_ic_file_replace {
   &:before {
     content: @eos_ic_file_replace; 
