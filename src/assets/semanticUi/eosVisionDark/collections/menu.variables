@@ -1,4 +1,4 @@
-// @eosGrey11-bg: @white-bg;
+
 --menu-boxShadow: 0 1px 0 0 @eosGrey1;
 // @secondaryActiveHoverItemBackground: @secondaryActiveItemBackground;
 // @secondaryActiveHoverItemColor: @secondaryHoverItemColor;

@@ -122,12 +122,12 @@
     }
 
     &:hover {
-      background-color: @eosGrey12-bg;
+      background-color: var(--white-bg-fade-50, fade(@eosGrey11, 50%));
       color: @eosGrey4-text;
     }
 
     &.active {
-      background-color: @eosGrey11-bg;
+      background-color: var(--white-bg, @eosGrey11-bg);
       color: @eosGrey4-text;
       &:after {
         background-color: @blue;

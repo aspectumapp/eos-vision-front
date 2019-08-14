@@ -5,5 +5,4 @@
 // @inputDisabledcolor: @eosGrey9-text;
 // @inputDisabledBorder: @eosGrey11-bg;
 // @disabledOpacity: 1;
-// @defaultTextColor: @eosGrey6-bg;
 // @errorItemActiveBackground: @eosRed1;

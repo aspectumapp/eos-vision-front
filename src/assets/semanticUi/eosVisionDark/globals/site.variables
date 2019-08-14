@@ -3,6 +3,7 @@
 --transparentBg: transparent;
 --none: none;
 --white-bg: #1f2d3a;
+--white-bg-fade-50: fade(#1f2d3a, 50%);
 --white-bg-fade-70: fade(#1f2d3a, 70%);
 --borderColor: @eosGrey3;
 @textColor: @eosGrey11;
@@ -37,7 +38,9 @@
 --eosGrey9-2-bg: @eosGrey9-2;
 --eosGrey10-bg: @eosGrey3;
 --eosGrey11-bg: @eosGrey2;
+--eosGrey11-bg-fade-50: fade(@eosGrey2, 50%);
 --eosGrey12-bg: @eosGrey1;
+--eosGrey12-bg-fade-50: fade(@eosGrey1, 50%);
 
 --eosGrey13-bg: #2d3849;
 

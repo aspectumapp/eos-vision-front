@@ -71,7 +71,7 @@
 }
 
 .ui.accordion.styled .title {
-  background-color: @eosGrey11-bg;
+  background-color: var(--eosGrey10-bg, @eosGrey11);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

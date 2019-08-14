@@ -39,6 +39,7 @@
 @selectionVisibleMenuBoxShadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 @selectionFocusMenuBoxShadow: @selectionVisibleMenuBoxShadow;
 
+@defaultTextColor: var(--eosGrey6-bg, @inputPlaceholderColor);
 
 
 @selectionMenuBorderRadius: @borderRadius;

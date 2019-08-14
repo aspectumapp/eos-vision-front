@@ -81,6 +81,7 @@
         flex-basis: 30%;
         word-break: break-word;
         font-weight: @fontNormal;
+        color: var(--eosGrey6-text, @labelColor);
         .ui.button.icon {
           .icon {
             font-size: 15px;
