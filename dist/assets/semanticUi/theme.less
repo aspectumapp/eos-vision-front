@@ -24,9 +24,6 @@
 /* Site theme site.variables */
 @import (optional) "@{siteFolder}/globals/site.variables";
 
-/* Site dark site.variables */
-@import (optional) "@{eosVisionDark}/globals/site.variables";
-
 /* Site mobile site.variables */
 @import (optional) "@{eosVisionMobile}/globals/site.variables";
 
@@ -49,9 +46,6 @@
 
 /* Site Theme */
 @import (optional) "@{siteFolder}/@{type}s/@{element}.variables";
-
-/* Site Dark Theme */
-@import (optional) "@{eosVisionDark}/@{type}s/@{element}.variables";
 
 /* Site mobile Theme */
 @import (optional) "@{eosVisionMobile}/@{type}s/@{element}.variables";
@@ -82,7 +76,6 @@
 .loadUIOverrides() {
   @import (optional) "@{themesFolder}/@{theme}/@{type}s/@{element}.overrides";
   @import (optional) "@{siteFolder}/@{type}s/@{element}.overrides";
-  @import (optional) "@{eosVisionDark}/@{type}s/@{element}.overrides";
   @import (optional) "@{eosVisionMobile}/@{type}s/@{element}.overrides";
   @import (optional) "@{eosVisionTablet}/@{type}s/@{element}.overrides";
   @import (optional) "@{eosVisionIframe}/@{type}s/@{element}.overrides";

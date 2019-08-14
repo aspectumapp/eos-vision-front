@@ -39,6 +39,7 @@
 @selectionVisibleMenuBoxShadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 @selectionFocusMenuBoxShadow: @selectionVisibleMenuBoxShadow;
 
+@defaultTextColor: var(--eosGrey6-bg, @inputPlaceholderColor);
 
 
 @selectionMenuBorderRadius: @borderRadius;
@@ -64,7 +65,8 @@
 @selectionVisibleBorderColor: @focusedFormBorderColor;
 @selectionActiveHoverBorderColor: @selectionVisibleBorderColor;
 
-@hoveredItemBackground: @eosGrey10-bg;
+@hoveredItemBackground: var(--eosGrey9-bg, @eosGrey10);
+@activeItemBackground: var(--eosGrey9-bg, @eosGrey10);
 
 
 @menuInputMargin: round(10/14rem, 3) round(12/14rem, 3);
@@ -103,3 +105,8 @@
 
 @menuBoxShadow: @eosBoxShadow-3 !important;
 @menuBorder: none !important;
+
+@menuDividerColor: var(--dropdown-menuDividerColor, @borderColor);
+
+
+@menuBackground: var(--menu-dropdownBackground, @white);

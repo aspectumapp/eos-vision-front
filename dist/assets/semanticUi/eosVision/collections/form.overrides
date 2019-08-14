@@ -28,7 +28,7 @@
       right: 0;
       top: 0;
       bottom: 0;
-      background-color: fade(@white-bg, 60%);
+      background-color: @inputHidebackground;
       z-index: 1;
       border-radius: 4px;
     }
@@ -81,6 +81,7 @@
         flex-basis: 30%;
         word-break: break-word;
         font-weight: @fontNormal;
+        color: var(--eosGrey6-text, @labelColor);
         .ui.button.icon {
           .icon {
             font-size: 15px;
@@ -117,24 +118,6 @@
     &.error {
       > label {
         color: @red !important;
-      }
-    }
-    > .ui.input > .dropdown {
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 100%;
-      .menu {
-        margin-top: 3px;
-        left: 0;
-        max-height: 33px * 6;
-        overflow: auto;
-      }
-      &.upward {
-        top: auto;
-        .menu {
-          margin: 0 0 3px;
-        }
       }
     }
   }

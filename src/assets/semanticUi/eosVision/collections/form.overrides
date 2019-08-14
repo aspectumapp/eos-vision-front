@@ -120,24 +120,6 @@
         color: @red !important;
       }
     }
-    > .ui.input > .dropdown {
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 100%;
-      .menu {
-        margin-top: 3px;
-        left: 0;
-        max-height: 33px * 6;
-        overflow: auto;
-      }
-      &.upward {
-        top: auto;
-        .menu {
-          margin: 0 0 3px;
-        }
-      }
-    }
   }
 
   .disabled.fields .field input,

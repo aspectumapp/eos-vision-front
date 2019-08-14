@@ -31,4 +31,8 @@
 
 @disabledOpacity: 1;
 
-@inputBackground: @white-bg;
+@inputBackground: var(--eosGrey10-bg, @white);
+
+@inputErrorPlaceholderColor: #ffddd9;
+@inputErrorPlaceholderFocusColor: #ffddd9;
+@inputHidebackground: var(--form-inputHidebackground, fade(@white, 95%));

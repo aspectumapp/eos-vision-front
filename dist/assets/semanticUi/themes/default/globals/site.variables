@@ -82,8 +82,6 @@
 
 /* Input Text Color */
 @inputColor: @textColor;
-@inputPlaceholderColor: lighten(@inputColor, 75);
-@inputPlaceholderFocusColor: lighten(@inputColor, 45);
 
 /* Line Height Default For Inputs in Browser (Descenders are 17px at 14px base em) */
 @inputLineHeight: unit((17 / 14), em);
@@ -140,7 +138,6 @@
 
 @linkColor           : #4183C4;
 @linkUnderline       : none;
-@linkHoverColor      : darken(saturate(@linkColor, 20), 15, relative);
 @linkHoverUnderline  : @linkUnderline;
 
 /*-------------------
@@ -274,7 +271,7 @@
 @oliveHeaderColor  : darken(@oliveTextColor, 5);
 @greenHeaderColor  : darken(@greenTextColor, 5);
 @yellowHeaderColor : darken(@yellowTextColor, 5);
-@blueHeaderColor   : darken(@blueTextColor, 5);
+@blueHeaderColor   : @blueTextColor;
 @tealHeaderColor   : darken(@tealTextColor, 5);
 @pinkHeaderColor   : darken(@pinkTextColor, 5);
 @violetHeaderColor : darken(@violetTextColor, 5);
@@ -735,7 +732,6 @@
 ;
 
 /*---  Colors  ---*/
-@primaryColorHover        : saturate(darken(@primaryColor, 5), 10, relative);
 @secondaryColorHover      : saturate(lighten(@secondaryColor, 5), 10, relative);
 @lightPrimaryColorHover   : saturate(darken(@lightPrimaryColor, 5), 10, relative);
 @lightSecondaryColorHover : saturate(lighten(@lightSecondaryColor, 5), 10, relative);
@@ -746,7 +742,6 @@
 @oliveHover               : saturate(darken(@olive, 5), 10, relative);
 @greenHover               : saturate(darken(@green, 5), 10, relative);
 @tealHover                : saturate(darken(@teal, 5), 10, relative);
-@blueHover                : saturate(darken(@blue, 5), 10, relative);
 @violetHover              : saturate(darken(@violet, 5), 10, relative);
 @purpleHover              : saturate(darken(@purple, 5), 10, relative);
 @pinkHover                : saturate(darken(@pink, 5), 10, relative);
@@ -767,8 +762,8 @@
 @lightBlackHover          : saturate(darken(@fullBlack, 5), 10, relative);
 
 /*---  Emotive  ---*/
-@positiveColorHover       : saturate(darken(@positiveColor, 5), 10, relative);
-@negativeColorHover       : saturate(darken(@negativeColor, 5), 10, relative);
+@positiveColorHover       : @positiveColor;
+@negativeColorHover       : @negativeColor;
 
 /*---  Brand   ---*/
 @facebookHoverColor       : saturate(darken(@facebookColor, 5), 10, relative);
@@ -795,7 +790,6 @@
 --------------------*/
 
 /*---  Colors  ---*/
-@primaryColorFocus        : saturate(darken(@primaryColor, 8), 20, relative);
 @secondaryColorFocus      : saturate(lighten(@secondaryColor, 8), 20, relative);
 @lightPrimaryColorFocus   : saturate(darken(@lightPrimaryColor, 8), 20, relative);
 @lightSecondaryColorFocus : saturate(lighten(@lightSecondaryColor, 8), 20, relative);
@@ -806,7 +800,6 @@
 @oliveFocus               : saturate(darken(@olive, 8), 20, relative);
 @greenFocus               : saturate(darken(@green, 8), 20, relative);
 @tealFocus                : saturate(darken(@teal, 8), 20, relative);
-@blueFocus                : saturate(darken(@blue, 8), 20, relative);
 @violetFocus              : saturate(darken(@violet, 8), 20, relative);
 @purpleFocus              : saturate(darken(@purple, 8), 20, relative);
 @pinkFocus                : saturate(darken(@pink, 8), 20, relative);
@@ -827,8 +820,8 @@
 @lightBlackFocus          : saturate(darken(@fullBlack, 8), 20, relative);
 
 /*---  Emotive  ---*/
-@positiveColorFocus       : saturate(darken(@positiveColor, 8), 20, relative);
-@negativeColorFocus       : saturate(darken(@negativeColor, 8), 20, relative);
+@positiveColorFocus       : @positiveColor;
+@negativeColorFocus       : @negativeColor;
 
 /*---  Brand   ---*/
 @facebookFocusColor       : saturate(darken(@facebookColor, 8), 20, relative);
@@ -856,7 +849,6 @@
 --------------------*/
 
 /*---  Colors  ---*/
-@primaryColorDown        : darken(@primaryColor, 10);
 @secondaryColorDown      : lighten(@secondaryColor, 10);
 @lightPrimaryColorDown   : darken(@lightPrimaryColor, 10);
 @lightSecondaryColorDown : lighten(@lightSecondaryColor, 10);
@@ -867,7 +859,6 @@
 @oliveDown               : darken(@olive, 10);
 @greenDown               : darken(@green, 10);
 @tealDown                : darken(@teal, 10);
-@blueDown                : darken(@blue, 10);
 @violetDown              : darken(@violet, 10);
 @purpleDown              : darken(@purple, 10);
 @pinkDown                : darken(@pink, 10);
@@ -888,8 +879,8 @@
 @lightBlackDown          : darken(@fullBlack, 10);
 
 /*---  Emotive  ---*/
-@positiveColorDown       : darken(@positiveColor, 10);
-@negativeColorDown       : darken(@negativeColor, 10);
+@positiveColorDown       : @positiveColor;
+@negativeColorDown       : @negativeColor;
 
 /*---  Brand   ---*/
 @facebookDownColor       : darken(@facebookColor, 10);
@@ -917,7 +908,6 @@
 --------------------*/
 
 /*---  Colors  ---*/
-@primaryColorActive        : saturate(darken(@primaryColor, 5), 15, relative);
 @secondaryColorActive      : saturate(lighten(@secondaryColor, 5), 15, relative);
 @lightPrimaryColorActive   : saturate(darken(@lightPrimaryColor, 5), 15, relative);
 @lightSecondaryColorActive : saturate(lighten(@lightSecondaryColor, 5), 15, relative);
@@ -928,7 +918,6 @@
 @oliveActive               : saturate(darken(@olive, 5), 15, relative);
 @greenActive               : saturate(darken(@green, 5), 15, relative);
 @tealActive                : saturate(darken(@teal, 5), 15, relative);
-@blueActive                : saturate(darken(@blue, 5), 15, relative);
 @violetActive              : saturate(darken(@violet, 5), 15, relative);
 @purpleActive              : saturate(darken(@purple, 5), 15, relative);
 @pinkActive                : saturate(darken(@pink, 5), 15, relative);
@@ -949,8 +938,8 @@
 @lightBlackActive          : saturate(darken(@fullBlack, 5), 15, relative);
 
 /*---  Emotive  ---*/
-@positiveColorActive       : saturate(darken(@positiveColor, 5), 15, relative);
-@negativeColorActive       : saturate(darken(@negativeColor, 5), 15, relative);
+@positiveColorActive       : @positiveColor;
+@negativeColorActive       : @negativeColor;
 
 /*---  Brand   ---*/
 @facebookActiveColor       : saturate(darken(@facebookColor, 5), 15, relative);

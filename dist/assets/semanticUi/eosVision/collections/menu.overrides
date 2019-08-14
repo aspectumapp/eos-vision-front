@@ -48,12 +48,7 @@
       border-bottom-color: transparent;
       font-size: @fontSize;
       padding: @secondaryPointingTabsMenuItemVerticalPadding @secondaryPointingTabsMenuItemHorizontalPadding;
-      & when (@VisionDark = false) {
-        color: @eosGrey5-text;
-      }
-      & when (@VisionDark = true) {
-        color: @eosGrey7-text;
-      }
+      color: var(--eosGrey7-text, @eosGrey5);
       &:hover {
         color: @darkTextColor;
       }
@@ -127,12 +122,12 @@
     }
 
     &:hover {
-      background-color: fade(@eosGrey11-bg, 50%);
+      background-color: var(--white-bg-fade-50, fade(@eosGrey11, 50%));
       color: @eosGrey4-text;
     }
 
     &.active {
-      background-color: @eosGrey11-bg;
+      background-color: var(--white-bg, @eosGrey11-bg);
       color: @eosGrey4-text;
       &:after {
         background-color: @blue;

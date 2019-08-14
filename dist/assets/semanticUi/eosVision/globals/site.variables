@@ -6,7 +6,7 @@
         Page
 --------------------*/
 
-@pageBackground      : @eosGrey11-bg;
+@pageBackground      : var(--pageBackground, @eosGrey11);
 
 @textColor           : @eosGrey3-text;
 
@@ -37,6 +37,7 @@
 --------------------*/
 
 @linkColor           : @blue;
+@linkHoverColor      : @eosBlue2;
 @linkHoverUnderline: underline;
 
 /*-------------------
@@ -65,15 +66,15 @@
 
 @inputLineHeight: unit((16 / 14), rem);
 
-@inputBackground        : @white-bg;
+@inputBackground        : var(--inputBackground, @white);
 
 /* Input Text Color */
 
 @inputPlaceholderColor: @eosGrey8-text;
 @inputPlaceholderFocusColor: @inputPlaceholderColor;
-@inputBorderColor: @eosGrey8-bg;
-@inputHoverBorderColor: @eosGrey7-bg;
-@inputHoverBackgroundColor: @inputBackground;
+@inputBorderColor: var(--inputBorderColor, @eosGrey8);
+@inputHoverBorderColor: var(--inputHoverBorderColor, @eosGrey7);
+@inputHoverBackgroundColor: var(--inputHoverBackgroundColor, @white);
 
 @selectedTextColor           : @textColor;
 
@@ -81,7 +82,7 @@
       Borders
 --------------------*/
 
-@borderColor               : @eosGrey9;
+@borderColor               : var(--borderColor, @eosGrey9);
 @internalBorderColor       : @borderColor;
 /*-------------------
      Neutral Text
@@ -107,18 +108,19 @@
 @eosGrey9-2: #d2d6da;
 @eosGrey10: #F4F4F5;
 @eosGrey11: #F9F9F9;
+@eosGrey12: #fcfcfc;
 
 
-@eosBlue1: #3F7FBF;
-@eosBlue2: #468DD4;
-@eosBlue3: #4C9AE7;
-@eosBlue4: #64A6E8;
-@eosBlue5: #7BB2E8;
-@eosBlue6: #92BDE8;
-@eosBlue6-1: #96c7fd;
-@eosBlue7: #A9C9E8;
-@eosBlue8: #D4E9FF;
-@eosBlue9: #f2f8ff;
+@eosBlue1:  var(--eosBlue1, #0080FF);
+@eosBlue2: var(--eosBlue2, #1A8CFF);
+@eosBlue3: var(--eosBlue3, #3399FF);
+@eosBlue4: var(--eosBlue4, #59ACFF);
+@eosBlue5: var(--eosBlue5, #80BFFF);
+@eosBlue6: var(--eosBlue6, #A6D2FF);
+@eosBlue6-1: var(--eosBlue6-1, #96c7fd);
+@eosBlue7: var(--eosBlue7, #BFDFFF);
+@eosBlue8: var(--eosBlue8, #D9ECFF);
+@eosBlue9: var(--eosBlue9, #F2F9FF);
 
 @eosRed1: #FF5440;
 @eosRed2: #E73C1E;
@@ -132,9 +134,11 @@
 
 /*---  Colors  ---*/
 @blue             : @eosBlue3;
+@blue-transparent-5 : var(--blue-transparent-5, fade(#4C9AE7, 5%));
 @blueHover        : @eosBlue2;
 @blueDown         : @eosBlue1;
 @blueFocus        : @blue;
+@blueActive        : @blue;
 
 @red              : @eosRed1;
 @redHover         : @eosRed2;
@@ -145,6 +149,11 @@
 @greenHover         : @eosGreen2;
 @greenDown          : @eosGreen3;
 @greenFocus         : @green;
+
+@primaryColorHover        : @blueHover;
+@primaryColorFocus        : @blueFocus;
+@primaryColorDown        : @blueDown;
+@primaryColorActive:     @blue; 
 
 @orange           : #ffae44;
 @yellow           : #ffb731;
@@ -163,38 +172,51 @@
 
 @mutedTextColor              : rgba(0, 0, 0, 0.6);
 
-@white-text: #fff;
-@white-bg: #fff;
+@white-text: var(--white-text, @white);
+@white-bg: var(--white-bg, @white);
 
-@eosGrey1-text: @eosGrey1;
-@eosGrey2-text: @eosGrey2;
-@eosGrey3-text: @eosGrey3;
-@eosGrey4-text: @eosGrey4;
-@eosGrey5-text: @eosGrey5;
-@eosGrey6-text: @eosGrey6;
-@eosGrey7-text: @eosGrey7;
-@eosGrey8-text: @eosGrey8;
-@eosGrey9-text: @eosGrey9;
-@eosGrey9-1-text: @eosGrey9-1;
-@eosGrey9-2-text: @eosGrey9-2;
-@eosGrey10-text: @eosGrey10;
-@eosGrey11-text: @eosGrey11;
+@white-bg-fade-10: var(--white-bg-fade-10, fade(@white, 10%));
+@white-bg-fade-20: var(--white-bg-fade-20, fade(@white, 20%));
+@white-bg-fade-30: var(--white-bg-fade-30, fade(@white, 30%));
+@white-bg-fade-40: var(--white-bg-fade-40, fade(@white, 40%));
+@white-bg-fade-50: var(--white-bg-fade-50, fade(@white, 50%));
+@white-bg-fade-60: var(--white-bg-fade-60, fade(@white, 60%));
+@white-bg-fade-70: var(--white-bg-fade-70, fade(@white, 70%));
+@white-bg-fade-80: var(--white-bg-fade-80, fade(@white, 80%));
+@white-bg-fade-90: var(--white-bg-fade-90, fade(@white, 90%));
+@white-bg-fade-95: var(--white-bg-fade-95, fade(@white, 95%));
 
-@eosGrey1-bg: @eosGrey1;
-@eosGrey2-bg: @eosGrey2;
-@eosGrey3-bg: @eosGrey3;
-@eosGrey4-bg: @eosGrey4;
-@eosGrey5-bg: @eosGrey5;
-@eosGrey6-bg: @eosGrey6;
-@eosGrey7-bg: @eosGrey7;
-@eosGrey8-bg: @eosGrey8;
-@eosGrey9-bg: @eosGrey9;
-@eosGrey9-1-bg: @eosGrey9-1;
-@eosGrey9-2-bg: @eosGrey9-2;
-@eosGrey10-bg: @eosGrey10;
-@eosGrey11-bg: @eosGrey11;
+@eosGrey1-text: var(--eosGrey1-text, @eosGrey1);
+@eosGrey2-text: var(--eosGrey2-text, @eosGrey2);
+@eosGrey3-text: var(--eosGrey3-text, @eosGrey3);
+@eosGrey4-text: var(--eosGrey4-text, @eosGrey4);
+@eosGrey5-text: var(--eosGrey5-text, @eosGrey5);
+@eosGrey6-text: var(--eosGrey6-text, @eosGrey6);
+@eosGrey7-text: var(--eosGrey7-text, @eosGrey7);
+@eosGrey8-text: var(--eosGrey8-text, @eosGrey8);
+@eosGrey9-text: var(--eosGrey9-text, @eosGrey9);
+@eosGrey9-1-text: var(--eosGrey9-1-text, @eosGrey9-1);
+@eosGrey9-2-text: var(--eosGrey9-2-text, @eosGrey9-2);
+@eosGrey10-text: var(--eosGrey10-text, @eosGrey10);
+@eosGrey11-text: var(--eosGrey11-text, @eosGrey11);
+@eosGrey12-text: var(--eosGrey12-text, @eosGrey12);
 
-@selectedBackgroudColor: @eosBlue9;
+@eosGrey1-bg: var(--eosGrey1-bg, @eosGrey1);
+@eosGrey2-bg: var(--eosGrey2-bg, @eosGrey2);
+@eosGrey3-bg: var(--eosGrey3-bg, @eosGrey3);
+@eosGrey4-bg: var(--eosGrey4-bg, @eosGrey4);
+@eosGrey5-bg: var(--eosGrey5-bg, @eosGrey5);
+@eosGrey6-bg: var(--eosGrey6-bg, @eosGrey6);
+@eosGrey7-bg: var(--eosGrey7-bg, @eosGrey7);
+@eosGrey8-bg: var(--eosGrey8-bg, @eosGrey8);
+@eosGrey9-bg: var(--eosGrey9-bg, @eosGrey9);
+@eosGrey9-1-bg: var(--eosGrey9-1-bg, @eosGrey9-1);
+@eosGrey9-2-bg: var(--eosGrey9-2-bg, @eosGrey9-2);
+@eosGrey10-bg: var(--eosGrey10-bg, @eosGrey10);
+@eosGrey11-bg: var(--eosGrey11-bg, @eosGrey11);
+@eosGrey12-bg: var(--eosGrey12-bg, @eosGrey12);
+
+@selectedBackgroudColor: var(--selectedBackgroudColor, @eosBlue9);
 @selectedBorderColor: @blue;
 
 
@@ -211,10 +233,20 @@
 
 @customScrollbarWidth: 9px;
 
-@trackBackground: fade(@eosGrey9-1-bg, 22%);
+@trackBackground: var(--trackBackground, #f1f1f1);
+@trackBackground-2: var(--eosGrey10-bg, #f1f3f4);
 
 @thumbBorderRadius: 3px;
-@thumbBackground: @eosGrey9-1-bg;
+
+@thumbBackground: var(--eosGrey9-bg, @eosGrey9-1);
+@thumbBackground-2: var(--eosGrey8-bg, #aab0b8);
+
+@thumbHoverBackground: var(--eosGrey8-bg, rgba(128, 135, 139, 0.8));
+@thumbHoverBackground-2: var(--eosGrey5-bg, #aab0b8);
+
+@thumbInactiveBackground: @thumbBackground;
+
+
 
 /*-------------------
     inputs disabled

@@ -6,9 +6,11 @@
 
 @labelFontSize: @fontSize;
 
-@labelColor: @eosGrey5-text;
+@labelColor: var(--eosGrey7-text, @eosGrey5);
 @labelHoverColor: @eosGrey4-text;
 @labelDistance: @checkboxSize + 6;
+
+@checkboxBackground: var(--none, @white);
 
 @checkboxActiveCheckColor: #fff;
 @solidBorderColor: @eosGrey8;
@@ -26,7 +28,7 @@
 
 @checkboxActiveFocusBackground: @checkboxActiveBackground;
 
-@checkboxActiveFocusBorderColor: darken(@checkboxActiveBorderColor, 10%);
+@checkboxActiveFocusBorderColor: @checkboxActiveBorderColor;
 
 @labelFocusColor: @labelColor;
 

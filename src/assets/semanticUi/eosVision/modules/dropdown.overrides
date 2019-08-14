@@ -284,8 +284,6 @@
       top: auto !important;
     }
   }
-
-
 }
 
 
@@ -309,6 +307,33 @@
     margin: -5px 0;
     &:hover {
       color: @eosGrey4-text;
+    }
+  }
+}
+
+.ui.input > .dropdown, .ui.form .field > .ui.input > .dropdown {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  .menu {
+    margin-top: 3px;
+    left: 0;
+    max-height: 34px * 5;
+    overflow: auto;
+    padding: 0 !important;
+    .item {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    b {
+      color: @textColor;
+    }
+  }
+  &.upward {
+    top: auto;
+    .menu {
+      margin: 0 0 3px;
     }
   }
 }
