@@ -109,16 +109,16 @@
 @eosGrey11: #F9F9F9;
 
 
-@eosBlue1: #3F7FBF;
-@eosBlue2: #468DD4;
-@eosBlue3: #4C9AE7;
-@eosBlue4: #64A6E8;
-@eosBlue5: #7BB2E8;
-@eosBlue6: #92BDE8;
+@eosBlue1: #0080FF;
+@eosBlue2: #1A8CFF;
+@eosBlue3: #3399FF;
+@eosBlue4: #59ACFF;
+@eosBlue5: #80BFFF;
+@eosBlue6: #A6D2FF;
 @eosBlue6-1: #96c7fd;
-@eosBlue7: #A9C9E8;
-@eosBlue8: #D4E9FF;
-@eosBlue9: #f2f8ff;
+@eosBlue7: #BFDFFF;
+@eosBlue8: #D9ECFF;
+@eosBlue9: #F2F9FF;
 
 @eosRed1: #FF5440;
 @eosRed2: #E73C1E;
