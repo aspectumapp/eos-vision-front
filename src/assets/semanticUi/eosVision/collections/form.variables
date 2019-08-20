@@ -36,3 +36,6 @@
 @inputErrorPlaceholderColor: #ffddd9;
 @inputErrorPlaceholderFocusColor: #ffddd9;
 @inputHidebackground: var(--form-inputHidebackground, fade(@white, 95%));
+
+
+@formErrorBackground: var(--eosGrey10-bg, @negativeBackgroundColor);

@@ -1,5 +1,0 @@
-@tooltipInvertedColor: @eosGrey12-bg;
-@tooltipInvertedBackground: @eosGrey1-bg;
-@background: @eosGrey10-bg;
-@arrowBottomBackground: @eosGrey10-bg;
-@arrowBoxShadow: 1px 1px 0px 0px @eosGrey10-bg;

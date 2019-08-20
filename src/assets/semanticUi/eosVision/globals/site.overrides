@@ -20,6 +20,7 @@ body {
   .ui.dropdown ::-webkit-scrollbar,
   .upload-files-panel ::-webkit-scrollbar,
   .ui.modal ::-webkit-scrollbar,
+  .ui.popup ::-webkit-scrollbar,
   .ui.sidebar ::-webkit-scrollbar {
     -webkit-appearance: none;
     width: 7px;
@@ -34,6 +35,7 @@ body {
   .ui.dropdown ::-webkit-scrollbar-track,
   .upload-files-panel ::-webkit-scrollbar-track,
   .ui.modal ::-webkit-scrollbar-track,
+  .ui.popup ::-webkit-scrollbar-track,
   .ui.sidebar ::-webkit-scrollbar-track {
     background: @trackBackground-2;
     border-radius: 0;
@@ -47,6 +49,7 @@ body {
   .ui.dropdown ::-webkit-scrollbar-thumb,
   .upload-files-panel ::-webkit-scrollbar-thumb,
   .ui.modal ::-webkit-scrollbar-thumb,
+  .ui.popup ::-webkit-scrollbar-thumb,
   .ui.sidebar ::-webkit-scrollbar-thumb {
     cursor: pointer;
     border-radius: 6px;
@@ -62,6 +65,7 @@ body {
   .ui.dropdown ::-webkit-scrollbar-thumb:hover,
   .upload-files-panel ::-webkit-scrollbar-thumb:hover,
   .ui.modal ::-webkit-scrollbar-thumb:hover,
+  .ui.popup ::-webkit-scrollbar-thumb:hover,
   .ui.sidebar ::-webkit-scrollbar-thumb:hover {
     background: @thumbHoverBackground-2;
     transition: all 0.3s !important;
@@ -77,6 +81,7 @@ body {
   .ui.dropdown ::-webkit-scrollbar-thumb:window-inactive,
   .upload-files-panel ::-webkit-scrollbar-thumb:window-inactive,
   .ui.modal ::-webkit-scrollbar-thumb:window-inactive,
+  .ui.popup ::-webkit-scrollbar-thumb:window-inactive,
   .ui.sidebar ::-webkit-scrollbar-thumb:window-inactive {
     background: @thumbBackground-2;
   }

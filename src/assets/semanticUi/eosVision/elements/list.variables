@@ -6,3 +6,5 @@
 @itemHeaderFontWeight: @fontSemiBold;
 @margin: 0;
 @relativeMedium: @fontSize;
+
+@dividedBorder: @dividedBorderWidth solid var(--eosGrey12-bg, @borderColor);
