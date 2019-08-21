@@ -189,6 +189,11 @@
   }
 }
 
+.ui.dropdown .menu input {
+  border-color: var(--eosGrey11-bg, @inputBorderColor);
+  background: var(--eosGrey11-bg, @white) !important;
+}
+
 .context-menu {
   &.ui.simple {
     z-index: 103;

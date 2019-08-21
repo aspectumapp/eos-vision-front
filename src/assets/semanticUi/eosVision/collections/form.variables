@@ -37,5 +37,7 @@
 @inputErrorPlaceholderFocusColor: #ffddd9;
 @inputHidebackground: var(--white-bg-fade-95, fade(@white, 95%));
 
+@loaderDimmerColor: var(--white-bg-fade-95, fade(@white, 95%));
+
 
 @formErrorBackground: var(--eosGrey10-bg, @negativeBackgroundColor);

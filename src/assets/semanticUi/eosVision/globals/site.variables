@@ -70,7 +70,7 @@
 
 /* Input Text Color */
 
-@inputPlaceholderColor: @eosGrey8-text;
+@inputPlaceholderColor: var(--eosGrey6-text, @eosGrey8-text);
 @inputPlaceholderFocusColor: @inputPlaceholderColor;
 @inputBorderColor: var(--inputBorderColor, @eosGrey8);
 @inputHoverBorderColor: var(--inputHoverBorderColor, @eosGrey7);
