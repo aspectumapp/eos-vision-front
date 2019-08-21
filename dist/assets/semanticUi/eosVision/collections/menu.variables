@@ -67,7 +67,9 @@
 
 
 @secondaryActiveItemBackground: @eosGrey10-bg;
+@secondaryActiveHoverItemBackground: @eosGrey10-bg;
 @secondaryActiveItemColor: @eosGrey4-text;
+@secondaryActiveHoverItemColor: @eosGrey4-text;
 
 @hoverItemBackground: transparent;
 @hoverItemTextColor: @eosGrey3-text;
@@ -84,7 +86,8 @@
 
 @dropdownMenuBorderRadius: 3px;
 
-@dropdownActiveItemBackground: @eosGrey11-bg;
+@dropdownActiveItemBackground: var(--white-bg, @eosGrey11-bg);
+@dropdownSelectedItemBackground: var(--white-bg, @eosGrey11-bg);
 @dropdownActiveItemFontWeight: @fontSemiBold;
 
 @dropdownItemFontSize: @fontSize;

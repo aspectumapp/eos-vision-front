@@ -5,9 +5,10 @@
 --white-bg: #1f2d3a;
 --white-bg-fade-50: fade(#1f2d3a, 50%);
 --white-bg-fade-70: fade(#1f2d3a, 70%);
+--white-bg-fade-95: fade(#1f2d3a, 95%);
 --borderColor: @eosGrey3;
-@textColor: @eosGrey11;
 
+--opacity-70: 0.7;
 
 --eosGrey1-text: #fff;
 
@@ -41,6 +42,7 @@
 --eosGrey11-bg-fade-50: fade(@eosGrey2, 50%);
 --eosGrey12-bg: @eosGrey1;
 --eosGrey12-bg-fade-50: fade(@eosGrey1, 50%);
+--eosGrey12-bg-fade-95: fade(@eosGrey1, 95%);
 
 --eosGrey13-bg: #2d3849;
 

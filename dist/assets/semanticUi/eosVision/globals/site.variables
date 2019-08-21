@@ -70,7 +70,7 @@
 
 /* Input Text Color */
 
-@inputPlaceholderColor: @eosGrey8-text;
+@inputPlaceholderColor: var(--eosGrey6-text, @eosGrey8-text);
 @inputPlaceholderFocusColor: @inputPlaceholderColor;
 @inputBorderColor: var(--inputBorderColor, @eosGrey8);
 @inputHoverBorderColor: var(--inputHoverBorderColor, @eosGrey7);
@@ -252,8 +252,8 @@
     inputs disabled
 --------------------*/
   @inputDisabledBackground: @eosGrey11-bg;
-  @inputDisabledcolor: @eosGrey4-text;
-  @inputDisabledBorder: @borderColor;
+  @inputDisabledcolor: var(--eosGrey9-text, @eosGrey4-text);
+  @inputDisabledBorder: var(--eosGrey11-bg, @borderColor);
 
 
 /*-------------------

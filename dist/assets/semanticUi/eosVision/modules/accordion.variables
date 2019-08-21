@@ -20,4 +20,4 @@
 
 @iconFontSize: 12px;
 
-@accordionNotActiveItem: var(--accordion-accordionNotActiveItem, fade(@white, 95%));
+@accordionNotActiveItem: var(--white-bg-fade-70, fade(@white, 70%));
