@@ -23,6 +23,10 @@
   }
 }
 
+.ui.dropdown.active > .ui.blue.button {
+  background-color: @blueDown;
+}
+
 .ui.button.copy {
   overflow: hidden;
   .icon {

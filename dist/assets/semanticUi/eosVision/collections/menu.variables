@@ -86,8 +86,8 @@
 
 @dropdownMenuBorderRadius: 3px;
 
-@dropdownActiveItemBackground: var(--white-bg, @eosGrey11-bg);
-@dropdownSelectedItemBackground: var(--white-bg, @eosGrey11-bg);
+@dropdownActiveItemBackground: var(--none, @eosGrey11);
+@dropdownSelectedItemBackground: var(--none, @eosGrey11);
 @dropdownActiveItemFontWeight: @fontSemiBold;
 
 @dropdownItemFontSize: @fontSize;

@@ -21,6 +21,8 @@
 @messageColor: @eosGrey7-text;
 
 
+@errorItemActiveBackground: var(--errorItemActiveBackground, #FDCFCF);
+
 @itemFontSize: @fontSize;
 @itemColor: @textColor;
 @menuBorderColor: @borderColor;
