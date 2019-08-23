@@ -71,6 +71,6 @@
     }
   }
   input {
-    background: var(--eosGrey11-bg, @white) !important;
+    background: var(--eosgrey11-bg, @white) !important;
   }
 }

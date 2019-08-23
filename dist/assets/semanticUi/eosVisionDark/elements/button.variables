@@ -8,6 +8,6 @@
 // @basicDownBoxShadow: none;
 // @red: #E73C1E;
 // @redHover: #FF5440;
---button-blueButton: @eosBlue2;
---button-blueButtonHover: @blue;
---button-basicBoxShadow: none;
+--button-bluebutton: @eosBlue2;
+--button-bluebuttonHover: @blue;
+--button-basicboxshadow: none;

@@ -20,7 +20,7 @@
 @extraHorizontalSpacing: 8/14rem;
 @extraMargin: 7px 0 0;
 
-@boxShadow: inset 0 0 0 1px var(--transparentBg, @borderColor);
+@boxShadow: inset 0 0 0 1px var(--transparentbg, @borderColor);
 @padding: 10px 10px 7px 10px;
 
 @borderRadius: @absoluteBorderRadius;
@@ -29,7 +29,7 @@
 
 @itemSpacing: 10/13em;
 
-@background: var(--eosGrey13-bg, @white);
+@background: var(--eosgrey13-bg, @white);
 
 
 @imageBorderRadius: 3px;

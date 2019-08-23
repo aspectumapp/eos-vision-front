@@ -21,4 +21,4 @@
 /* Sizes */
 @small: @fontSize;
 
-@color: var(--eosGrey4-text, @textColor);
+@color: var(--eosgrey4-text, @textColor);

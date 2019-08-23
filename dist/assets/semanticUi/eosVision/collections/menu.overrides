@@ -48,7 +48,7 @@
       border-bottom-color: transparent;
       font-size: @fontSize;
       padding: @secondaryPointingTabsMenuItemVerticalPadding @secondaryPointingTabsMenuItemHorizontalPadding;
-      color: var(--eosGrey7-text, @eosGrey5);
+      color: var(--eosgrey7-text, @eosGrey5);
       &:hover {
         color: @darkTextColor;
       }
