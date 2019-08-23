@@ -138,7 +138,7 @@
 @blueHover        : @eosBlue2;
 @blueDown         : @eosBlue1;
 @blueFocus        : @blue;
-@blueActive        : @blue;
+@blueActive        : @eosBlue1;
 
 @red              : @eosRed1;
 @redHover         : @eosRed2;
