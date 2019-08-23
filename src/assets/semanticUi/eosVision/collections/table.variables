@@ -20,3 +20,5 @@
 
 /* Sizes */
 @small: @fontSize;
+
+@color: var(--eosGrey4-text, @textColor);

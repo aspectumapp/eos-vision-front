@@ -255,6 +255,7 @@
   @inputDisabledcolor: var(--eosGrey9-text, @eosGrey4-text);
   @inputDisabledBorder: var(--eosGrey11-bg, @borderColor);
 
+  @inputHighlightBackground : fade(#59ACFF, 60%);
 
 /*-------------------
     Focused Input
@@ -264,7 +265,7 @@
 @focusedFormBorderColor: @eosBlue4;
 
 @loaderLineWidth: 0.2rem;
-@loaderFillColor         : rgba(0, 0, 0, 0.15);
+@loaderFillColor         : @eosGrey9-bg;
 @loaderLineColor         : @blue;
 
 

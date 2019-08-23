@@ -8,9 +8,9 @@
 
 @background: @white;
 @borderWidth: 1px;
-@border: @borderWidth solid @borderColor;
+@border: @borderWidth solid var(--none, @borderColor);
 
-@boxShadow: @subtleShadow;
+@boxShadow: var(--none, @subtleShadow);
 @verticalPadding: 1em;
 @horizontalPadding: 1em;
 @padding: @verticalPadding @horizontalPadding;

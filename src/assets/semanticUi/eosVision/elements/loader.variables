@@ -2,9 +2,6 @@
     User Variable Overrides
 *******************************/
 
-
-@loaderFillColor: #e1e1e1;
-
 @shapeBorderColor: @blue transparent transparent;
 
 
