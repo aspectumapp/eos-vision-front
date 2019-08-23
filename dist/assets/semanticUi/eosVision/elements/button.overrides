@@ -90,6 +90,7 @@
   position: absolute;
   bottom: 15px;
   right: 353px;
+  background: transparent;
 }
 
 
