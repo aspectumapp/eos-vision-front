@@ -56,10 +56,13 @@
   text-align: @menuTextAlign;
   box-shadow: @menuBoxShadow;
   border: @menuBorder;
-  border-radius: @menuBorderRadius;
   transition: @menuTransition;
   z-index: @menuZIndex;
   will-change: transform, opacity;
+}
+
+.ui.dropdown .menu, .ui.dropdown .menu .item .menu {
+  border-radius: @menuBorderRadius !important;
 }
 
 .ui.dropdown:not(.selection):not(.multiple) .menu {
