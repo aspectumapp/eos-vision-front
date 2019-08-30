@@ -80,7 +80,7 @@
 
 
 
-.item.ui.dropdown .scrolling.menu {
+.item.ui.dropdown > .scrolling.menu {
   border-radius: 0 0 @dropdownMenuBorderRadius @dropdownMenuBorderRadius !important;
 }
 
