@@ -9,7 +9,7 @@
 @loaderLineWidth: 2px;
 
 
-@border: @borderWidth solid var(--eosGrey9-bg, @inputBorderColor);
+@border: @borderWidth solid var(--eosgrey9-bg, @inputBorderColor);
 @iconOpacity: 1;
 
 @iconColor: @eosGrey6-text;
@@ -18,7 +18,7 @@
 
 @disabledOpacity: 1;
 
-@background: var(--eosGrey9-bg, @inputBackground);
+@background: var(--eosgrey9-bg, @inputBackground);
 
 @focusColor: @textColor;
 

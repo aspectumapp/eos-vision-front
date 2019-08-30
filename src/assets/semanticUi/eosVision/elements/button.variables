@@ -29,20 +29,20 @@
         Basic
 --------------------*/
 
-@basicBackground: var(--eosGrey10-bg, @white);
+@basicBackground: var(--eosgrey10-bg, @white);
 @basicTextTransform: @textTransform;
 @basicFontWeight: @fontWeight;
-@basicBoxShadow: var(--button-basicBoxShadow, 0px 0px 0px @basicBorderSize @eosGrey8-bg inset);
+@basicBoxShadow: var(--button-basicboxshadow, 0px 0px 0px @basicBorderSize @eosGrey8-bg inset);
 @basicTextColor: @eosGrey5-text;
 
-@basicHoverBackground: var(--eosGrey9-bg, @eosGrey10);
+@basicHoverBackground: var(--eosgrey9-bg, @eosGrey10);
 @basicHoverTextColor: @eosGrey4-text;
-@basicHoverBoxShadow: var(--button-basicBoxShadow, 0px 0px 0px @basicBorderSize @eosGrey7-bg inset);
+@basicHoverBoxShadow: var(--button-basicboxshadow, 0px 0px 0px @basicBorderSize @eosGrey7-bg inset);
 
-@basicDownBackground: var(--eosGrey8-bg, @eosGrey11);
-@basicDownTextColor: var(--eosGrey4-text, @eosGrey3);
+@basicDownBackground: var(--eosgrey8-bg, @eosGrey11);
+@basicDownTextColor: var(--eosgrey4-text, @eosGrey3);
 
-@basicDownBoxShadow: var(--button-basicBoxShadow, 0px 0px 0px @basicBorderSize @eosGrey7-bg inset, inset 0 1px 5px rgba(51, 62, 82, 0.2));
+@basicDownBoxShadow: var(--button-basicboxshadow, 0px 0px 0px @basicBorderSize @eosGrey7-bg inset, inset 0 1px 5px rgba(51, 62, 82, 0.2));
 
 @basicFocusBackground: @basicBackground;
 
@@ -52,5 +52,5 @@
 @eos-buttonTransparentFontSize: 16px;
 @eos-buttonTransparentPadding: 6px;
 
-@blueButton: var(--button-blueButton, @blue);
-@blueButtonHover: var(--button-blueButtonHover, @blue);
+@blueButton: var(--button-bluebutton, @blue);
+@blueButtonHover: var(--button-bluebuttonHover, @blue);

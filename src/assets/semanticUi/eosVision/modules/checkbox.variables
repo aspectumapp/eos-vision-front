@@ -6,7 +6,7 @@
 
 @labelFontSize: @fontSize;
 
-@labelColor: var(--eosGrey7-text, @eosGrey5);
+@labelColor: var(--eosgrey7-text, @eosGrey5);
 @labelHoverColor: @eosGrey4-text;
 @labelDistance: @checkboxSize + 6;
 
@@ -15,7 +15,7 @@
 @checkboxFocusBackground: var(--none, @white);
 
 @checkboxActiveCheckColor: #fff;
-@solidBorderColor: var(--eosGrey7-bg, @eosGrey8);
+@solidBorderColor: var(--eosgrey7-bg, @eosGrey8);
 @checkboxFocusBorderColor: @solidBorderColor;
 
 @checkboxPressedBackground: var(none, @checkboxHoverBackground);
@@ -24,7 +24,7 @@
 @checkboxActiveBackground: @blue;
 @checkboxActiveBorderColor: @blue;
 
-@checkboxHoverBorderColor: var(--eosGrey4-bg, @eosGrey6);
+@checkboxHoverBorderColor: var(--eosgrey4-bg, @eosGrey6);
 
 @checkboxActiveFocusCheckColor: @checkboxActiveCheckColor;
 
@@ -34,7 +34,7 @@
 
 @labelFocusColor: @labelColor;
 
-@disabledCheckboxLabelColor: var(--eosGrey7-text, rgba(0, 0, 0, 1));
+@disabledCheckboxLabelColor: var(--eosgrey7-text, rgba(0, 0, 0, 1));
 
 @checkboxCheckFontSize: 11px;
 

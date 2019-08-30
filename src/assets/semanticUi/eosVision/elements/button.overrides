@@ -309,7 +309,7 @@
     padding: 0;
     font-size: @eos-buttonTransparentFontSize;
     background: transparent;
-    color: var(--eosGrey6-text, @eosGrey5);
+    color: var(--eosgrey6-text, @eosGrey5);
     & when (@visionMobile = false) and (@visionTablet = false) {
       &:hover {
         color: @eosGrey4-text;

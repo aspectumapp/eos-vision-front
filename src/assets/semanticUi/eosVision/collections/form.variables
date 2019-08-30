@@ -31,7 +31,7 @@
 
 @disabledOpacity: 1;
 
-@inputBackground: var(--eosGrey10-bg, @white);
+@inputBackground: var(--eosgrey10-bg, @white);
 
 @inputErrorPlaceholderColor: #ffddd9;
 @inputErrorPlaceholderFocusColor: #ffddd9;
@@ -40,4 +40,4 @@
 @loaderDimmerColor: var(--white-bg-fade-95, fade(@white, 95%));
 
 
-@formErrorBackground: var(--eosGrey10-bg, @negativeBackgroundColor);
+@formErrorBackground: var(--eosgrey10-bg, @negativeBackgroundColor);

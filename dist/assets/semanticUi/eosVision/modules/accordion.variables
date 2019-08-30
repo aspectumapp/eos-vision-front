@@ -4,7 +4,7 @@
 
 
 @styledBackground: transparent;
-@styledActiveTitleBackground: var(--eosGrey13-bg, @eosGrey11);
+@styledActiveTitleBackground: var(--eosgrey13-bg, @eosGrey11);
 
 @styledTitleHoverBackground: @eosGrey10-bg;
 

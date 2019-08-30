@@ -1,2 +1,2 @@
---dropdown-menuDividerColor: @eosGrey9-bg;
---errorItemActiveBackground: #d86868;
+--dropdown-menudividercolor: @eosGrey9-bg;
+--errorItemactivebackground: #d86868;

@@ -190,8 +190,8 @@
 }
 
 .ui.dropdown .menu input {
-  border-color: var(--eosGrey11-bg, @inputBorderColor);
-  background: var(--eosGrey11-bg, @white) !important;
+  border-color: var(--eosgrey11-bg, @inputBorderColor);
+  background: var(--eosgrey11-bg, @white) !important;
 }
 
 .context-menu {

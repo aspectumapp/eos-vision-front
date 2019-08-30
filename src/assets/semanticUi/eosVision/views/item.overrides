@@ -4,7 +4,7 @@
 
 
 .ui.items + .ui.items {
-  border-top: 1px solid var(--eosGrey11-bg, @eosGrey8);
+  border-top: 1px solid var(--eosgrey11-bg, @eosGrey8);
   padding-top: @groupMarginVerticalBottom;
   margin-top: 0;
 }
