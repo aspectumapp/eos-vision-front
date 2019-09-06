@@ -16,6 +16,8 @@
 @smallHeaderSize: 18px;
 @headerFontWeight: @fontSemiBold;
 
+@miniComputerWidth: 386px;
+
 
 @headerPadding: 15px 43px 0 23px;
 

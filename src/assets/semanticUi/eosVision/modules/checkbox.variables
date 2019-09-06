@@ -6,29 +6,35 @@
 
 @labelFontSize: @fontSize;
 
-@labelColor: @eosGrey5-text;
+@labelColor: var(--eosgrey7-text, @eosGrey5);
 @labelHoverColor: @eosGrey4-text;
 @labelDistance: @checkboxSize + 6;
 
-@checkboxActiveCheckColor: #fff;
-@solidBorderColor: @eosGrey8;
-@checkboxFocusBorderColor: @eosGrey8;
+@checkboxBackground: var(--none, @white);
 
-@checkboxPressedBackground: @checkboxHoverBackground;
-@checkboxPressedBorderColor: @checkboxHoverBorderColor;
+@checkboxFocusBackground: var(--none, @white);
+
+@checkboxActiveCheckColor: #fff;
+@solidBorderColor: var(--eosgrey7-bg, @eosGrey8);
+@checkboxFocusBorderColor: @solidBorderColor;
+
+@checkboxPressedBackground: var(none, @checkboxHoverBackground);
+@checkboxPressedBorderColor: @checkboxPressedBackground;
 
 @checkboxActiveBackground: @blue;
 @checkboxActiveBorderColor: @blue;
 
-@checkboxHoverBorderColor: @eosGrey6;
+@checkboxHoverBorderColor: var(--eosgrey4-bg, @eosGrey6);
 
 @checkboxActiveFocusCheckColor: @checkboxActiveCheckColor;
 
 @checkboxActiveFocusBackground: @checkboxActiveBackground;
 
-@checkboxActiveFocusBorderColor: darken(@checkboxActiveBorderColor, 10%);
+@checkboxActiveFocusBorderColor: @checkboxActiveBorderColor;
 
 @labelFocusColor: @labelColor;
+
+@disabledCheckboxLabelColor: var(--eosgrey7-text, rgba(0, 0, 0, 1));
 
 @checkboxCheckFontSize: 11px;
 
@@ -61,5 +67,8 @@
 @toggleFocusColor: @toggleLaneBackground;
 
 @handleBoxShadow: inset 0 0 0 1px @eosGrey8, 0 2px 3px rgba(0, 0, 0, 0.09);
-@toggleOnHandleBoxShadow: inset 0 0 0 1px @eosBlue2, 0 2px 3px rgba(0, 0, 0, 0.09);
-@toggleOffHandleBoxShadow: @handleBoxShadow;
+@toggleOnHandleBoxShadow: var(--none, inset 0 0 0 1px @eosBlue2, 0 2px 3px rgba(0, 0, 0, 0.09));
+@toggleOffHandleBoxShadow: var(--none, @handleBoxShadow);
+
+
+@disabledCheckboxOpacity: 0.4;

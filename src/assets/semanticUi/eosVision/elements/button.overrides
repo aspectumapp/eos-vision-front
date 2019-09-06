@@ -23,6 +23,10 @@
   }
 }
 
+.ui.dropdown.active > .ui.blue.button {
+  background-color: @blueDown;
+}
+
 .ui.button.copy {
   overflow: hidden;
   .icon {
@@ -86,6 +90,7 @@
   position: absolute;
   bottom: 15px;
   right: 353px;
+  background: transparent;
 }
 
 
@@ -304,14 +309,7 @@
     padding: 0;
     font-size: @eos-buttonTransparentFontSize;
     background: transparent;
-    & when (@VisionDark = false) {
-      color: @eosGrey5-text;
-    }
-    & when (@VisionDark = true) {
-      color: @eosGrey6-text;
-    }
-    
-    
+    color: var(--eosgrey6-text, @eosGrey5);
     & when (@visionMobile = false) and (@visionTablet = false) {
       &:hover {
         color: @eosGrey4-text;
@@ -428,7 +426,7 @@
           color: @eosGrey4-text;
         }
         &:active {
-          color: darken(@eosGrey4-text, 6%);
+          color: @eosGrey3-text;
         }
       }
     }

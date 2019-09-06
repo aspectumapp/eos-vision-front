@@ -2,10 +2,11 @@
     User Variable Overrides
 *******************************/
 
-@background: @white-bg;
-@arrowBackground: @white-bg;
+@background: var(--eosgrey10-bg, @white);
+@arrowBackground: var(--eosgrey10-bg, @white);
 
-@tooltipInvertedBackground: #191b1b;
+@tooltipInvertedBackground: var(--eosgrey1-bg, #191b1b);
+@tooltipInvertedColor: var(--eosgrey12-bg, @invertedColor);
 @invertedArrowCenterBackground: @tooltipInvertedBackground;
 @tooltipBorderRadius: 3px;
 
@@ -21,7 +22,7 @@
 @tooltipDistanceAway: 7px;
 
 
-@arrowColor: #e1e1e1;
+@arrowColor: var(--eosgrey10-bg, #e1e1e1);
 // @arrowWidth: 1em;
 @arrowDistanceFromEdge: 10px;
 // @tooltipArrowVerticalOffset: 0;

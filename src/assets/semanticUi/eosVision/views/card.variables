@@ -9,16 +9,14 @@
 @headerLineHeightOffset: 0;
 
 @metaFontSize: 12/13em;
-@metaColor: @eosGrey7-text;
+@metaColor: var(--eosgrey8-text, @eosGrey7);
 
-@background: @white-bg;
+@background: var(--eosgrey13-bg, @white);
 
 
 @borderShadow: 0px 0px 0px @borderWidth @borderColor;
-@boxShadow:
-  @borderShadow,
-  0 2px 4px rgba(0, 0, 0, 0)
-;
+
+@boxShadow: var(--card-boxshadow, @borderShadow,0 2px 4px rgba(0, 0, 0, 0));
 
 @contentDivider: 0;
 
@@ -32,3 +30,4 @@
 
 @width: 208px;
 @imageBackground: transparent;
+@imageOpacity: var(--card-imageopacity, 1);

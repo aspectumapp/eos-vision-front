@@ -121,14 +121,14 @@
 /* Negative */
 @negativeColor: @negativeTextColor;
 @negativeBoxShadow: @stateMarkerWidth 0px 0px @negativeBorderColor inset;
-@negativeBackgroundHover: darken(@negativeBackgroundColor, 3);
-@negativeColorHover: darken(@negativeColor, 3);
+@negativeBackgroundHover: @negativeBackgroundColor;
+@negativeColorHover: @negativeColor;
 
 /* Error */
 @errorColor: @errorTextColor;
 @errorBoxShadow: @stateMarkerWidth 0px 0px @errorBorderColor inset;
-@errorBackgroundHover: darken(@errorBackgroundColor, 3);
-@errorColorHover: darken(@errorColor, 3);
+@errorBackgroundHover: @errorBackgroundColor;
+@errorColorHover: @errorColor;
 
 /* Warning */
 @warningColor: @warningTextColor;

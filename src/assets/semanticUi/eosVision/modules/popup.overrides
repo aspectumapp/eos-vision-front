@@ -45,15 +45,6 @@
   margin: 2px -1px 0 0;
 }
 
-.ui.popup ::-webkit-scrollbar-track {
-  background: #e5e5e5;
-}
-
-.ui.popup ::-webkit-scrollbar-thumb {
-  border-radius: 5px;
-  background: #acacac;
-}
-
 .ui.popup {
   &.edit-string,
   &.edit-boolean {
@@ -78,5 +69,8 @@
       margin: 0;
       height: 16px;
     }
+  }
+  input {
+    background: var(--eosgrey11-bg, @white) !important;
   }
 }

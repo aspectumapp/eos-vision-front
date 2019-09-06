@@ -1,7 +1,7 @@
 
 
 
-@dropdownBackground: @white-bg;
+@dropdownBackground: var(--menu-dropdownbackground, @white);
 
 @medium: @fontSize;
 
@@ -9,14 +9,14 @@
     User Variable Overrides
 *******************************/
 @background: @white-bg;
-@verticalBackground: @background;
+@verticalBackground: var(--eosgrey13-bg, @white);
 
 @invertedDividerBackground: transparent;
 @borderRadius: 0;
 @itemFontWeight: @fontSemiBold;
 @headerWeight: @fontSemiBold;
 
-@boxShadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+@boxShadow:  var(--menu-boxshadow, 0 2px 4px rgba(0, 0, 0, 0.05));
 @border: 0;
 
 /*--------------
@@ -32,7 +32,7 @@
 
 @invertedMenuPressedBackground: transparent;
 
-@dropdownHoveredItemBackground: @eosGrey10-bg;
+@dropdownHoveredItemBackground: var(--dropdown-dropdownhovereditembackground, @eosGrey10-bg);
 /*-------------------
       Collection
 --------------------*/
@@ -67,7 +67,9 @@
 
 
 @secondaryActiveItemBackground: @eosGrey10-bg;
+@secondaryActiveHoverItemBackground: @eosGrey10-bg;
 @secondaryActiveItemColor: @eosGrey4-text;
+@secondaryActiveHoverItemColor: @eosGrey4-text;
 
 @hoverItemBackground: transparent;
 @hoverItemTextColor: @eosGrey3-text;
@@ -84,7 +86,8 @@
 
 @dropdownMenuBorderRadius: 3px;
 
-@dropdownActiveItemBackground: @eosGrey11-bg;
+@dropdownActiveItemBackground: var(--none, @eosGrey11);
+@dropdownSelectedItemBackground: var(--none, @eosGrey11);
 @dropdownActiveItemFontWeight: @fontSemiBold;
 
 @dropdownItemFontSize: @fontSize;

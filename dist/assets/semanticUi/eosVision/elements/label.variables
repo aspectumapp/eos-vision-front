@@ -18,33 +18,33 @@
 
 
 @pointingVerticalDistance: .7em;
-
+@blueRibbonShadow: @blue;
 
 /* Colors */
-@redTextColor: @white-text;
-@orangeTextColor: @white-text;
-@yellowTextColor: @white-text;
-@oliveTextColor: @white-text;
-@greenTextColor: @white-text;
-@tealTextColor: @white-text;
-@blueTextColor: @white-text;
-@violetTextColor: @white-text;
-@purpleTextColor: @white-text;
-@pinkTextColor: @white-text;
-@brownTextColor: @white-text;
-@greyTextColor: @white-text;
-@blackTextColor: @white-text;
+@redTextColor: @white;
+@orangeTextColor: @white;
+@yellowTextColor: @white;
+@oliveTextColor: @white;
+@greenTextColor: @white;
+@tealTextColor: @white;
+@blueTextColor: @white;
+@violetTextColor: @white;
+@purpleTextColor: @white;
+@pinkTextColor: @white;
+@brownTextColor: @white;
+@greyTextColor: @white;
+@blackTextColor: @white;
 
-@redHoverTextColor: @white-text;
-@orangeHoverTextColor: @white-text;
-@yellowHoverTextColor: @white-text;
-@oliveHoverTextColor: @white-text;
-@greenHoverTextColor: @white-text;
-@tealHoverTextColor: @white-text;
-@blueHoverTextColor: @white-text;
-@violetHoverTextColor: @white-text;
-@purpleHoverTextColor: @white-text;
-@pinkHoverTextColor: @white-text;
-@brownHoverTextColor: @white-text;
-@greyHoverTextColor: @white-text;
-@blackHoverTextColor: @white-text;
+@redHoverTextColor: @white;
+@orangeHoverTextColor: @white;
+@yellowHoverTextColor: @white;
+@oliveHoverTextColor: @white;
+@greenHoverTextColor: @white;
+@tealHoverTextColor: @white;
+@blueHoverTextColor: @white;
+@violetHoverTextColor: @white;
+@purpleHoverTextColor: @white;
+@pinkHoverTextColor: @white;
+@brownHoverTextColor: @white;
+@greyHoverTextColor: @white;
+@blackHoverTextColor: @white;

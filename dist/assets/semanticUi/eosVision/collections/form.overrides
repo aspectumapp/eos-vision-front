@@ -28,7 +28,7 @@
       right: 0;
       top: 0;
       bottom: 0;
-      background-color: fade(@white-bg, 60%);
+      background-color: @inputHidebackground;
       z-index: 1;
       border-radius: 4px;
     }
@@ -81,6 +81,7 @@
         flex-basis: 30%;
         word-break: break-word;
         font-weight: @fontNormal;
+        color: var(--eosgrey6-text, @labelColor);
         .ui.button.icon {
           .icon {
             font-size: 15px;

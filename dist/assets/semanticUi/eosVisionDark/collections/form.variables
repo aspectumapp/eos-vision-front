@@ -1,6 +1,3 @@
-@inputBackground: @eosGrey10-bg;
-@inputDisabledBackground: @eosGrey11-bg;
+
 @inputDisabledcolor: @eosGrey9-text;
-@inputDisabledBorder: @eosGrey11-bg;
 @loaderDimmerColor: fade(@eosGrey11-bg, 75%);
-@formErrorBackground: @eosGrey10-bg;

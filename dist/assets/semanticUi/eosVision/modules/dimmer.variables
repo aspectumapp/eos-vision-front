@@ -3,4 +3,4 @@
 *******************************/
 
 @backgroundColor: rgba(27, 33, 43, 0.85);
-@invertedBackgroundColor: fade(@white-bg, 95%);
+@invertedBackgroundColor: @white-bg-fade-95;
