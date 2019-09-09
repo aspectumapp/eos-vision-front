@@ -273,6 +273,10 @@
     z-index: 2;
     margin-left: 0;
     top: 100%;
+    &.upward {
+      top: auto;
+      bottom: 100%;
+    }
     &:before {
       left: 12%;
     }
