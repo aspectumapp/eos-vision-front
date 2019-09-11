@@ -3,7 +3,7 @@
 *******************************/
 
 .ui.dimmer.modals {
-  z-index: 1050;
+  z-index: @eos-modalsDimmer-zIndex;
 }
 
 
