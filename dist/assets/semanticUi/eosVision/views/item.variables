@@ -41,5 +41,5 @@
 
 @imageVerticalAlign: center;
 
-@itemHideBackground: var(--white-bg-fade-70, @white-bg-fade-95);
-@itemHideShadow: var(--white-bg-fade-70, transparent);
+@itemHideBackground: @white-bg-fade-60;
+@itemHideShadow: var(--white-bg-fade-60, transparent);

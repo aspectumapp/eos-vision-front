@@ -4,6 +4,7 @@
 --none: none;
 --white-bg: #1f2d3a;
 --white-bg-fade-50: fade(#1f2d3a, 50%);
+--white-bg-fade-60: fade(#1f2d3a, 50%);
 --white-bg-fade-70: fade(#1f2d3a, 70%);
 --white-bg-fade-95: fade(#1f2d3a, 95%);
 --bordercolor: @eosGrey3;
