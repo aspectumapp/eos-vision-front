@@ -1130,6 +1130,13 @@ a.ui.basic.label:hover {
 .ui.pointing.label,
 .ui[class*="pointing above"].label {
   margin-top: @pointingVerticalDistance;
+  &.upward {
+    margin-top: 0em;
+    margin-bottom: @pointingVerticalDistance;
+    &:before {
+      top: 100%;
+    }
+  }
 }
 .ui.pointing.label:before,
 .ui[class*="pointing above"].label:before {
