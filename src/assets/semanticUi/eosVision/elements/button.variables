@@ -52,5 +52,3 @@
 @eos-buttonTransparentFontSize: 16px;
 @eos-buttonTransparentPadding: 6px;
 
-@blueButton: var(--button-bluebutton, @blue);
-@blueButtonHover: var(--button-bluebuttonHover, @blue);

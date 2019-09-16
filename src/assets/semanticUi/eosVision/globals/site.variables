@@ -134,7 +134,7 @@
 
 /*---  Colors  ---*/
 @blue             : @eosBlue3;
-@blue-transparent-5 : var(--blue-transparent-5, fade(#4C9AE7, 5%));
+@blue-transparent-5 : fade(#3399FF, 5%);
 @blueHover        : @eosBlue2;
 @blueDown         : @eosBlue1;
 @blueFocus        : @blue;
