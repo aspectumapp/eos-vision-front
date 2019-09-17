@@ -22,8 +22,6 @@
 --eosgrey7-text: @eosGrey6;
 --eosgrey8-text: @eosGrey5;
 --eosgrey9-text: @eosGrey4;
---eosgrey9-1-text: @eosGrey9-1;
---eosgrey9-2-text: @eosGrey9-2;
 --eosgrey10-text: @eosGrey3;
 --eosgrey11-text: @eosGrey2;
 
@@ -36,8 +34,6 @@
 --eosgrey7-bg: @eosGrey6;
 --eosgrey8-bg: @eosGrey5;
 --eosgrey9-bg: @eosGrey4;
---eosgrey9-1-bg: @eosGrey9-1;
---eosgrey9-2-bg: @eosGrey9-2;
 --eosgrey10-bg: @eosGrey3;
 --eosgrey11-bg: @eosGrey2;
 --eosgrey11-bg-fade-50: fade(@eosGrey2, 50%);
