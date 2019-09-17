@@ -103,10 +103,10 @@
 @eosGrey6: #8B939F;
 @eosGrey7: #AAB0B8;
 @eosGrey8: #C7CBD1;
-@eosGrey9: #E4E8EB;
+@eosGrey9: #E4E5E7;
 @eosGrey10: #F4F4F5;
 @eosGrey11: #F9F9F9;
-@eosGrey12: #fcfcfc;
+@eosGrey12: #FCFCFC;
 
 
 @eosBlue1:  var(--eosBlue1, #0080FF);
