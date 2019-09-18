@@ -109,9 +109,6 @@
       left: 0;
       right: 7px;
     }
-    &.logo {
-      padding: 17px 0 16px;
-    }
     &:after {
       content: '';
       position: absolute;
@@ -132,9 +129,6 @@
       &:after {
         background-color: @blue;
       }
-    }
-    &.logo {
-      background-color: transparent;
     }
     .icon {
       font-size: 18px;
