@@ -91,6 +91,11 @@
   bottom: 15px;
   right: 353px;
   background: transparent;
+  .ui.button {
+    > .icon {
+      margin: 0;
+    }
+  }
 }
 
 
@@ -195,7 +200,7 @@
 }
 
 .ui.buttons.icon .ui.button, .ui.button.icon {
-  font-size: 16px;
+  font-size: @eos-buttonIconFontSize;
   padding: 10px;
   white-space: nowrap;
 }
@@ -210,16 +215,13 @@
 
 *:not(.icon)>.ui.button:not(.icon)>.icon:not(.button) {
   position: relative;
-  & when (@visionTablet = false) {
-    font-size: 14px;
-    height: 10px;
-  }
+  font-size: 16px;
+  height: 10px;
+  
   & when (@visionWeb = true) {
-    top: -0.5px;
+    top: -1px;
   }
   & when (@visionTablet = true) {
-    font-size: 16px;
-    height: 10px;
     top: -2px;
   }
 }
@@ -307,19 +309,13 @@
 .ui.button.icon {
   &.transparent {
     padding: 0;
-    font-size: @eos-buttonTransparentFontSize;
     background: transparent;
     color: var(--eosgrey6-text, @eosGrey5);
     & when (@visionMobile = false) and (@visionTablet = false) {
-      &:hover {
+      &:hover, &:active, &.active {
         color: @eosGrey4-text;
+        background-color: @eosGrey10-bg;
       }
-      &:active, &.active {
-        color: @eosGrey3-text;
-      }
-    }
-    >.icon, >.eos_ic {
-      margin: @eos-buttonTransparentPadding !important;
     }
     & when (@visionMobile = true) {
       background-position: center;
@@ -333,6 +329,9 @@
         background-size: 100%;
         transition: background 0s;
       }
+    }
+    > .icon {
+      margin: @eos-buttonTransparentPadding;
     }
     &.dark, &.blue, &.red {
       background-color: transparent !important;
@@ -422,10 +421,7 @@
         -webkit-tap-highlight-color: transparent;
       }
       & when (@visionMobile = false) and (@visionTablet = false)  {
-        &:hover {
-          color: @eosGrey4-text;
-        }
-        &:active {
+        &:hover, &:active {
           color: @eosGrey3-text;
         }
       }
@@ -433,11 +429,17 @@
     &.btn-favorite {
       &.active {
         color: @yellow;
+        &:not(:hover) {
+          background: transparent;
+        }
       }
     }
     &.btn-public {
       &.active {
         color: @blue;
+        &:not(:hover) {
+          background: transparent;
+        }
       }
     }
     > .icon:not(.button), >.eos_ic {
