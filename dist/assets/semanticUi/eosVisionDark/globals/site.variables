@@ -50,3 +50,6 @@
 --inputhoverbackgroundcolor: @eosGrey3;
 
 --trackbackground: none;
+
+--eosBlue3: #1A8CFF;
+--eosBlue2: #3399FF;

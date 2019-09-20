@@ -35,7 +35,7 @@
 @basicBoxShadow: var(--button-basicboxshadow, 0px 0px 0px @basicBorderSize @eosGrey8-bg inset);
 @basicTextColor: @eosGrey5-text;
 
-@basicHoverBackground: var(--eosgrey9-bg, @eosGrey10);
+@basicHoverBackground: var(--eosgrey9-bg, @white);
 @basicHoverTextColor: @eosGrey4-text;
 @basicHoverBoxShadow: var(--button-basicboxshadow, 0px 0px 0px @basicBorderSize @eosGrey7-bg inset);
 
@@ -49,8 +49,6 @@
 @basicFocusBoxShadow: @basicBoxShadow;
 
 
-@eos-buttonTransparentFontSize: 16px;
+@eos-buttonIconFontSize: 16px;
 @eos-buttonTransparentPadding: 6px;
 
-@blueButton: var(--button-bluebutton, @blue);
-@blueButtonHover: var(--button-bluebuttonHover, @blue);
