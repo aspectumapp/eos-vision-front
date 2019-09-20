@@ -289,13 +289,15 @@
 
 
 
-@eos-sidebar-zIndex: 102;
+
 @eos-upgrade-alert-zIndex: 103;
 @eos-basemapPopup-zIndex: 104;
+@eos-sidebar-zIndex: 106;
+@eos-navigationSidebar-zIndex: 107;
 
 @eos-subHeader-zIndex: 1030;
 @eos-header-zIndex: 1040;
-@eos-navigationSidebar-zIndex: 1045;
+
 @eos-modalsDimmer-zIndex: 1050;
 @eos-notificationsMessagesList-zIndex: 1060;
 @eos-lasso-zIndex: 1070;

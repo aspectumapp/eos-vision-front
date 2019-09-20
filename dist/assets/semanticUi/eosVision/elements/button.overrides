@@ -91,6 +91,7 @@
   bottom: 15px;
   right: 353px;
   background: transparent;
+  transition: transform 500ms ease;
 }
 
 
