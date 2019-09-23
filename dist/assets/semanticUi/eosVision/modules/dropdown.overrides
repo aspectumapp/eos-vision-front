@@ -134,7 +134,7 @@
   }
 }
 
-.ui.disabled.dropdown {
+.ui.disabled.dropdown:not(.item) {
   background: @inputDisabledBackground;
   color: @inputDisabledcolor;
   border-color: @inputDisabledBorder;

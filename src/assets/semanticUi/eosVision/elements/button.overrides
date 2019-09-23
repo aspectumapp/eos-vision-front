@@ -269,26 +269,43 @@
   input:not(:checked) {
     + .button {
       opacity: 1;
-      background-color: @eosGrey10-bg;
-      color: @eosGrey6-text;
-    }
-  }
-  & when (@visionWeb = true) {
-    &:hover {
-      input:not(:checked) {
-        + .button {
-          background-color: @eosGrey9-bg;
-          color: @eosGrey5-text;
-        }
-      }
+      background-color: @backgroundColor;
+      color: @color;
     }
   }
   input:checked {
     + .button {
       background-color: @blue;
-      color: @white-text;
+      color: @blueTextColor;
     }
   }
+  &:hover {
+    input:not(:checked) {
+      + .button {
+        background-color: @hoverBackgroundColor;
+        color: @hoverColor;
+      }
+    }
+    input:checked {
+      + .button {
+        background-color: @blueHover;
+      }
+    }
+  }
+  &:active {
+    input:not(:checked) {
+      + .button {
+        background-color: @downBackgroundColor;
+        color: @downColor;
+      }
+    }
+    input:checked {
+      + .button {
+        background-color: @blueDown;
+      }
+    }
+  }
+  
 }
 
 @keyframes rippleButton {

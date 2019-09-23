@@ -27,8 +27,7 @@
       }
     }
     &.disabled {
-      opacity: .3;
-      cursor: default;
+      opacity: .45;
       pointer-events: none;
     }
   }
