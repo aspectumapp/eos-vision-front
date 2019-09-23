@@ -1,3 +1,0 @@
-.ui.buttons.white, .ui.button.white {
-  box-shadow: none !important;
-}
