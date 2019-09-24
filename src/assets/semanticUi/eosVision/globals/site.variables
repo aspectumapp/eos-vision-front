@@ -283,9 +283,10 @@
 
 
 
-@eos-sidebar-zIndex: 102;
+
 @eos-upgrade-alert-zIndex: 103;
 @eos-basemapPopup-zIndex: 104;
+@eos-sidebar-zIndex: 106;
 
 @eos-subHeader-zIndex: 1030;
 @eos-header-zIndex: 1040;
