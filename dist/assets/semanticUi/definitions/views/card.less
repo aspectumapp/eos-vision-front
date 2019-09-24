@@ -97,19 +97,19 @@
   Rounded Edges
 ---------------*/
 
-.ui.cards > .card > :first-child,
-.ui.card > :first-child {
+.ui.cards > .card > :first-child:not(.ui.button),
+.ui.card > :first-child:not(.ui.button) {
   border-radius: @borderRadius @borderRadius 0em 0em !important;
   border-top: none !important;
 }
 
-.ui.cards > .card > :last-child,
-.ui.card > :last-child {
+.ui.cards > .card > :last-child:not(.ui.button),
+.ui.card > :last-child:not(.ui.button) {
   border-radius: 0em 0em @borderRadius @borderRadius !important;
 }
 
-.ui.cards > .card > :only-child,
-.ui.card > :only-child {
+.ui.cards > .card > :only-child:not(.ui.button),
+.ui.card > :only-child:not(.ui.button) {
   border-radius: @borderRadius !important;
 }
 

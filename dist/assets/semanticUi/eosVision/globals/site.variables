@@ -103,12 +103,10 @@
 @eosGrey6: #8B939F;
 @eosGrey7: #AAB0B8;
 @eosGrey8: #C7CBD1;
-@eosGrey9: #E4E8EB;
-@eosGrey9-1: #d8d8d8;
-@eosGrey9-2: #d2d6da;
+@eosGrey9: #E4E5E7;
 @eosGrey10: #F4F4F5;
 @eosGrey11: #F9F9F9;
-@eosGrey12: #fcfcfc;
+@eosGrey12: #FCFCFC;
 
 
 @eosBlue1:  var(--eosBlue1, #0080FF);
@@ -153,7 +151,7 @@
 @primaryColorHover        : @blueHover;
 @primaryColorFocus        : @blueFocus;
 @primaryColorDown        : @blueDown;
-@primaryColorActive:     @blue; 
+@primaryColorActive:     @blue;
 
 @orange           : #ffae44;
 @yellow           : #ffb731;
@@ -195,8 +193,6 @@
 @eosGrey7-text: var(--eosgrey7-text, @eosGrey7);
 @eosGrey8-text: var(--eosgrey8-text, @eosGrey8);
 @eosGrey9-text: var(--eosgrey9-text, @eosGrey9);
-@eosGrey9-1-text: var(--eosgrey9-1-text, @eosGrey9-1);
-@eosGrey9-2-text: var(--eosgrey9-2-text, @eosGrey9-2);
 @eosGrey10-text: var(--eosgrey10-text, @eosGrey10);
 @eosGrey11-text: var(--eosgrey11-text, @eosGrey11);
 @eosGrey12-text: var(--eosgrey12-text, @eosGrey12);
@@ -210,8 +206,6 @@
 @eosGrey7-bg: var(--eosgrey7-bg, @eosGrey7);
 @eosGrey8-bg: var(--eosgrey8-bg, @eosGrey8);
 @eosGrey9-bg: var(--eosgrey9-bg, @eosGrey9);
-@eosGrey9-1-bg: var(--eosgrey9-1-bg, @eosGrey9-1);
-@eosGrey9-2-bg: var(--eosgrey9-2-bg, @eosGrey9-2);
 @eosGrey10-bg: var(--eosgrey10-bg, @eosGrey10);
 @eosGrey11-bg: var(--eosgrey11-bg, @eosGrey11);
 @eosGrey12-bg: var(--eosgrey12-bg, @eosGrey12);
@@ -238,7 +232,7 @@
 
 @thumbBorderRadius: 3px;
 
-@thumbBackground: var(--eosgrey9-bg, @eosGrey9-1);
+@thumbBackground: var(--eosgrey9-bg, @eosGrey9);
 @thumbBackground-2: var(--eosgrey8-bg, #aab0b8);
 
 @thumbHoverBackground: var(--eosgrey8-bg, rgba(128, 135, 139, 0.8));
