@@ -2,13 +2,14 @@
 
 @font-face {
   font-family: '@{icomoon-font-family}';
-  src:  url('@{icomoon-font-path}/@{icomoon-font-family}.eot?lzk7l4');
-  src:  url('@{icomoon-font-path}/@{icomoon-font-family}.eot?lzk7l4#iefix') format('embedded-opentype'),
-    url('@{icomoon-font-path}/@{icomoon-font-family}.ttf?lzk7l4') format('truetype'),
-    url('@{icomoon-font-path}/@{icomoon-font-family}.woff?lzk7l4') format('woff'),
-    url('@{icomoon-font-path}/@{icomoon-font-family}.svg?lzk7l4#@{icomoon-font-family}') format('svg');
+  src:  url('@{icomoon-font-path}/@{icomoon-font-family}.eot?w2zw3w');
+  src:  url('@{icomoon-font-path}/@{icomoon-font-family}.eot?w2zw3w#iefix') format('embedded-opentype'),
+    url('@{icomoon-font-path}/@{icomoon-font-family}.ttf?w2zw3w') format('truetype'),
+    url('@{icomoon-font-path}/@{icomoon-font-family}.woff?w2zw3w') format('woff'),
+    url('@{icomoon-font-path}/@{icomoon-font-family}.svg?w2zw3w#@{icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: block;
 }
 
 [class^="eos_"], [class*=" eos_"], .ui.label> .icon, .dropdown.icon.add, .close.icon, .chevron.icon, .ui.message>.close.icon {
@@ -28,6 +29,51 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.eos_ic_mdi_crop_portrait {
+  &:before {
+    content: @eos_ic_mdi_crop_portrait; 
+  }
+}
+.eos_ic_mdi_crop_landscape {
+  &:before {
+    content: @eos_ic_mdi_crop_landscape; 
+  }
+}
+.eos_ic_print {
+  &:before {
+    content: @eos_ic_print; 
+  }
+}
+.eos_ic_show_panel {
+  &:before {
+    content: @eos_ic_show_panel; 
+  }
+}
+.eos_ic_published {
+  &:before {
+    content: @eos_ic_published; 
+  }
+}
+.eos_ic_move_to_folder {
+  &:before {
+    content: @eos_ic_move_to_folder; 
+  }
+}
+.eos_ic_folder {
+  &:before {
+    content: @eos_ic_folder; 
+  }
+}
+.eos_ic_feedback {
+  &:before {
+    content: @eos_ic_feedback; 
+  }
+}
+.eos_ic_create_new_folder {
+  &:before {
+    content: @eos_ic_create_new_folder; 
+  }
+}
 .eos_ic_dark_light {
   &:before {
     content: @eos_ic_dark_light; 
@@ -393,11 +439,6 @@
     content: @eos_ic_content_copy; 
   }
 }
-.eos_ic_create_new_folder {
-  &:before {
-    content: @eos_ic_create_new_folder; 
-  }
-}
 .eos_ic_create {
   &:before {
     content: @eos_ic_create; 
@@ -433,11 +474,6 @@
     content: @eos_ic_expand_more; 
   }
 }
-.eos_ic_feedback {
-  &:before {
-    content: @eos_ic_feedback; 
-  }
-}
 .eos_ic_file_download {
   &:before {
     content: @eos_ic_file_download; 
@@ -446,11 +482,6 @@
 .eos_ic_file_upload {
   &:before {
     content: @eos_ic_file_upload; 
-  }
-}
-.eos_ic_folder {
-  &:before {
-    content: @eos_ic_folder; 
   }
 }
 .eos_ic_fullscreen {
@@ -521,11 +552,6 @@
 .eos_ic_more_vert {
   &:before {
     content: @eos_ic_more_vert; 
-  }
-}
-.eos_ic_move_to_folder {
-  &:before {
-    content: @eos_ic_move_to_folder; 
   }
 }
 .eos_ic_my_aoi {
