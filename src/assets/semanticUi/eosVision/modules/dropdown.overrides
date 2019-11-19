@@ -66,14 +66,11 @@
     text-overflow: ellipsis;
     position: absolute;
     left: @selectionHorizontalPadding;
-    right: @selectionHorizontalPadding;
+    right: @selectionIconDistance;
     top: @selectionVerticalPadding;
   }
   > .dropdown.icon {
     color: @eosGrey5-text;
-    ~ .text {
-      right: @selectionIconDistance;
-    }
   }
   .menu {
     .selected.item:hover {

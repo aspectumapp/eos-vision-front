@@ -79,12 +79,12 @@
 @scrollingItemHeight: 34px;
 
 @selectionTabletMaxItems: 4;
-@selectionComputerMaxItems: 5;
-@selectionWidescreenMaxItems: 5;
+@selectionComputerMaxItems: 6;
+@selectionWidescreenMaxItems: 6;
 
 @scrollingTabletMaxItems: 4;
-@scrollingComputerMaxItems: 5;
-@scrollingWidescreenMaxItems: 5;
+@scrollingComputerMaxItems: 6;
+@scrollingWidescreenMaxItems: 6;
 
 @activeItemFontWeight: @fontSemiBold;
 
