@@ -57,20 +57,54 @@
 }
 
 /*--- buttons new colors START---*/
+& when (@visionIframe = true) {
+  .ui.buttons {
+    border-radius: 38px;
+    .ui.button {
+      position: relative;
+      &:first-child {
+        border-radius: 38px 0 0 38px;
+      }
+      &:last-child {
+        border-radius: 0 38px 38px 0;
+      }
+      +.ui.button {
+        .decor {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: -1px;
+          width: 1px;
+          border-top: 8px solid @white-bg;
+          border-bottom: 8px solid @white-bg;
+        }
+      }
+    }
+  }
+}
 
 .ui.buttons.white, .ui.button.white {
   background-color: @white-bg;
-  color: @eosGrey5-text;
-  
+  color: @eosGrey5-text;  
   box-shadow: @eosBoxShadow-1 !important;
 }
-.ui.buttons.white:not(.icon), .ui.button.white:not(.icon) {
-  border-radius: 3px;
+& when (@visionIframe = false) {
+  .ui.buttons.white:not(.icon), .ui.button.white:not(.icon) {
+    border-radius: 3px;
+  }
 }
 .ui.buttons.white .ui.button,
 .ui.button.white {
   color: @eosGrey5-text;
   background-color: @white-bg;
+  & when (@visionIframe = true) {
+    padding: 8px;
+    width: auto;
+    height: auto;
+    .icon {
+      font-size: 18px;
+    }
+  }
   &:hover {
     background-color: @eosGrey10-bg;
     color: @eosGrey4-text;
@@ -81,7 +115,12 @@
 }
 .ui.buttons.white .ui.button {
   + .ui.button {
-    border-left: 1px solid @eosGrey8-bg;
+    & when (@visionIframe = false) {
+      border-left: 1px solid @eosGrey8-bg;
+    }
+    & when (@visionIframe = true) {
+      border-left: 1px solid @borderColor;
+    }
   }
 }
 

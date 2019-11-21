@@ -11,11 +11,12 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
-& when (@visionWeb = true) {
+& when (@visionWeb = true), (@visionIframe = true) {
   .ui.message ::-webkit-scrollbar,
   .analysis-info-panel ::-webkit-scrollbar,
   .legends-info-block ::-webkit-scrollbar,
   .analysis-result-popup ::-webkit-scrollbar,
+  .widgets-list-popup ::-webkit-scrollbar,
   .popup-show-info ::-webkit-scrollbar,
   .ui.dropdown ::-webkit-scrollbar,
   .upload-files-panel ::-webkit-scrollbar,
@@ -31,6 +32,7 @@ body {
   .analysis-info-panel ::-webkit-scrollbar-track,
   .legends-info-block ::-webkit-scrollbar-track,
   .analysis-result-popup ::-webkit-scrollbar-track,
+  .widgets-list-popup ::-webkit-scrollbar-track,
   .popup-show-info ::-webkit-scrollbar-track,
   .ui.dropdown ::-webkit-scrollbar-track,
   .upload-files-panel ::-webkit-scrollbar-track,
@@ -45,6 +47,7 @@ body {
   .analysis-info-panel ::-webkit-scrollbar-thumb,
   .legends-info-block ::-webkit-scrollbar-thumb,
   .analysis-result-popup ::-webkit-scrollbar-thumb,
+  .widgets-list-popup ::-webkit-scrollbar-thumb,
   .popup-show-info ::-webkit-scrollbar-thumb,
   .ui.dropdown ::-webkit-scrollbar-thumb,
   .upload-files-panel ::-webkit-scrollbar-thumb,
@@ -61,6 +64,7 @@ body {
   .analysis-info-panel ::-webkit-scrollbar-thumb:hover,
   .legends-info-block ::-webkit-scrollbar-thumb:hover,
   .analysis-result-popup ::-webkit-scrollbar-thumb:hover,
+  .widgets-list-popup ::-webkit-scrollbar-thumb:hover,
   .popup-show-info ::-webkit-scrollbar-thumb:hover,
   .ui.dropdown ::-webkit-scrollbar-thumb:hover,
   .upload-files-panel ::-webkit-scrollbar-thumb:hover,
@@ -77,6 +81,7 @@ body {
   .analysis-info-panel ::-webkit-scrollbar-thumb:window-inactive,
   .legends-info-block ::-webkit-scrollbar-thumb:window-inactive,
   .analysis-result-popup ::-webkit-scrollbar-thumb:window-inactive,
+  .widgets-list-popup ::-webkit-scrollbar-thumb:window-inactive,
   .popup-show-info ::-webkit-scrollbar-thumb:window-inactive,
   .ui.dropdown ::-webkit-scrollbar-thumb:window-inactive,
   .upload-files-panel ::-webkit-scrollbar-thumb:window-inactive,
