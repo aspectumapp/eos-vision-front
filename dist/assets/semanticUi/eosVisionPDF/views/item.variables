@@ -1,0 +1,2 @@
+@background: @white;
+@headerFontSize: 13px;

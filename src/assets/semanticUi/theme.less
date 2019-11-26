@@ -33,6 +33,9 @@
 /* Site Iframe site.variables */
 @import (optional) "@{eosVisionIframe}/globals/site.variables";
 
+/* Site PDF site.variables */
+@import (optional) "@{eosVisionPDF}/globals/site.variables";
+
 
 /*-------------------
  Component Variables
@@ -55,6 +58,9 @@
 
 /* Site Iframe Theme */
 @import (optional) "@{eosVisionIframe}/@{type}s/@{element}.variables";
+
+/* Site PDF Theme */
+@import (optional) "@{eosVisionPDF}/@{type}s/@{element}.variables";
 
 
 /*******************************
@@ -79,4 +85,5 @@
   @import (optional) "@{eosVisionMobile}/@{type}s/@{element}.overrides";
   @import (optional) "@{eosVisionTablet}/@{type}s/@{element}.overrides";
   @import (optional) "@{eosVisionIframe}/@{type}s/@{element}.overrides";
+  @import (optional) "@{eosVisionPDF}/@{type}s/@{element}.overrides";
 }
