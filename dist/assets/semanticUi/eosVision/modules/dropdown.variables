@@ -27,6 +27,7 @@
 @itemColor: @textColor;
 @menuBorderColor: @borderColor;
 
+@dropdownIconMargin: 0em 0em 0em .5em;
 
 @selectionIconPadding: 11px;
 
