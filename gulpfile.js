@@ -6,15 +6,15 @@ const gulpSvgSprite = require('gulp-svg-sprites');
 
 const constants = require('./config/constants');
 
-gulp.task('clean:dist', function(){
+gulp.task('clean:dist', function() {
   return del(`${constants.DIST_DIR}/**`, {force:true});
 });
 
-gulp.task('clean:docs', function(){
+gulp.task('clean:docs', function() {
   return del(`${constants.DOCS_DIR}/**`, {force:true});
 });
 
-gulp.task('copy:dist', function () {
+gulp.task('copy:dist', function() {
   gulp
     .src(`${constants.SRC_DIR}/assets/**/*`)
     .pipe(gulp.dest(`${constants.DIST_DIR}/assets/`))
@@ -25,7 +25,7 @@ gulp.task('copy:dist', function () {
     .pipe(gulp.dest(`${constants.DIST_DIR}/ui/`))
   ;
 
-  gulp
+  return gulp
     .src(`${constants.SRC_DIR}/ui/**/*.less`)
     .pipe(gulp.dest(`${constants.DIST_DIR}/ui/`))
   ;
