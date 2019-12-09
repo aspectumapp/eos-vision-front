@@ -64,9 +64,6 @@
       position: relative;
       &:first-child {
         border-radius: 38px 0 0 38px;
-        &:last-child {
-          border-radius: 38px;
-        }
       }
       &:last-child {
         border-radius: 0 38px 38px 0;
