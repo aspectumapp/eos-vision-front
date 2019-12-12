@@ -90,6 +90,15 @@
   background-color: @white-bg;
   color: @eosGrey5-text;  
   box-shadow: @eosBoxShadow-1 !important;
+  
+}
+& when (@visionIframe = true) {
+  .ui.button.white {
+    &.icon {
+      border-radius: 38px;
+      padding: 8px;
+    }
+  }
 }
 & when (@visionIframe = false) {
   .ui.buttons.white:not(.icon), .ui.button.white:not(.icon) {
@@ -104,6 +113,7 @@
     padding: 8px;
     width: auto;
     height: auto;
+    
     .icon {
       font-size: 18px;
     }
@@ -112,7 +122,7 @@
     background-color: @eosGrey10-bg;
     color: @eosGrey4-text;
   }
-  &:active, &.active {
+  &.active {
     color: @blueHover;
   }
 }
