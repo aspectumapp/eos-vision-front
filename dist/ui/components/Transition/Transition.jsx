@@ -65,7 +65,7 @@ export default class Transition extends React.Component {
             this.setState({ status, animating: true }, () => {
                 const durationType = TRANSITION_TYPE[status];
                 const durationValue = normalizeTransitionDuration(duration, durationType);
-                invoke(this.props, 'onStart', null, Object.assign(Object.assign({}, this.props), { status }));
+                invoke(this.props, 'onStart', null, Object.assign({}, this.props, { status }));
                 if (this.timeoutId) {
                     clearTimeout(this.timeoutId);
                     this.timeoutId = null;
@@ -76,7 +76,7 @@ export default class Transition extends React.Component {
         this.handleComplete = () => {
             this.timeoutId = null;
             const { status: current } = this.state;
-            invoke(this.props, 'onComplete', null, Object.assign(Object.assign({}, this.props), { status: current }));
+            invoke(this.props, 'onComplete', null, Object.assign({}, this.props, { status: current }));
             if (this.nextStatus) {
                 this.handleStart();
                 return;
@@ -84,7 +84,7 @@ export default class Transition extends React.Component {
             const status = this.computeCompletedStatus();
             const callback = current === TransitionStatus.Entering ? 'onShow' : 'onHide';
             this.setState({ status, animating: false }, () => {
-                invoke(this.props, callback, null, Object.assign(Object.assign({}, this.props), { status }));
+                invoke(this.props, callback, null, Object.assign({}, this.props, { status }));
             });
         };
         this.updateStatus = () => {
@@ -178,7 +178,7 @@ export default class Transition extends React.Component {
             const childStyle = get(children, 'props.style');
             const type = TRANSITION_TYPE[status];
             const animationDuration = type && `${normalizeTransitionDuration(duration, type)}ms`;
-            return Object.assign(Object.assign({}, childStyle), { animationDuration });
+            return Object.assign({}, childStyle, { animationDuration });
         };
         const { initial: status, next } = this.computeInitialStatuses();
         this.nextStatus = next;
