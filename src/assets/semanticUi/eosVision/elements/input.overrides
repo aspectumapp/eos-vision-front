@@ -39,6 +39,9 @@
     left: 0;
     top: 100%;
     z-index: 2;
+    .fields.two & {
+      left: auto;
+    }
     &:before {
       left: 16px;
     }
