@@ -10,14 +10,25 @@
 }
 
 .ui.items>.item .meta.link {
-  color: @linkColor;
-  text-decoration: @linkUnderline;
+  cursor: default;
   display: block;
-  &:hover {
-    color: @linkHoverColor;
-    text-decoration: @linkHoverUnderline;
+}
+
+.ui.items>.item .meta {
+  a {
+    color: @linkColor;
+    text-decoration: @linkUnderline;
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    &:hover {
+      color: @linkHoverColor;
+      text-decoration: @linkHoverUnderline;
+    }
   }
 }
+
 .ui.items > .item > .content > .header {
   display: block;
 }
