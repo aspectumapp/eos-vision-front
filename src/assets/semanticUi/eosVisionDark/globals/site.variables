@@ -39,6 +39,7 @@
 --eosgrey11-bg-fade-50: fade(@eosGrey2, 50%);
 --eosgrey12-bg: @eosGrey1;
 --eosgrey12-bg-fade-50: fade(@eosGrey1, 50%);
+--eosgrey12-bg-fade-80: fade(@eosGrey1, 80%);
 --eosgrey12-bg-fade-95: fade(@eosGrey1, 95%);
 
 --eosgrey13-bg: #2d3849;
