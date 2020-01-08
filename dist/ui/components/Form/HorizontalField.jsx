@@ -4,6 +4,7 @@ import './form.less';
 export default class HorizontalField extends React.Component {
     render() {
         const className = classnames('field horizontal', {
+            [this.props.className]: !!this.props.className,
             error: this.props.error,
             disabled: this.props.disabled,
         });
