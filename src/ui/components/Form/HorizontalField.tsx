@@ -7,11 +7,13 @@ export interface Props {
   label?: string;
   error?: boolean;
   disabled?: boolean;
+  className?: string;
 }
 
 export default class HorizontalField extends React.Component<Props> {
   render(): React.ReactNode {
     const className = classnames('field horizontal', {
+      [this.props.className]: !!this.props.className,
       error: this.props.error,
       disabled: this.props.disabled,
     });
