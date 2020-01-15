@@ -21,8 +21,10 @@
 .ui.mini.input, .ui.small.input {
   font-size: @fontSize;
   input {
-    padding-top: 7px;
-    padding-bottom: 7px;
+    &, .ui.form & {
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
   }
 }
 
