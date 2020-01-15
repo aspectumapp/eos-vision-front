@@ -56,8 +56,13 @@
           top: 30px;
         }
       }
-      > .content {
+      .content {
         pointer-events: none;
+        user-select: none;
+        * {
+          pointer-events: none;
+          user-select: none;
+        }
       }
     }
     .ui.checkbox.toggle.fitted {
@@ -69,7 +74,9 @@
     margin: 20px 0;
   }
 }
-
+.ui.accordion .title {
+  user-select: none;
+}
 .ui.accordion.styled .title {
   background-color: var(--eosgrey10-bg, @eosGrey11);
   white-space: nowrap;
