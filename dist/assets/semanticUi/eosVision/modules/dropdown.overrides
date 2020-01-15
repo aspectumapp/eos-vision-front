@@ -47,7 +47,7 @@
   content: "\f0da"/*rtl:"\f0d9"*/;
 }
 
-.ui.dropdown > .dropdown.icon {
+.ui.dropdown.selection > .dropdown.icon {
   color: @eosGrey6-text;
 }
 
@@ -142,8 +142,21 @@
 }
 
 .ui.dropdown {
+  display: inline-flex;
+  max-width: 100%;
+  align-items: center;
+  > .text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
   > .icon + .icon {
     display: none;
+  }
+  > .menu {
+    > .scrolling.menu {
+      border-top: 1px solid @borderColor !important;
+    }
   }
 }
 

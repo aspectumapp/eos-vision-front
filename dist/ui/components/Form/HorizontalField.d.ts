@@ -5,6 +5,7 @@ export interface Props {
     label?: string;
     error?: boolean;
     disabled?: boolean;
+    className?: string;
 }
 export default class HorizontalField extends React.Component<Props> {
     render(): React.ReactNode;

@@ -234,6 +234,18 @@
       margin-top: -13px;
       margin-bottom: 8px;
     }
+    + .field.horizontal.toggle-field {
+      margin-top: 23px;
+    }
+    &.toggle-field {
+      min-height: auto;
+      label {
+        font-weight: @fontSemiBold;
+      }
+      + .field.horizontal.toggle-field {
+        margin-top: 20px;
+      }
+    }
   }
   .group-label {
     position: relative;
