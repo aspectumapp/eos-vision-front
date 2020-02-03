@@ -141,7 +141,7 @@
   border-color: @menuBorderColor !important;
 }
 
-.ui.dropdown {
+.ui.dropdown:not(.ui.button) {
   display: inline-flex;
   max-width: 100%;
   align-items: center;

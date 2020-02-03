@@ -89,7 +89,7 @@
 .ui.buttons.white, .ui.button.white {
   background-color: @white-bg;
   color: @eosGrey5-text;  
-  box-shadow: @eosBoxShadow-1 !important;
+  box-shadow: var(--none, @eosBoxShadow-1);
   
 }
 & when (@visionIframe = true) {
@@ -254,7 +254,7 @@
 
 .ui.buttons.icon .ui.button, .ui.button.icon {
   font-size: @eos-buttonIconFontSize;
-  padding: 10px;
+  padding: 9px;
   white-space: nowrap;
 }
 
