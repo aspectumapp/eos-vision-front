@@ -270,8 +270,8 @@
 
 @miniSize        : (12 / 14);
 
-@relativeBorderRadius: @relative4px;
-@absoluteBorderRadius: @4px;
+@relativeBorderRadius: @relative5px;
+@absoluteBorderRadius: @5px;
 
 
 /*-------------------

@@ -13,6 +13,7 @@
 @searchInputTop: -2px;
 
 @menuBackground: @white-bg;
+@menuBorderRadius: @8px;
 
 @subMenuDistanceAway: -(round(3/14em, 3));
 @subMenuMargin:  -(round(6/13em, 3)) 0em 0em @subMenuDistanceAway;

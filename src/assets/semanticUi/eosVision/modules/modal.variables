@@ -18,6 +18,8 @@
 
 @miniComputerWidth: 386px;
 
+@buttonDistance: 10px;
+
 
 @headerPadding: 15px 43px 0 23px;
 

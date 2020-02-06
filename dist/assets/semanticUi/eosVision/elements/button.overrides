@@ -140,11 +140,16 @@
 .ui.icon.buttons.edit-geometry {
   z-index: 10;
   position: absolute;
-  bottom: 15px;
-  right: 353px;
+  bottom: 22px;
+  right: 218px;
   background: transparent;
   transition: transform 500ms ease;
   .ui.button {
+    border-radius: 31px;
+    width: 34px;
+    height: 34px;
+    box-shadow: var(--none, @eosBoxShadow-1);
+    
     > .icon {
       margin: 0;
     }
