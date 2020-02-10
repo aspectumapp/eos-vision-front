@@ -5,8 +5,8 @@
 @background: var(--eosgrey10-bg, @white);
 @arrowBackground: var(--eosgrey10-bg, @white);
 
-@tooltipInvertedBackground: @eosGrey1-bg;
-@tooltipInvertedColor: var(--eosgrey12-bg, @invertedColor);
+@tooltipInvertedBackground: @eosGrey1;
+@tooltipInvertedColor: @invertedColor;
 @invertedArrowCenterBackground: @tooltipInvertedBackground;
 @tooltipBorderRadius: 6px;
 

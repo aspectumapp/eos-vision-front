@@ -9,7 +9,7 @@
 @headerBackground: transparent;
 @contentBackground: transparent;
 
-@borderRadius: 6px;
+@borderRadius: 10px;
 
 @headerFontSize: 18px;
 @miniHeaderSize: 18px;
@@ -29,11 +29,11 @@
 @headerColor: @textColor;
 
 @actionBorder: 1px solid @borderColor;
-@actionPadding: 14px 23px 15px;
+@actionPadding: 20px 23px;
 
 @closeTop: 0;
 @closeRight: 2px;
-@closeColor: @eosGrey6-text;
+@closeColor: var(--eosgrey6-text, inherit);
 
 @closeSize: 18px;
 

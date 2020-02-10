@@ -225,7 +225,7 @@
           padding: 14px 29px 14px 15px !important;
         }
         & when (@visionTablet = false) {
-          padding: 10px 29px 11px 15px !important;
+          padding: 10px 29px 10px 15px !important;
         }
       }
       .icon {

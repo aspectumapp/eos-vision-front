@@ -17,7 +17,7 @@
 @borderShadow: 0px 0px 0px @borderWidth @borderColor;
 
 @boxShadow: var(--card-boxshadow, @borderShadow,0 2px 4px rgba(0, 0, 0, 0));
-
+@borderRadius: 5px;
 @contentDivider: 0;
 
 @contentPaddingVertical: 9/13em;

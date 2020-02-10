@@ -48,7 +48,7 @@
 --selectedbackgroudcolor: @eosGrey3;
 --inputbordercolor: @eosGrey3;
 --inputbackground: @eosGrey3;
---inputhoverbordercolor: @eosGrey9-bg;
+--inputhoverbordercolor: @eosGrey4;
 --inputhoverbackgroundcolor: @eosGrey3;
 
 --trackbackground: none;

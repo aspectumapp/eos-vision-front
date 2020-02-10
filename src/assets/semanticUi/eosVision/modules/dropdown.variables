@@ -28,6 +28,10 @@
 @itemColor: @textColor;
 @menuBorderColor: @borderColor;
 
+@itemLineHeight: 14px;
+@itemLineHeightOffset: (@itemLineHeight - @itemLineHeight);
+
+
 @dropdownIconMargin: 0em 0em 0em .5em;
 
 @selectionIconPadding: 11px;
@@ -52,7 +56,7 @@
 
 @selectionItemDivider: none;
 
-@itemVerticalPadding: round(10.5/13em, 3);
+@itemVerticalPadding: 10px;
 
 @selectionIconDistance: 35/13em;
 
