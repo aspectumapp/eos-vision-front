@@ -108,7 +108,6 @@
 .ui.checkbox.small label {
   font-size: 12px;
   padding-left: 19px;
-  color: #3E475D;
   min-height: 12px;
 }
 
