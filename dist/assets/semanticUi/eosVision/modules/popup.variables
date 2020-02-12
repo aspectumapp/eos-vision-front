@@ -34,7 +34,7 @@
 @verticalPadding: 10.5/14em;
 @horizontalPadding: 15/14em;
 
-@tooltipZIndex: 2;
+@tooltipZIndex: 1000;
 @arrowZIndex: 1;
 
 @borderColor: #e1e1e1;

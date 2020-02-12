@@ -244,7 +244,6 @@
   &.tiny {
     font-size: 10px;
     padding: 7/10em 14/13em;
-    border-radius: 2px;
   }
   &.mini {
     font-size: 9px;
@@ -407,9 +406,6 @@
     }
     > .icon {
       margin: @eos-buttonTransparentPadding;
-    }
-    &.dark, &.blue, &.red {
-      background-color: transparent !important;
     }
 
     &.white {

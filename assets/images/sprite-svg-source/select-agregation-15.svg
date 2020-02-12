@@ -1,23 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg version="1.1" viewBox="0 0 34 20" xmlns="http://www.w3.org/2000/svg">
-<g fill="none" fill-rule="evenodd">
-<g transform="translate(-1948 -7203)">
-<g transform="translate(1948 7203)">
-<rect width="34" height="20"/>
-<circle cx="12" cy="14" r="1" fill="#64A6E8" fill-rule="nonzero"/>
-<circle cx="4" cy="3" r="1" fill="#64A6E8" fill-rule="nonzero" opacity=".5"/>
-<circle cx="12" cy="6" r="1" fill="#64A6E8" fill-rule="nonzero"/>
-<circle cx="4" cy="16" r="1" fill="#64A6E8" fill-rule="nonzero" opacity=".5"/>
-<circle cx="28" cy="16" r="1" fill="#64A6E8" fill-rule="nonzero" opacity=".5"/>
-<circle cx="26" cy="2" r="1" fill="#64A6E8" fill-rule="nonzero" opacity=".5"/>
-<circle cx="30" cy="7" r="1" fill="#64A6E8" fill-rule="nonzero" opacity=".5"/>
-<circle cx="5" cy="9" r="1" fill="#64A6E8" fill-rule="nonzero" opacity=".5"/>
-<circle cx="23" cy="9" r="1" fill="#64A6E8" fill-rule="nonzero"/>
-<circle cx="17" cy="4" r="1" fill="#64A6E8" fill-rule="nonzero"/>
-<circle cx="21" cy="15" r="1" fill="#64A6E8" fill-rule="nonzero"/>
-<circle cx="17" cy="10" r="2" fill="#64A6E8" fill-rule="nonzero"/>
-<circle cx="17" cy="10" r="9" fill="#64A6E8" fill-opacity=".2" fill-rule="nonzero" stroke="#64A6E8"/>
-</g>
+<svg width="34" height="20" viewBox="0 0 34 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="radius-points">
+<g id="img">
+<path id="Oval 2" d="M17 19C21.9706 19 26 14.9706 26 10C26 5.02944 21.9706 1 17 1C12.0294 1 8 5.02944 8 10C8 14.9706 12.0294 19 17 19Z" fill="#64A6E8" fill-opacity="0.2"/>
+<path id="Oval 2 Copy 3" d="M12 15C12.5523 15 13 14.5523 13 14C13 13.4477 12.5523 13 12 13C11.4477 13 11 13.4477 11 14C11 14.5523 11.4477 15 12 15Z" fill="#3399FF"/>
+<path id="Oval 2 Copy 3_2" opacity="0.5" d="M4 4C4.55228 4 5 3.55228 5 3C5 2.44772 4.55228 2 4 2C3.44772 2 3 2.44772 3 3C3 3.55228 3.44772 4 4 4Z" fill="#59ACFF"/>
+<path id="Oval 2 Copy 3_3" d="M12 7C12.5523 7 13 6.55228 13 6C13 5.44772 12.5523 5 12 5C11.4477 5 11 5.44772 11 6C11 6.55228 11.4477 7 12 7Z" fill="#3399FF"/>
+<path id="Oval 2 Copy 3_4" opacity="0.5" d="M4 17C4.55228 17 5 16.5523 5 16C5 15.4477 4.55228 15 4 15C3.44772 15 3 15.4477 3 16C3 16.5523 3.44772 17 4 17Z" fill="#59ACFF"/>
+<path id="Oval 2 Copy 3_5" opacity="0.5" d="M28 17C28.5523 17 29 16.5523 29 16C29 15.4477 28.5523 15 28 15C27.4477 15 27 15.4477 27 16C27 16.5523 27.4477 17 28 17Z" fill="#59ACFF"/>
+<path id="Oval 2 Copy 3_6" opacity="0.5" d="M26 3C26.5523 3 27 2.55228 27 2C27 1.44772 26.5523 1 26 1C25.4477 1 25 1.44772 25 2C25 2.55228 25.4477 3 26 3Z" fill="#59ACFF"/>
+<path id="Oval 2 Copy 3_7" opacity="0.5" d="M30 8C30.5523 8 31 7.55228 31 7C31 6.44772 30.5523 6 30 6C29.4477 6 29 6.44772 29 7C29 7.55228 29.4477 8 30 8Z" fill="#59ACFF"/>
+<path id="Oval 2 Copy 3_8" opacity="0.5" d="M5 10C5.55228 10 6 9.55228 6 9C6 8.44772 5.55228 8 5 8C4.44772 8 4 8.44772 4 9C4 9.55228 4.44772 10 5 10Z" fill="#59ACFF"/>
+<path id="Oval 2 Copy 3_9" d="M23 10C23.5523 10 24 9.55228 24 9C24 8.44772 23.5523 8 23 8C22.4477 8 22 8.44772 22 9C22 9.55228 22.4477 10 23 10Z" fill="#3399FF"/>
+<path id="Oval 2 Copy 3_10" d="M17 5C17.5523 5 18 4.55228 18 4C18 3.44772 17.5523 3 17 3C16.4477 3 16 3.44772 16 4C16 4.55228 16.4477 5 17 5Z" fill="#3399FF"/>
+<path id="Oval 2 Copy 3_11" d="M21 16C21.5523 16 22 15.5523 22 15C22 14.4477 21.5523 14 21 14C20.4477 14 20 14.4477 20 15C20 15.5523 20.4477 16 21 16Z" fill="#3399FF"/>
+<path id="Oval 2_2" d="M17 12C18.1046 12 19 11.1046 19 10C19 8.89543 18.1046 8 17 8C15.8954 8 15 8.89543 15 10C15 11.1046 15.8954 12 17 12Z" fill="#3399FF"/>
+<path id="Oval 2 (Stroke)" fill-rule="evenodd" clip-rule="evenodd" d="M7.5 10C7.5 4.75329 11.7533 0.5 17 0.5C22.2467 0.5 26.5 4.75329 26.5 10C26.5 15.2467 22.2467 19.5 17 19.5C11.7533 19.5 7.5 15.2467 7.5 10ZM17 1.5C12.3056 1.5 8.5 5.30558 8.5 10C8.5 14.6944 12.3056 18.5 17 18.5C21.6944 18.5 25.5 14.6944 25.5 10C25.5 5.30558 21.6944 1.5 17 1.5Z" fill="#3399FF"/>
 </g>
 </g>
 </svg>

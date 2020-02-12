@@ -5,4 +5,7 @@
 
 .ui.modal {
   font-size: @fontSize;
+  .ui.dimmer {
+    border-radius: @borderRadius;
+  }
 }
