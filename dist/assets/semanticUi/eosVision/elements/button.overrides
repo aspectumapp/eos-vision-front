@@ -89,7 +89,7 @@
 .ui.buttons.white, .ui.button.white {
   background-color: @white-bg;
   color: @eosGrey5-text;  
-  box-shadow: @eosBoxShadow-1 !important;
+  box-shadow: var(--none, @eosBoxShadow-1);
   
 }
 & when (@visionIframe = true) {
@@ -140,11 +140,16 @@
 .ui.icon.buttons.edit-geometry {
   z-index: 10;
   position: absolute;
-  bottom: 15px;
-  right: 353px;
+  bottom: 22px;
+  right: 218px;
   background: transparent;
   transition: transform 500ms ease;
   .ui.button {
+    border-radius: 31px;
+    width: 34px;
+    height: 34px;
+    box-shadow: var(--none, @eosBoxShadow-1);
+    
     > .icon {
       margin: 0;
     }
@@ -239,7 +244,6 @@
   &.tiny {
     font-size: 10px;
     padding: 7/10em 14/13em;
-    border-radius: 2px;
   }
   &.mini {
     font-size: 9px;
@@ -254,7 +258,7 @@
 
 .ui.buttons.icon .ui.button, .ui.button.icon {
   font-size: @eos-buttonIconFontSize;
-  padding: 10px;
+  padding: 9px;
   white-space: nowrap;
 }
 
@@ -402,9 +406,6 @@
     }
     > .icon {
       margin: @eos-buttonTransparentPadding;
-    }
-    &.dark, &.blue, &.red {
-      background-color: transparent !important;
     }
 
     &.white {

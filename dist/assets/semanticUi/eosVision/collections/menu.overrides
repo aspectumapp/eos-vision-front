@@ -33,6 +33,10 @@
   }
 }
 
+.ui.dropdown .menu {
+  overflow: auto;
+}
+
 .ui.menu .item.menu {
   padding: 0;
 }
@@ -47,7 +51,7 @@
       border-bottom-color: transparent;
       font-size: @fontSize;
       padding: @secondaryPointingTabsMenuItemVerticalPadding @secondaryPointingTabsMenuItemHorizontalPadding;
-      color: var(--eosgrey7-text, @eosGrey5);
+      color: var(--eosgrey7-text, @eosGrey4);
       &:hover {
         color: @darkTextColor;
       }
@@ -56,9 +60,9 @@
       }
       &.active {
         border-bottom-color: @blue;
-        color: @darkTextColor;
+        color: @eosGrey3-text;
         .icon {
-          color: @eosGrey4-text;
+          color: inherit;
         }
       }
     }
@@ -113,8 +117,11 @@
       position: absolute;
       top: 0;
       bottom: 0;
-      left: 0;
-      width: 2px;
+      left: -3px;
+      width: 3px;
+      background-color: @blue;
+      transition: transform .4s ease-out;
+      border-radius: 0 3px 3px 0;
     }
 
     &:hover {
@@ -124,9 +131,10 @@
 
     &.active {
       background-color: var(--white-bg, @eosGrey11-bg);
-      color: @eosGrey4-text;
+      color: var(--eosgrey4-text, @eosGrey3);
       &:after {
-        background-color: @blue;
+        transform: translate(3px, 0);
+        transition: transform .4s ease-in;
       }
     }
     .icon {

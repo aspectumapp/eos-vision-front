@@ -17,11 +17,10 @@
   &.scrolling.menu {
     max-width: 221px;
     .ui.dropdown & {
-      max-height: 37px * 9;
+      max-height: 34px * 9;
       .ui.checkbox {
         &.item {
-          padding: .61429rem 1rem .61429rem .857rem !important;
-          //padding-right: .857rem;
+          padding: .473rem 1rem .473rem .857rem !important;
         }
       }
     }
@@ -53,7 +52,7 @@
 /* Checkmark */
 .ui.checkbox input:checked ~ label,
 .ui.checkbox input:checked ~ .box {
-  color: @darkTextColor;
+  color: @eosGrey3-text;
 }
 
 .ui.checkbox input:checked ~ label:hover,
@@ -109,7 +108,6 @@
 .ui.checkbox.small label {
   font-size: 12px;
   padding-left: 19px;
-  color: #3E475D;
   min-height: 12px;
 }
 

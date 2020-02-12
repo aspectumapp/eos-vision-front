@@ -6,6 +6,8 @@
 @small: round(13/14rem, 4);
 @large: 1rem;
 
+@borderRadius: @6px;
+
 @color: @eosGrey4-text;
 @backgroundColor: @eosGrey10-bg;
 @hoverColor: @eosGrey4-text;
@@ -19,7 +21,7 @@
 
 /* Button defaults to using same height as input globally */
 @verticalPadding: 1em;
-@horizontalPadding: 1.25em;
+@horizontalPadding: 1em;
 
 /* Icon */
 @iconVerticalAlign: top;

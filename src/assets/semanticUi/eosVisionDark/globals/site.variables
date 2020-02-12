@@ -37,6 +37,7 @@
 --eosgrey10-bg: @eosGrey3;
 --eosgrey11-bg: @eosGrey2;
 --eosgrey11-bg-fade-50: fade(@eosGrey2, 50%);
+--eosgrey11-bg-fade-60: fade(@eosGrey2, 60%);
 --eosgrey12-bg: @eosGrey1;
 --eosgrey12-bg-fade-50: fade(@eosGrey1, 50%);
 --eosgrey12-bg-fade-80: fade(@eosGrey1, 80%);
@@ -47,7 +48,7 @@
 --selectedbackgroudcolor: @eosGrey3;
 --inputbordercolor: @eosGrey3;
 --inputbackground: @eosGrey3;
---inputhoverbordercolor: @eosGrey9-bg;
+--inputhoverbordercolor: @eosGrey4;
 --inputhoverbackgroundcolor: @eosGrey3;
 
 --trackbackground: none;

@@ -13,6 +13,7 @@
 @closeNotificationPadding: 14px;
 
 @black: @eosGrey1;
+@borderRadius: 6px;
 
 @horizontalPadding: 15px;
 

@@ -1,22 +1,15 @@
-<svg width="34px" height="20px" viewBox="0 0 51 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-
-            <rect x="0.659090909" y="0" width="51" height="30"></rect>
-            <polygon  fill="#C6CAD0" fill-rule="nonzero" points="16.4503182 10.2272727 12.9082727 10.2272727 11.1362273 13.2954545 12.9082727 16.3636364 16.4503182 16.3636364 18.2223636 13.2954545"></polygon>
-            <polygon  fill="#515B6B" fill-rule="nonzero" points="22.5866818 6.81818182 19.0446364 6.81818182 17.2725909 9.88636364 19.0446364 12.9545455 22.5866818 12.9545455 24.3587273 9.88636364"></polygon>
-            <polygon  fill="#8A929E" fill-rule="nonzero" points="28.7230455 10.2272727 25.181 10.2272727 23.4089545 13.2954545 25.181 16.3636364 28.7230455 16.3636364 30.4950909 13.2954545"></polygon>
-            <polygon  fill="#515B6B" fill-rule="nonzero" points="22.5866818 13.6363636 19.0446364 13.6363636 17.2725909 16.7045455 19.0446364 19.7727273 22.5866818 19.7727273 24.3587273 16.7045455"></polygon>
-            <polygon  fill="#C6CAD0" fill-rule="nonzero" points="34.8594091 6.81818182 31.3173636 6.81818182 29.5453182 9.88636364 31.3173636 12.9545455 34.8594091 12.9545455 36.6314545 9.88636364"></polygon>
-            <polygon  fill="#515B6B" fill-rule="nonzero" points="34.8594091 13.6363636 31.3173636 13.6363636 29.5453182 16.7045455 31.3173636 19.7727273 34.8594091 19.7727273 36.6314545 16.7045455"></polygon>
-            <polygon  fill="#8A929E" fill-rule="nonzero" points="34.8594091 20.4545455 31.3173636 20.4545455 29.5453182 23.5227273 31.3173636 26.5909091 34.8594091 26.5909091 36.6314545 23.5227273"></polygon>
-            <polygon  fill="#515B6B" fill-rule="nonzero" points="12.9079318 23.8636364 11.1365682 26.9318182 12.9079318 30 16.4506591 30 18.2220227 26.9318182 16.4506591 23.8636364"></polygon>
-            <polygon  fill="#8A929E" fill-rule="nonzero" points="16.4503182 17.0454545 12.9082727 17.0454545 11.1362273 20.1136364 12.9082727 23.1818182 16.4503182 23.1818182 18.2223636 20.1136364"></polygon>
-            <polygon  fill="#C6CAD0" fill-rule="nonzero" points="40.9957727 17.0454545 37.4537273 17.0454545 35.6816818 20.1136364 37.4537273 23.1818182 40.9957727 23.1818182 42.7678182 20.1136364"></polygon>
-            <polygon  fill="#8A929E" fill-rule="nonzero" points="43.58975 13.6361591 41.8183864 16.7043409 43.58975 19.7725227 47.1324773 19.7725227 48.9038409 16.7043409 47.1324773 13.6361591"></polygon>
-            <polygon  fill="#515B6B" fill-rule="nonzero" points="40.9957727 3.40909091 37.4537273 3.40909091 35.6816818 6.47727273 37.4537273 9.54545455 40.9957727 9.54545455 42.7678182 6.47727273"></polygon>
-            <polygon  fill="#8A929E" fill-rule="nonzero" points="19.0442955 -6.81818182e-05 17.2729318 3.06811364 19.0442955 6.13629545 22.5870227 6.13629545 24.3583864 3.06811364 22.5870227 -6.81818182e-05"></polygon>
-            <polygon  fill="#515B6B" fill-rule="nonzero" points="6.77156818 6.81804545 5.00020455 9.88622727 6.77156818 12.9544091 10.3142955 12.9544091 12.0856591 9.88622727 10.3142955 6.81804545"></polygon>
-            <polygon  fill="#C6CAD0" fill-rule="nonzero" points="6.77156818 20.4542727 5.00020455 23.5224545 6.77156818 26.5906364 10.3142955 26.5906364 12.0856591 23.5224545 10.3142955 20.4542727"></polygon>
-
-    </g>
+<svg width="34" height="20" viewBox="0 0 34 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="hexagons">
+<g id="hexagons-img-normal">
+<path id="Fill 1" fill-rule="evenodd" clip-rule="evenodd" d="M13.2495 8H9.75051L8 11L9.75051 14H13.2495L15 11L13.2495 8Z" fill="#C6CAD0"/>
+<path id="Fill 2" fill-rule="evenodd" clip-rule="evenodd" d="M19.2495 4H15.7505L14 7L15.7505 10H19.2495L21 7L19.2495 4Z" fill="#515B6B"/>
+<path id="Fill 3" fill-rule="evenodd" clip-rule="evenodd" d="M25.2495 8H21.7505L20 11L21.7505 14H25.2495L27 11L25.2495 8Z" fill="#8A929E"/>
+<path id="Fill 4" fill-rule="evenodd" clip-rule="evenodd" d="M19.2495 12H15.7505L14 15L15.7505 18H19.2495L21 15L19.2495 12Z" fill="#515B6B"/>
+<path id="Fill 5" fill-rule="evenodd" clip-rule="evenodd" d="M31.2495 4H27.7505L26 7L27.7505 10H31.2495L33 7L31.2495 4Z" fill="#C6CAD0"/>
+<path id="Fill 6" fill-rule="evenodd" clip-rule="evenodd" d="M31.2495 12H27.7505L26 15L27.7505 18H31.2495L33 15L31.2495 12Z" fill="#515B6B"/>
+<path id="Fill 9" fill-rule="evenodd" clip-rule="evenodd" d="M7.2495 12H3.75051L2 15L3.75051 18H7.2495L9 15L7.2495 12Z" fill="#8A929E"/>
+<path id="Fill 13" fill-rule="evenodd" clip-rule="evenodd" d="M21.75 0L20 3L21.75 6H25.25L27 3L25.25 0H21.75Z" fill="#8A929E"/>
+<path id="Fill 14" fill-rule="evenodd" clip-rule="evenodd" d="M3.75 4L2 7L3.75 10H7.25L9 7L7.25 4H3.75Z" fill="#515B6B"/>
+</g>
+</g>
 </svg>

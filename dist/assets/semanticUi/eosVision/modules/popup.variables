@@ -5,10 +5,10 @@
 @background: var(--eosgrey10-bg, @white);
 @arrowBackground: var(--eosgrey10-bg, @white);
 
-@tooltipInvertedBackground: var(--eosgrey1-bg, #191b1b);
-@tooltipInvertedColor: var(--eosgrey12-bg, @invertedColor);
+@tooltipInvertedBackground: @eosGrey1;
+@tooltipInvertedColor: @invertedColor;
 @invertedArrowCenterBackground: @tooltipInvertedBackground;
-@tooltipBorderRadius: 3px;
+@tooltipBorderRadius: 6px;
 
 @tooltipFontSize: 13px;
 
@@ -34,7 +34,7 @@
 @verticalPadding: 10.5/14em;
 @horizontalPadding: 15/14em;
 
-@tooltipZIndex: 2;
+@tooltipZIndex: 1000;
 @arrowZIndex: 1;
 
 @borderColor: #e1e1e1;

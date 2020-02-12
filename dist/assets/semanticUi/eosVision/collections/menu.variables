@@ -33,11 +33,12 @@
 @invertedMenuPressedBackground: transparent;
 
 @dropdownHoveredItemBackground: var(--dropdown-dropdownhovereditembackground, @eosGrey10-bg);
+@secondaryItemBorderRadius: 6px;
 /*-------------------
       Collection
 --------------------*/
 
-@itemTextColor: @eosGrey5-text;
+@itemTextColor: @eosGrey4-text;
 
 @itemHorizontalPadding: @relative16px;
 

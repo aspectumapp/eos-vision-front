@@ -1,28 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg version="1.1" viewBox="0 0 34 20" xmlns="http://www.w3.org/2000/svg">
-<g fill="none" fill-rule="evenodd">
-<g transform="translate(-1992 -7203)">
-<g transform="translate(1992 7203)">
-<rect width="34" height="20"/>
-<circle cx="12" cy="14" r="1" fill="#64A6E8" fill-rule="nonzero"/>
-<circle cx="4" cy="3" r="1" fill="#64A6E8" fill-rule="nonzero" opacity=".5"/>
-<circle cx="4" cy="16" r="1" fill="#64A6E8" fill-rule="nonzero" opacity=".5"/>
-<circle cx="28" cy="16" r="1" fill="#64A6E8" fill-rule="nonzero" opacity=".5"/>
-<circle cx="26" cy="2" r="1" fill="#64A6E8" fill-rule="nonzero" opacity=".5"/>
-<circle cx="30" cy="7" r="1" fill="#64A6E8" fill-rule="nonzero" opacity=".5"/>
-<circle cx="5" cy="9" r="1" fill="#64A6E8" fill-rule="nonzero" opacity=".5"/>
-<path d="m21 15l-4-5" fill-rule="nonzero" stroke="#64A6E8"/>
-<path d="m23 9l-6 1" fill-rule="nonzero" stroke="#64A6E8"/>
-<path d="m17 4v6" fill-rule="nonzero" stroke="#64A6E8"/>
-<path d="m12 6l5 4" fill-rule="nonzero" stroke="#64A6E8"/>
-<path d="m12 14l5-4" fill-rule="nonzero" stroke="#64A6E8"/>
-<circle cx="17" cy="10" r="2.5" fill="#64A6E8" fill-rule="nonzero" stroke="#fff"/>
-<circle cx="21" cy="15" r="1" fill="#64A6E8" fill-rule="nonzero"/>
-<circle cx="12" cy="14" r="1" fill="#64A6E8" fill-rule="nonzero"/>
-<circle cx="12" cy="6" r="1" fill="#64A6E8" fill-rule="nonzero"/>
-<circle cx="23" cy="9" r="1" fill="#64A6E8" fill-rule="nonzero"/>
-<circle cx="17" cy="4" r="1" fill="#64A6E8" fill-rule="nonzero"/>
-</g>
+<svg width="34" height="20" viewBox="0 0 34 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="K-nearest 2">
+<g id="img">
+<path id="Oval 2 Copy 3" d="M12 15C12.5523 15 13 14.5523 13 14C13 13.4477 12.5523 13 12 13C11.4477 13 11 13.4477 11 14C11 14.5523 11.4477 15 12 15Z" fill="#64A6E8"/>
+<path id="Oval 2 Copy 3_2" opacity="0.5" d="M4 4C4.55228 4 5 3.55228 5 3C5 2.44772 4.55228 2 4 2C3.44772 2 3 2.44772 3 3C3 3.55228 3.44772 4 4 4Z" fill="#59ACFF"/>
+<path id="Oval 2 Copy 3_3" opacity="0.5" d="M4 17C4.55228 17 5 16.5523 5 16C5 15.4477 4.55228 15 4 15C3.44772 15 3 15.4477 3 16C3 16.5523 3.44772 17 4 17Z" fill="#59ACFF"/>
+<path id="Oval 2 Copy 3_4" opacity="0.5" d="M28 17C28.5523 17 29 16.5523 29 16C29 15.4477 28.5523 15 28 15C27.4477 15 27 15.4477 27 16C27 16.5523 27.4477 17 28 17Z" fill="#59ACFF"/>
+<path id="Oval 2 Copy 3_5" opacity="0.5" d="M26 3C26.5523 3 27 2.55228 27 2C27 1.44772 26.5523 1 26 1C25.4477 1 25 1.44772 25 2C25 2.55228 25.4477 3 26 3Z" fill="#59ACFF"/>
+<path id="Oval 2 Copy 3_6" opacity="0.5" d="M30 8C30.5523 8 31 7.55228 31 7C31 6.44772 30.5523 6 30 6C29.4477 6 29 6.44772 29 7C29 7.55228 29.4477 8 30 8Z" fill="#59ACFF"/>
+<path id="Oval 2 Copy 3_7" opacity="0.5" d="M5 10C5.55228 10 6 9.55228 6 9C6 8.44772 5.55228 8 5 8C4.44772 8 4 8.44772 4 9C4 9.55228 4.44772 10 5 10Z" fill="#59ACFF"/>
+<path id="Oval 2" d="M17 12C18.1046 12 19 11.1046 19 10C19 8.89543 18.1046 8 17 8C15.8954 8 15 8.89543 15 10C15 11.1046 15.8954 12 17 12Z" fill="#3399FF"/>
+<path id="Subtract" fill-rule="evenodd" clip-rule="evenodd" d="M19.2383 11.9976C19.0156 12.2469 18.7519 12.4588 18.4577 12.6226L20.6094 15.3122L21.3902 14.6875L19.2383 11.9976ZM15.0023 12.2382C14.753 12.0155 14.5411 11.7517 14.3773 11.4576L11.6875 13.6094L12.3122 14.3902L15.0023 12.2382ZM14.3774 8.54217C14.5413 8.24802 14.7532 7.98431 15.0025 7.76164L12.3122 5.60938L11.6875 6.39024L14.3774 8.54217ZM16.5 7.04148C16.6626 7.0142 16.8296 7 17 7C17.1704 7 17.3374 7.0142 17.5 7.04148V4H16.5V7.04148ZM19.8364 9.02043C19.9424 9.32742 20 9.65698 20 10C20 10.0023 20 10.0046 20 10.007L23.0824 9.49323L22.918 8.50684L19.8364 9.02043Z" fill="#59ACFF"/>
+<path id="Oval 2 Copy 3_8" d="M21 16C21.5523 16 22 15.5523 22 15C22 14.4477 21.5523 14 21 14C20.4477 14 20 14.4477 20 15C20 15.5523 20.4477 16 21 16Z" fill="#3399FF"/>
+<path id="Oval 2 Copy 3_9" d="M12 15C12.5523 15 13 14.5523 13 14C13 13.4477 12.5523 13 12 13C11.4477 13 11 13.4477 11 14C11 14.5523 11.4477 15 12 15Z" fill="#3399FF"/>
+<path id="Oval 2 Copy 3_10" d="M12 7C12.5523 7 13 6.55228 13 6C13 5.44772 12.5523 5 12 5C11.4477 5 11 5.44772 11 6C11 6.55228 11.4477 7 12 7Z" fill="#3399FF"/>
+<path id="Oval 2 Copy 3_11" d="M23 10C23.5523 10 24 9.55228 24 9C24 8.44772 23.5523 8 23 8C22.4477 8 22 8.44772 22 9C22 9.55228 22.4477 10 23 10Z" fill="#3399FF"/>
+<path id="Oval 2 Copy 3_12" d="M17 5C17.5523 5 18 4.55228 18 4C18 3.44772 17.5523 3 17 3C16.4477 3 16 3.44772 16 4C16 4.55228 16.4477 5 17 5Z" fill="#3399FF"/>
 </g>
 </g>
 </svg>

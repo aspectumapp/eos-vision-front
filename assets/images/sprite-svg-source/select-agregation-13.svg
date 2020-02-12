@@ -1,13 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="34px" height="20px" viewBox="0 0 34 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
-    <title>Rectangle 14</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="img-for-analysis4">
-            <rect id="Rectangle-14" x="0" y="0" width="34" height="20"></rect>
-            <polyline id="Path-5" stroke="#64A6E8" stroke-width="2" fill-rule="nonzero" points="3 16 3 4 31 4 31 16"></polyline>
-        </g>
-    </g>
+<svg width="34" height="20" viewBox="0 0 34 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="uniform">
+<g id="img">
+<path id="Path 5" d="M3 16V4H31V16" stroke="#59ACFF" stroke-width="2"/>
+</g>
+</g>
 </svg>

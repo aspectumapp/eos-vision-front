@@ -6,12 +6,12 @@
 
 @labelFontSize: @fontSize;
 
-@labelColor: var(--eosgrey7-text, @eosGrey5);
-@labelHoverColor: @eosGrey4-text;
+@labelColor: var(--eosgrey7-text, @eosGrey4);
+@labelHoverColor: @eosGrey3-text;
 @labelDistance: @checkboxSize + 6;
 
 @checkboxBackground: var(--none, @white);
-
+@checkboxBorderRadius: @4px;
 @checkboxFocusBackground: var(--none, @white);
 
 @checkboxActiveCheckColor: #fff;
