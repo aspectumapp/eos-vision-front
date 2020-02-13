@@ -33,7 +33,7 @@
   }
 }
 
-.ui.dropdown .menu {
+.ui.dropdown:not(.context-menu) .menu {
   overflow: auto;
 }
 
