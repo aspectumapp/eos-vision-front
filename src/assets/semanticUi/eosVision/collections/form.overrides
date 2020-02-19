@@ -89,12 +89,12 @@
           }
         }
         + * {
-          flex-basis: 67.406%;
+          flex-basis: 67.722%;
           margin-left: auto !important;
         }
       }
       > .ui.label, > .ui.label.pointing, > .ui.label.pointing.error {
-        left: 100% - 67.406;
+        left: 100% - 67.722;
         max-width: 213px;
       }
       .ui.input > input {

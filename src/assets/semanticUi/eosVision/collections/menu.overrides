@@ -60,7 +60,7 @@
       }
       &.active {
         border-bottom-color: @blue;
-        color: @eosGrey3-text;
+        color: var(--eosgrey1-text, @eosGrey3);
         .icon {
           color: inherit;
         }

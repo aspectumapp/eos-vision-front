@@ -387,8 +387,11 @@
     color: var(--eosgrey6-text, @eosGrey5);
     & when (@visionMobile = false) and (@visionTablet = false) {
       &:hover, &:active, &.active {
-        color: @eosGrey4-text;
+        color: var(--eosgrey4-text, @eosGrey3);
         background-color: @eosGrey10-bg;
+        .ui.popup & {
+          background-color: var(--eosgrey9-bg, @eosGrey10);
+        }
       }
     }
     & when (@visionMobile = true) {
