@@ -147,9 +147,16 @@
   }
 
   .group {
-    border-left: 2px solid @borderColor;
-    > .field {
-      margin-left: -2px;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      border-radius: 7px;
+      background: @eosGrey8-bg;
     }
     .group-label {
       color: @textColor;
@@ -190,13 +197,12 @@
     margin-top: 25px;
   }
   .group {
-    padding-top: 2px;
     margin-top: 32px;
     &:first-child {
       margin-top: 14px;
     }
     > .field > label {
-      padding-left: 20px;
+      padding-left: 18px;
     }
   }
   .field, .group {
