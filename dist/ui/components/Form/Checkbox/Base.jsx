@@ -3,6 +3,7 @@ import classnames from 'classnames';
 export default class Base extends React.PureComponent {
     constructor() {
         super(...arguments);
+        this.input = React.createRef();
         this.handleChange = (event) => {
             if (this.props.disabled) {
                 return;
@@ -30,6 +31,11 @@ export default class Base extends React.PureComponent {
             return disabled ? -1 : tabIndex;
         };
     }
+    componentDidMount() {
+        if (this.props.autoFocus) {
+            this.input.current.focus();
+        }
+    }
     renderLabel() {
         const { label, } = this.props;
         if (!label || typeof label === 'string') {
@@ -45,7 +51,7 @@ export default class Base extends React.PureComponent {
             fitted: !this.props.label,
         });
         return (<div className={className} onClick={this.handleClick}>
-        <input type={this.props.inputType} name={this.props.name} checked={this.props.checked} tabIndex={this.computeTabIndex()} className='hidden' disabled={this.props.disabled} onChange={this.handleChange}/>
+        <input ref={this.input} type={this.props.inputType} name={this.props.name} checked={this.props.checked} tabIndex={this.computeTabIndex()} className='hidden' disabled={this.props.disabled} onChange={this.handleChange}/>
         {this.renderLabel()}
       </div>);
     }
@@ -61,5 +67,6 @@ Base.defaultProps = {
     name: '',
     value: '',
     label: '',
+    autoFocus: false,
 };
 //# sourceMappingURL=Base.jsx.map

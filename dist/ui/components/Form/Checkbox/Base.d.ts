@@ -57,6 +57,12 @@ export interface Props extends DataOnChange {
      */
     disabled?: boolean;
     /**
+     * Indicates if checkbox is autofocused
+     *
+     * @default false
+     */
+    autoFocus?: boolean;
+    /**
      * Change handler
      *
      * @default undefined
@@ -65,6 +71,8 @@ export interface Props extends DataOnChange {
 }
 export default class Base extends React.PureComponent<Props> {
     static defaultProps: Partial<Props>;
+    private input;
+    componentDidMount(): void;
     handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
     handleClick: (event: React.MouseEvent<Element, MouseEvent>) => void;
     computeTabIndex: () => number;
