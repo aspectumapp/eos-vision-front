@@ -1,2 +1,7 @@
 @import "../../../assets/global.config";
-& { @import "../../../assets/semanticUi/definitions/modules/checkbox.less"; }
+& {
+  @type    : 'module';
+  @element : 'checkbox';
+  @import (multiple) '../../../assets/semanticUi/theme.config';
+  @import "../../../assets/semanticUi/definitions/modules/checkbox.less"; 
+}
