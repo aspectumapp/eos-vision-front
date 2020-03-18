@@ -68,6 +68,13 @@ export interface Props extends DataOnChange {
   disabled?: boolean;
 
   /**
+   * Indicates if checkbox is autofocused
+   *
+   * @default false
+   */
+  autoFocus?: boolean;
+
+  /**
    * Change handler
    *
    * @default undefined
@@ -87,7 +94,16 @@ export default class Base extends React.PureComponent<Props> {
     name: '',
     value: '',
     label: '',
+    autoFocus: false,
   };
+
+  private input: React.RefObject<HTMLInputElement> = React.createRef();
+
+  componentDidMount(): void {
+    if (this.props.autoFocus) {
+      this.input.current.focus();
+    }
+  }
 
   handleChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
     if (this.props.disabled) {
@@ -160,6 +176,7 @@ export default class Base extends React.PureComponent<Props> {
         onClick={this.handleClick}
       >
         <input
+          ref={this.input}
           type={this.props.inputType}
           name={this.props.name}
           checked={this.props.checked}
