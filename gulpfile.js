@@ -16,6 +16,11 @@ gulp.task('clean:docs', function() {
 
 gulp.task('copy:dist', function() {
   gulp
+    .src(`${constants.SRC_DIR}/less/**/*`)
+    .pipe(gulp.dest(`${constants.DIST_DIR}/less/`))
+  ;
+
+  gulp
     .src(`${constants.SRC_DIR}/assets/**/*`)
     .pipe(gulp.dest(`${constants.DIST_DIR}/assets/`))
   ;
