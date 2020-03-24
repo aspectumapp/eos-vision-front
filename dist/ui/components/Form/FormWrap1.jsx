@@ -1,6 +1,6 @@
 import * as React from 'react';
 import classnames from 'classnames';
-import '../../../less/form/form.less';
+import './form1.less';
 export default class FormWrap extends React.Component {
     render() {
         const className = classnames('ui form', this.props.className, {

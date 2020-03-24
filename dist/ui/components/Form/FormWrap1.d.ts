@@ -1,5 +1,5 @@
 import * as React from 'react';
-import '../../../less/form/form.less';
+import './form1.less';
 export interface Props {
     children: React.ReactNode;
     /**
