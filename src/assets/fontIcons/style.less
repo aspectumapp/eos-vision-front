@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: '@{icomoon-font-family}';
-  src:  url('@{icomoon-font-path}/@{icomoon-font-family}.eot?qfkgl6');
-  src:  url('@{icomoon-font-path}/@{icomoon-font-family}.eot?qfkgl6#iefix') format('embedded-opentype'),
-    url('@{icomoon-font-path}/@{icomoon-font-family}.ttf?qfkgl6') format('truetype'),
-    url('@{icomoon-font-path}/@{icomoon-font-family}.woff?qfkgl6') format('woff'),
-    url('@{icomoon-font-path}/@{icomoon-font-family}.svg?qfkgl6#@{icomoon-font-family}') format('svg');
+  src:  url('@{icomoon-font-path}/@{icomoon-font-family}.eot?red8fp');
+  src:  url('@{icomoon-font-path}/@{icomoon-font-family}.eot?red8fp#iefix') format('embedded-opentype'),
+    url('@{icomoon-font-path}/@{icomoon-font-family}.ttf?red8fp') format('truetype'),
+    url('@{icomoon-font-path}/@{icomoon-font-family}.woff?red8fp') format('woff'),
+    url('@{icomoon-font-path}/@{icomoon-font-family}.svg?red8fp#@{icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -29,6 +29,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.eos_ic_area {
+  &:before {
+    content: @eos_ic_area; 
+  }
+}
+.eos_ic_distance {
+  &:before {
+    content: @eos_ic_distance; 
+  }
+}
+.eos_ic_ruler {
+  &:before {
+    content: @eos_ic_ruler; 
+  }
+}
 .eos_ic_keyboard {
   &:before {
     content: @eos_ic_keyboard; 
