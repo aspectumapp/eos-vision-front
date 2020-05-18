@@ -1,4 +1,19 @@
 @import "../../../assets/global.config";
-& { @import "../../../assets/semanticUi/definitions/modules/dimmer.less"; }
-& { @import "../../../assets/semanticUi/definitions/elements/segment.less"; }
-& { @import "../../../assets/semanticUi/definitions/elements/loader.less"; }
+& {
+  @type    : 'module';
+  @element : 'dimmer';
+  @import (multiple) '../../../assets/semanticUi/theme.config';
+  @import "../../../assets/semanticUi/definitions/modules/dimmer.less";
+}
+& {
+  @type    : 'element';
+  @element : 'segment';
+  @import (multiple) '../../../assets/semanticUi/theme.config';
+  @import "../../../assets/semanticUi/definitions/elements/segment.less";
+}
+& {
+  @type    : 'element';
+  @element : 'loader';
+  @import (multiple) '../../../assets/semanticUi/theme.config';
+  @import "../../../assets/semanticUi/definitions/elements/loader.less";
+}
