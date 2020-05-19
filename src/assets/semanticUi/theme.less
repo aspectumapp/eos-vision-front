@@ -24,6 +24,23 @@
 /* Site theme site.variables */
 @import (optional) "@{siteFolder}/globals/site.variables";
 
+/* Site theme site.variables */
+@import (optional) "../../../../../assets/components/semanticUi/@{siteFolder}/globals/site.variables";
+
+/* Site mobile site.variables */
+@import (optional) "../../../../../assets/components/semanticUi/@{eosVisionMobile}/globals/site.variables";
+
+/* Site Tablet site.variables */
+@import (optional) "../../../../../assets/components/semanticUi/@{eosVisionTablet}/globals/site.variables";
+
+/* Site Iframe site.variables */
+@import (optional) "../../../../../assets/components/semanticUi/@{eosVisionIframe}/globals/site.variables";
+
+/* Site PDF site.variables */
+@import (optional) "../../../../../assets/components/semanticUi/@{eosVisionPDF}/globals/site.variables";
+
+
+
 
 
 /*-------------------
@@ -38,6 +55,21 @@
 
 /* Site Theme */
 @import (optional) "@{siteFolder}/@{type}s/@{element}.variables";
+
+/* Site Theme */
+@import (optional) "../../../../../assets/components/semanticUi/@{siteFolder}/@{type}s/@{element}.variables";
+
+/* Site mobile Theme */
+@import (optional) "../../../../../assets/components/semanticUi/@{eosVisionMobile}/@{type}s/@{element}.variables";
+
+/* Site Tablet Theme */
+@import (optional) "../../../../../assets/components/semanticUi/@{eosVisionTablet}/@{type}s/@{element}.variables";
+
+/* Site Iframe Theme */
+@import (optional) "../../../../../assets/components/semanticUi/@{eosVisionIframe}/@{type}s/@{element}.variables";
+
+/* Site PDF Theme */
+@import (optional) "../../../../../assets/components/semanticUi/@{eosVisionPDF}/@{type}s/@{element}.variables";
 
 
 /*******************************
@@ -59,4 +91,5 @@
 .loadUIOverrides() {
   @import (optional) "@{themesFolder}/@{theme}/@{type}s/@{element}.overrides";
   @import (optional) "@{siteFolder}/@{type}s/@{element}.overrides";
+  @import (optional) "../../../../../assets/components/semanticUi/@{siteFolder}/@{type}s/@{element}.overrides";
 }
