@@ -1,3 +1,0 @@
-
-@inputDisabledcolor: @eosGrey9-text;
-@loaderDimmerColor: fade(@eosGrey11-bg, 75%);

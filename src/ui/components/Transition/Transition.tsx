@@ -4,7 +4,6 @@ import get from 'lodash-es/get';
 import isNil from 'lodash-es/isNil';
 import includes from 'lodash-es/includes';
 import * as React from 'react';
-import './transition.less';
 
 function normalizeTransitionDuration(duration, type): number {
   return (typeof duration === 'number' || typeof duration === 'string') ? duration : duration[type];

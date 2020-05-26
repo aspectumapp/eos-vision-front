@@ -1,4 +1,0 @@
-@width: 100%;
-@middleLayer: auto;
-
-@horizontalBoxShadow: 0 1px 5px 0 rgba(27, 33, 43, 0.15);

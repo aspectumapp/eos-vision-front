@@ -1,5 +1,4 @@
 import * as React from 'react';
-import './checkbox.less';
 import { Props as BaseProps } from './Checkbox/Base';
 export { DataOnChange, } from './Checkbox/Base';
 export interface Props extends BaseProps {

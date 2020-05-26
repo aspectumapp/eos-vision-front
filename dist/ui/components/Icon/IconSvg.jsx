@@ -1,5 +1,4 @@
 import * as React from 'react';
-import './IconSvg.less';
 import IconBase from './IconBase';
 export default class IconSvg extends React.PureComponent {
     render() {

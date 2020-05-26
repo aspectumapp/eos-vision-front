@@ -1,7 +1,0 @@
-@pressedItemBackground: transparent;
-@secondaryActiveItemColor: @textColor;
-@dividerSize: 0;
-
-
-@secondaryPointingTabsMenuItemVerticalPadding: 1em;
-@secondaryPointingTabsMenuItemHorizontalPadding: round(15/14em, 2);

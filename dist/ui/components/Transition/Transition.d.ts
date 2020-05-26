@@ -1,5 +1,4 @@
 import * as React from 'react';
-import './transition.less';
 declare enum TransitionStatus {
     Entered = "ENTERED",
     Entering = "ENTERING",
