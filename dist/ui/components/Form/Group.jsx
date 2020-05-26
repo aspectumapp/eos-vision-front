@@ -1,5 +1,4 @@
 import * as React from 'react';
-import './form.less';
 export default class Group extends React.Component {
     render() {
         return (<div className='group'>

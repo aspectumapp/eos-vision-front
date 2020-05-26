@@ -1,6 +1,5 @@
 import * as React from 'react';
 import classnames from 'classnames';
-import './form.less';
 
 export interface Props {
   children: React.ReactNode;

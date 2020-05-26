@@ -1,5 +1,4 @@
 import * as React from 'react';
-import './icon.less';
 
 import IconBase, {
   Props,

@@ -1,5 +1,4 @@
 import * as React from 'react';
-import './checkbox.less';
 
 import Base, {
   Props as BaseProps,

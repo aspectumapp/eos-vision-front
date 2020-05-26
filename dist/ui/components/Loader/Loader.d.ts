@@ -1,5 +1,4 @@
 import * as React from 'react';
-import './loader.less';
 export interface Props {
     /**
      * Indicates if loader is active

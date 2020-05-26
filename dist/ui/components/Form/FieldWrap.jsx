@@ -1,6 +1,5 @@
 import * as React from 'react';
 import classnames from 'classnames';
-import './form.less';
 export default class FieldWrap extends React.Component {
     render() {
         const className = classnames('field', this.props.className, {

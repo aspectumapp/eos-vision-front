@@ -1,6 +1,0 @@
-@dropdownItemFontSize: 16px;
-@itemLineHeight: 1.38;
-@dropdownMenuBorderRadius: 8px;
-
-
-@dropdownMenuBoxShadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);

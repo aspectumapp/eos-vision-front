@@ -1,8 +1,0 @@
-/*******************************
-    User Variable Overrides
-*******************************/
-
-@shapeBorderColor: @blue transparent transparent;
-
-
-@large   : @40px;

@@ -1,6 +1,0 @@
-@eos-buttonTransparentFontSize: 18px;
-@eos-buttonTransparentPadding: 7px;
-@horizontalPadding: round(17/14em, 3);
-
-
-

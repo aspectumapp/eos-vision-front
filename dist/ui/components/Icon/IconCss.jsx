@@ -1,5 +1,4 @@
 import * as React from 'react';
-import './IconCss.less';
 import IconBase from './IconBase';
 export default class IconCss extends React.PureComponent {
     render() {

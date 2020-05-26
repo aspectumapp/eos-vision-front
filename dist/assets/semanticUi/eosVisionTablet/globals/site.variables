@@ -1,5 +1,0 @@
-@fontSize : 14px;
-
-@pageMinWidth: 320px;
-
-@eos-sidebar-zIndex: 1003;

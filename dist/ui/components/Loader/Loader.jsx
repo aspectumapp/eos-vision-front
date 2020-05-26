@@ -1,6 +1,5 @@
 import * as React from 'react';
 import classnames from 'classnames';
-import './loader.less';
 export default class Loader extends React.PureComponent {
     render() {
         if (!this.props.active) {

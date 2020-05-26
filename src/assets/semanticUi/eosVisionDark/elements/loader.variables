@@ -1,2 +1,0 @@
-@loaderFillColor: @eosGrey9-bg;
-@invertedLoaderFillColor: @eosGrey9-bg !important;

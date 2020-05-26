@@ -1,3 +1,0 @@
-@headerFontSize: inherit;
-@extraMargin: 5px 0 0;
-@contentFontSize: round(13/14em, 2);
