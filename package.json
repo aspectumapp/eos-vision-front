@@ -60,7 +60,7 @@
   "dependencies": {
     "@types/react": "16.9.15",
     "classnames": "2.2.6",
-    "lodash-es": "4.17.15",
+    "lodash-es": "4.17.21",
     "prop-types": "15.7.2",
     "react": "16.12.0"
   },
